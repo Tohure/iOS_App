@@ -25,6 +25,12 @@
 		31859B3C1D64DBAD00187AB8 /* RppApp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B3B1D64DBAD00187AB8 /* RppApp_iOSTests.swift */; };
 		31859B471D64DBAD00187AB8 /* RppApp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B461D64DBAD00187AB8 /* RppApp_iOSUITests.swift */; };
 		31859B591D65256900187AB8 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B581D65256900187AB8 /* NetworkUtil.swift */; };
+		A072873F1D693D53000561CF /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072873B1D693D53000561CF /* RequestBuilder.swift */; };
+		A07287401D693D53000561CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072873C1D693D53000561CF /* NetworkManager.swift */; };
+		A07287411D693D53000561CF /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072873D1D693D53000561CF /* JSONParser.swift */; };
+		A07287421D693D53000561CF /* ContentLoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072873E1D693D53000561CF /* ContentLoadingManager.swift */; };
+		A07287451D693D7F000561CF /* NoticiasServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07287441D693D7F000561CF /* NoticiasServices.swift */; };
+		A07287481D693E1C000561CF /* NSErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07287471D693E1C000561CF /* NSErrorHelper.swift */; };
 		D698279055F6C9291AE0EC93 /* Pods_RppApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7E3AAFAB6CD010B4AAF907 /* Pods_RppApp_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +78,12 @@
 		31859B481D64DBAD00187AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31859B581D65256900187AB8 /* NetworkUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 		3B7E3AAFAB6CD010B4AAF907 /* Pods_RppApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RppApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A072873B1D693D53000561CF /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		A072873C1D693D53000561CF /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A072873D1D693D53000561CF /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		A072873E1D693D53000561CF /* ContentLoadingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentLoadingManager.swift; sourceTree = "<group>"; };
+		A07287441D693D7F000561CF /* NoticiasServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticiasServices.swift; sourceTree = "<group>"; };
+		A07287471D693E1C000561CF /* NSErrorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSErrorHelper.swift; sourceTree = "<group>"; };
 		B16530CBB2F6AFF3D9E399B8 /* Pods-RppApp_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RppApp_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RppApp_iOS/Pods-RppApp_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +176,7 @@
 		31859B251D64DBAC00187AB8 /* RppApp_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A072873A1D693D48000561CF /* Networking */,
 				31859B601D664F3700187AB8 /* Models */,
 				31859B571D65255600187AB8 /* Utils */,
 				31859B561D65254900187AB8 /* Controllers */,
@@ -206,8 +219,9 @@
 		31859B571D65255600187AB8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				3142080B1D692995009F638D /* TabPageViewController */,
+				A07287471D693E1C000561CF /* NSErrorHelper.swift */,
 				31859B581D65256900187AB8 /* NetworkUtil.swift */,
+				3142080B1D692995009F638D /* TabPageViewController */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -228,6 +242,26 @@
 				06D6AFA62CC60435048A2B59 /* Pods-RppApp_iOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A072873A1D693D48000561CF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A072873B1D693D53000561CF /* RequestBuilder.swift */,
+				A072873C1D693D53000561CF /* NetworkManager.swift */,
+				A072873D1D693D53000561CF /* JSONParser.swift */,
+				A072873E1D693D53000561CF /* ContentLoadingManager.swift */,
+				A07287431D693D5D000561CF /* Services */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		A07287431D693D5D000561CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A07287441D693D7F000561CF /* NoticiasServices.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		DAFA706B36579D1D2158CDC6 /* Frameworks */ = {
@@ -423,15 +457,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07287401D693D53000561CF /* NetworkManager.swift in Sources */,
 				3142081C1D692AA2009F638D /* TabView.swift in Sources */,
 				3142080A1D692236009F638D /* PortadaViewController.swift in Sources */,
 				314208191D692AA2009F638D /* TabCollectionCell.swift in Sources */,
+				A07287411D693D53000561CF /* JSONParser.swift in Sources */,
 				314208081D691C4E009F638D /* Multimedia.swift in Sources */,
 				3142081B1D692AA2009F638D /* TabPageViewController.swift in Sources */,
+				A07287451D693D7F000561CF /* NoticiasServices.swift in Sources */,
 				3142081A1D692AA2009F638D /* TabPageOption.swift in Sources */,
+				A07287481D693E1C000561CF /* NSErrorHelper.swift in Sources */,
 				31859B591D65256900187AB8 /* NetworkUtil.swift in Sources */,
+				A072873F1D693D53000561CF /* RequestBuilder.swift in Sources */,
 				314208061D691685009F638D /* Noticia.swift in Sources */,
 				31859B291D64DBAC00187AB8 /* SplashViewController.swift in Sources */,
+				A07287421D693D53000561CF /* ContentLoadingManager.swift in Sources */,
 				31859B271D64DBAC00187AB8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

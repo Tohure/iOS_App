@@ -15,6 +15,8 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getEventsInformation()
+        
         if NetworkUtil.isConnectedToNetwork() { launchTimer() }
         else
         {
@@ -27,6 +29,35 @@ class SplashViewController: UIViewController {
                 
                 UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(connectionAlert, animated: true, completion: nil)
             })
+        }
+    }
+    
+    func getEventsInformation() {
+        
+        NoticiasServices.fetchAllEvents { (array, error) -> Void in
+            
+            NSOperationQueue.mainQueue().addOperationWithBlock {
+                
+                if let error = error {
+                    
+                    let alertController = UIAlertController(title: error.localizedDescription, message: "¿Quieres intentarlo de nuevo?", preferredStyle: .Alert)
+                    
+                    alertController.addAction(UIAlertAction(title: "Reintentar", style: .Default, handler: { (alert) -> Void in
+                        self.getEventsInformation()
+                    }))
+                    
+                    alertController.addAction(UIAlertAction(title: "Cancelar", style: .Cancel, handler: nil))
+                    
+                    self.presentViewController(alertController, animated: true, completion: nil)
+                    
+                }
+                    
+                else {
+                    for item in array! {
+                        print(item.titular)
+                    }
+                }
+            }
         }
     }
     
