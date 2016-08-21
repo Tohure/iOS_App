@@ -1,0 +1,6 @@
+framework module Pods_RppApp_iOS {
+  umbrella header "Pods-RppApp_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
