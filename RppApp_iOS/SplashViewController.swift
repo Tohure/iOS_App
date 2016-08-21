@@ -15,8 +15,8 @@ class SplashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getEventsInformation()
-        
+        sendNoticias()
+        /*
         if NetworkUtil.isConnectedToNetwork() { launchTimer() }
         else
         {
@@ -29,7 +29,7 @@ class SplashViewController: UIViewController {
                 
                 UIApplication.sharedApplication().keyWindow?.rootViewController?.presentViewController(connectionAlert, animated: true, completion: nil)
             })
-        }
+        }*/
     }
     
     func getEventsInformation() {
@@ -56,9 +56,39 @@ class SplashViewController: UIViewController {
                     for item in array! {
                         print("titular \(item.titular) linkimg \(item.linkimg)")
                     }
+                    
+                    self.sendNoticias()
                 }
             }
         }
+    }
+    
+    func sendNoticias() {
+        
+        let categories = Category.getCategoryItems()
+        
+        let tc = TabPageViewController.create()
+        
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
+        let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
+        let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
+        let vc3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
+        let vc4 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
+        let vc5 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
+        let vc6 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
+        let vc7 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
+        let vc8 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
+        let vc9 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
+        let vc10 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
+        
+        tc.tabItems = [(vc, categories[0].name), (vc1, categories[1].name), (vc2, categories[2].name), (vc3, categories[3].name), (vc4, categories[4].name), (vc5, categories[5].name), (vc6, categories[6].name), (vc7, categories[7].name), (vc8, categories[8].name), (vc9, categories[9].name), (vc10, categories[10].name)]
+        tc.isInfinity = true
+        let nc = UINavigationController()
+        nc.viewControllers = [tc]
+        var option = TabPageOption()
+        option.currentColor = UIColor(red: 0/255, green: 88/255, blue: 180/255, alpha: 1.0)
+        tc.option = option
+        navigationController?.pushViewController(tc, animated: true)
     }
     
     func launchTimer() {
