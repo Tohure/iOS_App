@@ -20,14 +20,14 @@ class Noticia: NSObject {
         static let seccion = "seccion"
         static let slug = "slug"
         static let titular = "titular"
-        static let titularCorto = "titularCorto"
+        static let titularcorto = "titularcorto"
         static let gorro = "gorro"
-        static let linkImg = "linkImg"
-        static let fuenteFoto = "fuenteFoto"
-        static let creditosFoto = "creditosFoto"
-        static let elementoMultimedia = "elementoMultimedia"
-        static let cuerpo = "cuerpo"
-        static let seccionRuta = "seccionRuta"
+        static let linkimg = "linkimg"
+        static let fuentefoto = "fuentefoto"
+        static let creditos = "creditos"
+        static let elemento = "elemento"
+        static let desarrollo = "desarrollo"
+        static let seccionruta = "seccionruta"
     }
     
     var noticiaID: String!
@@ -39,14 +39,14 @@ class Noticia: NSObject {
     var seccion: String!
     var slug: String!
     var titular: String!
-    var titularCorto: String!
+    var titularcorto: String!
     var gorro: String!
-    var linkImg: String!
-    var fuenteFoto: String!
-    var creditosFoto: String!
-    var elementoMultimedia: String!
-    var cuerpo: String!
-    var seccionRuta: String!
+    var linkimg: String!
+    var fuentefoto: String!
+    var creditos: String!
+    var elemento: String!
+    var desarrollo: String!
+    var seccionruta: String!
     
     init(jsonObject: [String:AnyObject]) {
         
@@ -86,36 +86,37 @@ class Noticia: NSObject {
             self.titular = titular as! String
         }
         
-        if let titularCorto = jsonObject[NoticiaJSONKeys.titularCorto] {
-            self.titularCorto = titularCorto as! String
+        if let titularcorto = jsonObject[NoticiaJSONKeys.titularcorto] {
+            self.titularcorto = titularcorto as! String
         }
         
         if let gorro = jsonObject[NoticiaJSONKeys.gorro] {
             self.gorro = gorro as! String
         }
         
-        if let linkImg = jsonObject[NoticiaJSONKeys.linkImg] {
-            self.linkImg = linkImg as! String
+        
+        if let linkimg = jsonObject[NoticiaJSONKeys.linkimg] {
+            self.linkimg = linkimg as! String
         }
         
-        if let fuenteFoto = jsonObject[NoticiaJSONKeys.fuenteFoto] {
-            self.fuenteFoto = fuenteFoto as! String
+        if let fuentefoto = jsonObject[NoticiaJSONKeys.fuentefoto] {
+            self.fuentefoto = fuentefoto as! String
         }
         
-        if let creditosFoto = jsonObject[NoticiaJSONKeys.creditosFoto] {
-            self.creditosFoto = creditosFoto as! String
+        if let creditos = jsonObject[NoticiaJSONKeys.creditos] {
+            self.creditos = creditos as! String
         }
         
-        if let elementoMultimedia = jsonObject[NoticiaJSONKeys.elementoMultimedia] {
-            self.elementoMultimedia = elementoMultimedia as! String
+        if let elemento = jsonObject[NoticiaJSONKeys.elemento] {
+            self.elemento = elemento as! String
         }
         
-        if let cuerpo = jsonObject[NoticiaJSONKeys.cuerpo] {
-            self.cuerpo = cuerpo as! String
+        if let desarrollo = jsonObject[NoticiaJSONKeys.desarrollo] {
+            self.desarrollo = desarrollo as! String
         }
         
-        if let seccionRuta = jsonObject[NoticiaJSONKeys.seccionRuta] {
-            self.seccionRuta = seccionRuta as! String
+        if let seccionruta = jsonObject[NoticiaJSONKeys.seccionruta] {
+            self.seccionruta = seccionruta as! String
         }
     }        
     

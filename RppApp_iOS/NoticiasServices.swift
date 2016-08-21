@@ -9,14 +9,11 @@
 import Foundation
 
 
-
 class NoticiasServices {
     
-    static let allNoticiasPath = "lgfeed/"
+    static func fetchAllEvents(urlPath: String, completionHandler:([Noticia]?, error:NSError?) -> Void) {
     
-    static func fetchAllEvents(completionHandler:([Noticia]?, error:NSError?) -> Void) {
-    
-        let request = RequestBuilder.GET(path: allNoticiasPath)
+        let request = RequestBuilder.GET(path: urlPath)
         
         NetworkManager().dataTaskWithRequest(request) { (jsonObject, error) -> Void in
             
@@ -24,17 +21,14 @@ class NoticiasServices {
             
             if (error != nil) {
                 completionHandler(nil, error: error)
-            }
-                
-            else {
+            } else {
         
                 if let jsonObjectArray = jsonObject as? NSArray {
                     for event in (jsonObjectArray as! [[String:AnyObject]]) {
                         objects.append(Noticia(jsonObject: event))
                     }
                     completionHandler(objects, error: nil)
-                }
-                else {
+                } else {
                     completionHandler(nil, error: NSError.errorWithMessage("Error"))
                 }
             }

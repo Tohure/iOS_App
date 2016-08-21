@@ -12,7 +12,7 @@ import UIKit
 class RequestBuilder {
     
     static let websiteURL = "http://www.google.com"
-    static let baseURL = "http://rpp.pe/"    
+    static let baseURL = "http://rpp.pe/lgfeed/"
     
     //MARK : URL for Path
     

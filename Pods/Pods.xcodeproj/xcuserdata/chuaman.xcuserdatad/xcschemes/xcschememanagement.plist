@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SWRevealViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>40D165E5D201AA47D5CF9C177C180CFE</key>
+		<key>411A6C91FC1487690EAD1F8938B41820</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>97BF0D392C8EE4F43CCC76830B8F7E1A</key>
+		<key>B4B78EEA5BA0E0E91E554E3CD596D5C6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BB1A6DEBB4CB4CC5149CC2158958A966</key>
 		<dict>
 			<key>primary</key>
 			<true/>

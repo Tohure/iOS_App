@@ -34,7 +34,9 @@ class SplashViewController: UIViewController {
     
     func getEventsInformation() {
         
-        NoticiasServices.fetchAllEvents { (array, error) -> Void in
+        let pathURL = "/deportes"
+        
+        NoticiasServices.fetchAllEvents(pathURL) { (array, error) -> Void in
             
             NSOperationQueue.mainQueue().addOperationWithBlock {
                 
@@ -50,11 +52,9 @@ class SplashViewController: UIViewController {
                     
                     self.presentViewController(alertController, animated: true, completion: nil)
                     
-                }
-                    
-                else {
+                } else {
                     for item in array! {
-                        print(item.titular)
+                        print("titular \(item.titular) linkimg \(item.linkimg)")
                     }
                 }
             }

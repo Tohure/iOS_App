@@ -63,6 +63,7 @@
 		314208161D692AA2009F638D /* TabPageOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageOption.swift; sourceTree = "<group>"; };
 		314208171D692AA2009F638D /* TabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageViewController.swift; sourceTree = "<group>"; };
 		314208181D692AA2009F638D /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		3142081D1D694D57009F638D /* RppApp_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RppApp_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		31859B231D64DBAC00187AB8 /* RppApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RppApp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31859B261D64DBAC00187AB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31859B281D64DBAC00187AB8 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +161,7 @@
 				31859B241D64DBAC00187AB8 /* Products */,
 				8F5C42AB4B3470CEEDFA0248 /* Pods */,
 				DAFA706B36579D1D2158CDC6 /* Frameworks */,
+				3142081D1D694D57009F638D /* RppApp_iOS-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -621,6 +623,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gruporpp.RPPNoticiasIphone.RppApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RppApp_iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -636,6 +639,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gruporpp.RPPNoticiasIphone.RppApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RppApp_iOS-Bridging-Header.h";
 			};
 			name = Release;
 		};
