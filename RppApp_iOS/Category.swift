@@ -47,11 +47,13 @@ class Category: NSObject {
     
     var categoryID: String!
     var name: String!
+    var path: String!
     var active: Bool!
     
-    init(name: String) {
+    init(name: String, path: String) {
         
         self.name = name
+        self.path = path
     }
     
    
@@ -59,37 +61,37 @@ class Category: NSObject {
         
         var category = [Category]()
         
-        let teatro = Category(name: "PORTADA")
+        let teatro = Category(name: "PORTADA", path: "portada")
         category.append(teatro)
         
-        let escultura = Category(name: "POLITICA")
+        let escultura = Category(name: "POLITICA", path: "politica")
         category.append(escultura)
         
-        let literatura = Category(name: "ACTUALIDAD")
+        let literatura = Category(name: "ACTUALIDAD", path: "actualidad")
         category.append(literatura)
         
-        let cine = Category(name: "DEPORTES")
+        let cine = Category(name: "DEPORTES", path: "deportes")
         category.append(cine)
         
-        let musica = Category(name: "ENTRETENIMIENTO")
+        let musica = Category(name: "ENTRETENIMIENTO", path: "entretenimiento")
         category.append(musica)
         
-        let fotografia = Category(name: "PERU")
+        let fotografia = Category(name: "PERU", path: "peru")
         category.append(fotografia)
         
-        let arquitectura = Category(name: "MUNDO")
+        let arquitectura = Category(name: "MUNDO", path: "mundo")
         category.append(arquitectura)
         
-        let diseno = Category(name: "ECONOMIA")
+        let diseno = Category(name: "ECONOMIA", path: "economia")
         category.append(diseno)
         
-        let pintura = Category(name: "VIDA")
+        let pintura = Category(name: "VIDA", path: "vida")
         category.append(pintura)
         
-        let danza = Category(name: "TECNO")
+        let danza = Category(name: "TECNO", path: "tecno")
         category.append(danza)
         
-        let ilustracion = Category(name: "VIRAL")
+        let ilustracion = Category(name: "VIRAL", path: "viral")
         category.append(ilustracion)
         
         return category

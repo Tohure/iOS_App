@@ -13,25 +13,25 @@ class PortadaViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     var currentShownEvent : Noticia!
+    var pathURL: String!
     var events = [Noticia]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("luis")
+        //self.navigationController! .setNavigationBarHidden(false, animated: false)
+        self.navigationItem .setHidesBackButton(true, animated: true)
+        
+        
         fetchShares()
-        
-        
-//        thumbP.sd_setImageWithURL(NSURL(string: "http://p-gruporpp-media.s3.amazonaws.com/2016/08/20/540054_224608.png"), placeholderImage: UIImage(named: "defaultBackground"))
-        
-        
+
     }
     
     func fetchShares() {
 
         
-        let pathURL = "/deportes"
+        let pathURLConcatenado = "/" + pathURL
         
-        NoticiasServices.fetchAllEvents(pathURL) { (array, error) -> Void in
+        NoticiasServices.fetchAllEvents(pathURLConcatenado) { (array, error) -> Void in
             
             NSOperationQueue.mainQueue().addOperationWithBlock {
                 
@@ -57,8 +57,8 @@ extension PortadaViewController {
         tableView.allowsSelection = true
         
         self.automaticallyAdjustsScrollViewInsets = false
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 160
+        //tableView.rowHeight = UITableViewAutomaticDimension
+        //tableView.estimatedRowHeight = 160
         //self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
         //self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "BackIcon"), style: .Plain, target: self, action: #selector(EventListViewController.popToViewController))
     }
@@ -70,6 +70,10 @@ extension PortadaViewController {
 }
 
 extension PortadaViewController: UITableViewDataSource {
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 160
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         

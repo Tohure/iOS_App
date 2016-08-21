@@ -14,6 +14,7 @@ class SplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.navigationController! .setNavigationBarHidden(true, animated: false)
         
         sendNoticias()
         /*
@@ -69,17 +70,28 @@ class SplashViewController: UIViewController {
         
         let tc = TabPageViewController.create()
         
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
-        let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
-        let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
-        let vc3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
-        let vc4 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
-        let vc5 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
-        let vc6 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
-        let vc7 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
-        let vc8 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
-        let vc9 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
-        let vc10 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController")
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController") as! PortadaViewController
+        vc.pathURL = categories[0].path
+        let vc1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController") as! PortadaViewController
+        vc1.pathURL = categories[1].path
+        let vc2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController") as! PortadaViewController
+        vc2.pathURL = categories[2].path
+        let vc3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController") as! PortadaViewController
+        vc3.pathURL = categories[3].path
+        let vc4 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController") as! PortadaViewController
+        vc4.pathURL = categories[4].path
+        let vc5 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController") as! PortadaViewController
+        vc5.pathURL = categories[5].path
+        let vc6 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController") as! PortadaViewController
+        vc6.pathURL = categories[6].path
+        let vc7 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController") as! PortadaViewController
+        vc7.pathURL = categories[7].path
+        let vc8 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController") as! PortadaViewController
+        vc8.pathURL = categories[8].path
+        let vc9 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController") as! PortadaViewController
+        vc9.pathURL = categories[9].path
+        let vc10 = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("PortadaViewController") as! PortadaViewController
+        vc10.pathURL = categories[10].path
         
         tc.tabItems = [(vc, categories[0].name), (vc1, categories[1].name), (vc2, categories[2].name), (vc3, categories[3].name), (vc4, categories[4].name), (vc5, categories[5].name), (vc6, categories[6].name), (vc7, categories[7].name), (vc8, categories[8].name), (vc9, categories[9].name), (vc10, categories[10].name)]
         tc.isInfinity = true
