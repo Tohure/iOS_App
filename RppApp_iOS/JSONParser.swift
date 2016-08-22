@@ -30,9 +30,7 @@ class JSONParser {
             return NSError(domain: "UpArtError", code: statusCode, userInfo: JSONParser.createErrorInfoDictionary(errorDictionary as! [String : AnyObject]))
 
         
-        }
-        
-        else {
+        } else {
             
             if let _ = jsonObject["statusCode"] {
                 

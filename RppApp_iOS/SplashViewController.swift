@@ -99,7 +99,7 @@ class SplashViewController: UIViewController {
         let nc = UINavigationController()
         nc.viewControllers = [tc]
         var option = TabPageOption()
-        option.currentColor = UIColor(red: 0/255, green: 88/255, blue: 180/255, alpha: 1.0)
+        option.currentColor = UIColor(red: 0/255, green: 96/255, blue: 171/255, alpha: 1.0)
         tc.option = option
         //navigationController?.navigationItem.setHidesBackButton(true, animated: true)
         navigationController?.pushViewController(tc, animated: true)
