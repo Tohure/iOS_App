@@ -42,7 +42,6 @@ public class TabPageViewController: UIPageViewController {
  
         self.navigationController! .setNavigationBarHidden(false, animated: false)
         self.navigationItem .setHidesBackButton(true, animated: true)
-        
     }
 
     override public func viewDidLoad() {
