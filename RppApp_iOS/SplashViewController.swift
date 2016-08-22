@@ -93,7 +93,9 @@ class SplashViewController: UIViewController {
         vc10.pathURL = categories[10].path
         
         tc.tabItems = [(vc, categories[0].name), (vc1, categories[1].name), (vc2, categories[2].name), (vc3, categories[3].name), (vc4, categories[4].name), (vc5, categories[5].name), (vc6, categories[6].name), (vc7, categories[7].name), (vc8, categories[8].name), (vc9, categories[9].name), (vc10, categories[10].name)]
-        tc.isInfinity = true
+        
+        //tc.isInfinity = true
+        
         let nc = UINavigationController()
         nc.viewControllers = [tc]
         var option = TabPageOption()
