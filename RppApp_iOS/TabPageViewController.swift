@@ -35,6 +35,15 @@ public class TabPageViewController: UIPageViewController {
         let sb = UIStoryboard(name: "TabPageViewController", bundle: NSBundle(forClass: TabPageViewController.self))
         return sb.instantiateInitialViewController() as! TabPageViewController
     }
+    
+    override public func viewDidLayoutSubviews() {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "hamburguer"), style: .Plain, target: self, action: #selector(TabPageViewController.popToViewController))
+ 
+        self.navigationController! .setNavigationBarHidden(false, animated: false)
+        self.navigationItem .setHidesBackButton(true, animated: true)
+        
+    }
 
     override public func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +51,10 @@ public class TabPageViewController: UIPageViewController {
         setupPageViewController()
         setupScrollView()
         updateNavigationBar()
+    }
+    
+    func popToViewController() {
+        print("call to menu")
     }
 
     override public func viewWillAppear(animated: Bool) {

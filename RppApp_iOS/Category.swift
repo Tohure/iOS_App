@@ -61,7 +61,7 @@ class Category: NSObject {
         
         var category = [Category]()
         
-        let teatro = Category(name: "PORTADA", path: "portada")
+        let teatro = Category(name: "PORTADA", path: "")
         category.append(teatro)
         
         let escultura = Category(name: "POLITICA", path: "politica")

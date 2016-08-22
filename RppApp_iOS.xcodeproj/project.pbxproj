@@ -191,9 +191,9 @@
 				31859B601D664F3700187AB8 /* Models */,
 				31859B571D65255600187AB8 /* Utils */,
 				31859B561D65254900187AB8 /* Controllers */,
+				A0961D121D6ABCA10044897C /* Resources */,
 				31859B261D64DBAC00187AB8 /* AppDelegate.swift */,
 				31859B2A1D64DBAC00187AB8 /* Main.storyboard */,
-				31859B2D1D64DBAC00187AB8 /* Assets.xcassets */,
 				31859B2F1D64DBAC00187AB8 /* LaunchScreen.storyboard */,
 				31859B321D64DBAC00187AB8 /* Info.plist */,
 			);
@@ -292,6 +292,14 @@
 				A072874D1D696CD1000561CF /* EventDetailsView.xib */,
 			);
 			name = Xib;
+			sourceTree = "<group>";
+		};
+		A0961D121D6ABCA10044897C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				31859B2D1D64DBAC00187AB8 /* Assets.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		DAFA706B36579D1D2158CDC6 /* Frameworks */ = {

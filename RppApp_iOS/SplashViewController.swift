@@ -14,7 +14,6 @@ class SplashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.navigationController! .setNavigationBarHidden(true, animated: false)
         
         sendNoticias()
         /*
@@ -100,6 +99,7 @@ class SplashViewController: UIViewController {
         var option = TabPageOption()
         option.currentColor = UIColor(red: 0/255, green: 88/255, blue: 180/255, alpha: 1.0)
         tc.option = option
+        //navigationController?.navigationItem.setHidesBackButton(true, animated: true)
         navigationController?.pushViewController(tc, animated: true)
     }
     
