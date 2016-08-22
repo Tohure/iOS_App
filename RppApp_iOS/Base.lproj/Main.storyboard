@@ -91,7 +91,7 @@
         <!--Navigation Controller-->
         <scene sceneID="sm4-UV-0Gf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GDU-Cg-uAv" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="GDU-Cg-uAv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iVE-Pw-iaK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -15,12 +15,10 @@ class PortadaViewController: UIViewController {
     var currentShownEvent : Noticia!
     var pathURL: String!
     var events = [Noticia]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.navigationController! .setNavigationBarHidden(false, animated: false)
-        self.navigationItem .setHidesBackButton(true, animated: true)
-        
+    
         
         fetchShares()
 
@@ -72,7 +70,7 @@ extension PortadaViewController {
 extension PortadaViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 160
+        return 100
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="316" height="100"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BBQ-Sa-LEa">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BBQ-Sa-LEa">
                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="100" id="OBF-gm-I5Q"/>

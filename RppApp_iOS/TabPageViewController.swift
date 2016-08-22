@@ -35,6 +35,14 @@ public class TabPageViewController: UIPageViewController {
         let sb = UIStoryboard(name: "TabPageViewController", bundle: NSBundle(forClass: TabPageViewController.self))
         return sb.instantiateInitialViewController() as! TabPageViewController
     }
+    
+    override public func viewDidLayoutSubviews() {
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "BackIcon"), style: .Plain, target: self, action: #selector(PortadaViewController.popToViewController))
+ 
+        self.navigationController! .setNavigationBarHidden(false, animated: false)
+        self.navigationItem .setHidesBackButton(true, animated: true)
+    }
 
     override public func viewDidLoad() {
         super.viewDidLoad()
