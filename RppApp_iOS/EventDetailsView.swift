@@ -26,7 +26,7 @@ class EventDetailsView: UIView {
         
             self.titleLabel.text = event.titular
             self.descriptionLabel.text = event.gorro
-            self.iconNotice.sd_setImageWithURL(NSURL(string: event.linkimg), placeholderImage: UIImage(named: "defaultBackground"))
+            self.iconNotice.sd_setImageWithURL(NSURL(string: event.linkimg), placeholderImage: UIImage(named: "placeholder_img"))
             
 //            self.titleLabel.text = event.name
 //            self.categoryLabel.textColor = getEventTitleColor()

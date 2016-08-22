@@ -32,9 +32,7 @@ class NetworkManager {
             
             if let error = networkError {
                 completionHandler(jsonObject: nil, error: error)
-            }
-                
-            else if let data = optionalData, jsonObject = try? NSJSONSerialization.JSONObjectWithData(data, options: []) {
+            } else if let data = optionalData, jsonObject = try? NSJSONSerialization.JSONObjectWithData(data, options: []) {
                 
                 if jsonObject.isKindOfClass(NSArray) {
                     completionHandler(jsonObject: jsonObject, error: nil)
@@ -42,14 +40,11 @@ class NetworkManager {
                 if jsonObject.isKindOfClass(NSDictionary) {
                     if let error = NSError.errorWithMessageFromJSONObject(jsonObject as! [String : AnyObject]) {
                         completionHandler(jsonObject: jsonObject, error: error)
-                    }
-                    else {
+                    } else {
                         completionHandler(jsonObject: jsonObject, error: nil)
                     }
                 }
-            }
-                
-            else {
+            } else {
                 completionHandler(jsonObject: nil, error: NSError.errorWithMessage("Respuesta inesperada del servidor.", code: -1))
             }
             
