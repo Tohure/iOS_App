@@ -88,6 +88,11 @@ extension PortadaViewController: UITableViewDataSource {
         cell.eventDetailView.userInteractionEnabled = true
         cell.eventDetailView.event = event
         
+        cell.layer.shadowOpacity = 1.0
+        cell.layer.shadowRadius = 1.7
+        cell.layer.shadowColor = UIColor.blackColor().CGColor
+        cell.layer.shadowOffset = CGSizeMake(0.0, 0.0)
+        
         return cell
         
     }
@@ -111,7 +116,7 @@ extension PortadaViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         if section != 0 {
-            return 5
+            return 15
         }
         
         return 0

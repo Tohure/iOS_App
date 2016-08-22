@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GDU-Cg-uAv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GDU-Cg-uAv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
@@ -54,14 +54,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u5g-7Y-mEb">
-                                <rect key="frame" x="20" y="48" width="560" height="532"/>
+                                <rect key="frame" x="10" y="48" width="580" height="542"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventDetailsCell" rowHeight="178" id="fUX-4j-o41" customClass="EventDetailsCell" customModule="RppApp_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="560" height="178"/>
+                                        <rect key="frame" x="0.0" y="28" width="580" height="178"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fUX-4j-o41" id="TKQ-T1-XcL">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="177"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="580" height="177"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -74,10 +74,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="u5g-7Y-mEb" firstAttribute="leading" secondItem="pDl-2c-usO" secondAttribute="leading" constant="20" id="dmV-cf-mhz"/>
-                            <constraint firstAttribute="trailing" secondItem="u5g-7Y-mEb" secondAttribute="trailing" constant="20" id="gsf-F6-S01"/>
-                            <constraint firstItem="wED-6b-sTa" firstAttribute="top" secondItem="u5g-7Y-mEb" secondAttribute="bottom" constant="20" id="hDu-3Z-MFW"/>
-                            <constraint firstItem="u5g-7Y-mEb" firstAttribute="top" secondItem="ayx-8q-8O0" secondAttribute="bottom" constant="28" id="poD-qL-2BG"/>
+                            <constraint firstItem="u5g-7Y-mEb" firstAttribute="top" secondItem="ayx-8q-8O0" secondAttribute="bottom" constant="28" id="DLY-B7-n9J"/>
+                            <constraint firstItem="wED-6b-sTa" firstAttribute="top" secondItem="u5g-7Y-mEb" secondAttribute="bottom" constant="10" id="LxS-db-Eka"/>
+                            <constraint firstItem="u5g-7Y-mEb" firstAttribute="leading" secondItem="pDl-2c-usO" secondAttribute="leading" constant="10" id="TAf-Q5-qW4"/>
+                            <constraint firstAttribute="trailing" secondItem="u5g-7Y-mEb" secondAttribute="trailing" constant="10" id="p5n-jX-fl4"/>
                         </constraints>
                     </view>
                     <connections>
