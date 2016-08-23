@@ -25,7 +25,6 @@ class PortadaViewController: UIViewController {
     }
     
     func fetchShares() {
-
         
         let pathURLConcatenado = "/" + pathURL
         
