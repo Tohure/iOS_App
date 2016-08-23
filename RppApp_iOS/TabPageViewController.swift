@@ -38,7 +38,7 @@ public class TabPageViewController: UIPageViewController {
     
     override public func viewDidLayoutSubviews() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "hamburguer"), style: .Plain, target: self, action: #selector(TabPageViewController.popToViewController))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "hamburguer"), style: .Done, target: self, action: #selector(TabPageViewController.popToViewController))
  
         self.navigationController! .setNavigationBarHidden(false, animated: false)
         self.navigationItem .setHidesBackButton(true, animated: true)

@@ -10,7 +10,6 @@ import UIKit
 
 class PortadaViewController: UIViewController {
     
-    
     @IBOutlet weak var tableView: UITableView!
     var currentShownEvent : Noticia!
     var pathURL: String!
@@ -18,15 +17,11 @@ class PortadaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        
         fetchShares()
-
     }
     
     func fetchShares() {
 
-        
         let pathURLConcatenado = "/" + pathURL
         
         NoticiasServices.fetchAllEvents(pathURLConcatenado) { (array, error) -> Void in
@@ -70,12 +65,10 @@ extension PortadaViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return 1
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
         return self.events.count
     }
     
@@ -94,7 +87,6 @@ extension PortadaViewController: UITableViewDataSource {
         cell.layer.shadowOffset = CGSizeMake(0.0, 0.0)
         
         return cell
-        
     }
     
     func toEventDetailsViewController() {
