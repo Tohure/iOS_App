@@ -215,7 +215,6 @@
 		31859B251D64DBAC00187AB8 /* RppApp_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A023E10B1D6D75E000C47432 /* Supporting Files */,
 				A023E0F31D6D741200C47432 /* Streaming */,
 				A072874B1D696CB2000561CF /* View */,
 				A072873A1D693D48000561CF /* Networking */,
@@ -223,6 +222,7 @@
 				31859B571D65255600187AB8 /* Utils */,
 				31859B561D65254900187AB8 /* Controllers */,
 				A0961D121D6ABCA10044897C /* Resources */,
+				A023E10B1D6D75E000C47432 /* Supporting Files */,
 				31859B261D64DBAC00187AB8 /* AppDelegate.swift */,
 				31859B2A1D64DBAC00187AB8 /* Main.storyboard */,
 				31859B2F1D64DBAC00187AB8 /* LaunchScreen.storyboard */,

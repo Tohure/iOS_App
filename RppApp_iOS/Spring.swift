@@ -22,6 +22,7 @@
 
 import UIKit
 
+
 @objc public protocol Springable {
     var autostart: Bool  { get set }
     var autohide: Bool  { get set }

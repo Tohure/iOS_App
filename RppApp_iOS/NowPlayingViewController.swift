@@ -20,6 +20,7 @@ protocol NowPlayingViewControllerDelegate: class {
     func trackPlayingToggled(track: Track)
 }
 
+
 //*****************************************************************
 // NowPlayingViewController
 //*****************************************************************

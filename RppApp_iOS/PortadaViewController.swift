@@ -131,7 +131,7 @@ extension PortadaViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         //currentShownEvent = events[indexPath.section]
-        //self.toEventDetailsViewController()
+        //self.toEventDetailsViewController() y????
         
         
         let vc = self.storyboard!.instantiateViewControllerWithIdentifier("NowPlayingViewController") as! NowPlayingViewController

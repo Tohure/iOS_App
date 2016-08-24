@@ -22,6 +22,7 @@
 
 import UIKit
 
+
 public class SpringLabel: UILabel, Springable {
     @IBInspectable public var autostart: Bool = false
     @IBInspectable public var autohide: Bool = false
