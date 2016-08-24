@@ -37,24 +37,47 @@ public class TabPageViewController: UIPageViewController {
     }
     
     override public func viewDidLayoutSubviews() {
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "hamburguer"), style: .Done, target: self, action: #selector(TabPageViewController.popToViewController))
- 
-        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
         self.navigationController! .setNavigationBarHidden(false, animated: false)
         self.navigationItem .setHidesBackButton(true, animated: true)
     }
 
     override public func viewDidLoad() {
         super.viewDidLoad()
+        generalConfiguration()
+        
+
 
         setupPageViewController()
         setupScrollView()
         updateNavigationBar()
     }
     
+    func generalConfiguration() {
+        
+        let btnMenu = UIButton(type: .Custom)
+        btnMenu .setImage(UIImage(named: "hamburguer"), forState: .Normal)
+        btnMenu.frame = CGRectMake(0.0, 0.0, 34.0, 32.0)
+        btnMenu.addTarget(self, action: #selector(TabPageViewController.popToViewController), forControlEvents: .TouchUpInside)
+        btnMenu.adjustsImageWhenHighlighted = false
+        let btnMenuItem = UIBarButtonItem(customView: btnMenu)
+        self.navigationItem.setLeftBarButtonItem(btnMenuItem, animated: true)
+        
+        let btnRadioEnVivo = UIButton(type: .Custom)
+        btnRadioEnVivo .setImage(UIImage(named: "en_vivo"), forState: .Normal)
+        btnRadioEnVivo.frame = CGRectMake(0.0, 0.0, 34.0, 32.0)
+        btnRadioEnVivo.addTarget(self, action: #selector(TabPageViewController.loadRadioInLive), forControlEvents: .TouchUpInside)
+        btnRadioEnVivo.adjustsImageWhenHighlighted = false
+        let btnRadioEnVivoItem = UIBarButtonItem(customView: btnRadioEnVivo)
+        self.navigationItem.setRightBarButtonItem(btnRadioEnVivoItem, animated: true)
+        
+    }
+    
     func popToViewController() {
         print("call to menu")
+    }
+    
+    func loadRadioInLive() {
+        print("loadRadioInLive")
     }
 
     override public func viewWillAppear(animated: Bool) {
