@@ -129,7 +129,12 @@ extension PortadaViewController: UITableViewDataSource {
 extension PortadaViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+        print(indexPath.section)
+        /*let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("portadaView") as! PortadaViewController
+        dispatch_async(dispatch_get_main_queue(), {
+            self.presentViewController(vc, animated: true, completion: nil)
+        })*/
         //currentShownEvent = events[indexPath.section]
         //self.toEventDetailsViewController() y????
         
