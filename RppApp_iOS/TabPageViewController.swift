@@ -78,6 +78,8 @@ public class TabPageViewController: UIPageViewController {
     
     func loadRadioInLive() {
         print("loadRadioInLive")
+        let vc = self.storyboard!.instantiateViewControllerWithIdentifier("NowPlayingViewController") as! NowPlayingViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     override public func viewWillAppear(animated: Bool) {

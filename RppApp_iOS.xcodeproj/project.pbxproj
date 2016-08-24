@@ -25,6 +25,19 @@
 		31859B3C1D64DBAD00187AB8 /* RppApp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B3B1D64DBAD00187AB8 /* RppApp_iOSTests.swift */; };
 		31859B471D64DBAD00187AB8 /* RppApp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B461D64DBAD00187AB8 /* RppApp_iOSUITests.swift */; };
 		31859B591D65256900187AB8 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B581D65256900187AB8 /* NetworkUtil.swift */; };
+		A023E0F01D6D73DD00C47432 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0EF1D6D73DD00C47432 /* NowPlayingViewController.swift */; };
+		A023E0F21D6D740500C47432 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A023E0F11D6D740500C47432 /* MediaPlayer.framework */; };
+		A023E0F81D6D742400C47432 /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0F51D6D742400C47432 /* RadioStation.swift */; };
+		A023E0F91D6D742400C47432 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0F61D6D742400C47432 /* Player.swift */; };
+		A023E0FA1D6D742400C47432 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0F71D6D742400C47432 /* Track.swift */; };
+		A023E0FC1D6D745400C47432 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0FB1D6D745400C47432 /* SwiftyJSON.swift */; };
+		A023E0FF1D6D749A00C47432 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0FE1D6D749A00C47432 /* SpringImageView.swift */; };
+		A023E1011D6D749F00C47432 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1001D6D749F00C47432 /* SpringLabel.swift */; };
+		A023E1031D6D74B200C47432 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1021D6D74B200C47432 /* Spring.swift */; };
+		A023E1081D6D752A00C47432 /* AnimationFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1051D6D752A00C47432 /* AnimationFrames.swift */; };
+		A023E1091D6D752A00C47432 /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1061D6D752A00C47432 /* UIImageView+Download.swift */; };
+		A023E10A1D6D752A00C47432 /* UIImage+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1071D6D752A00C47432 /* UIImage+DropShadow.swift */; };
+		A023E10D1D6D75EA00C47432 /* SwiftRadio-Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E10C1D6D75EA00C47432 /* SwiftRadio-Settings.swift */; };
 		A03D6A7D1D6BFE5A00110321 /* DetailNoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D6A7C1D6BFE5A00110321 /* DetailNoticeVC.swift */; };
 		A072873F1D693D53000561CF /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072873B1D693D53000561CF /* RequestBuilder.swift */; };
 		A07287401D693D53000561CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072873C1D693D53000561CF /* NetworkManager.swift */; };
@@ -84,6 +97,19 @@
 		31859B481D64DBAD00187AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31859B581D65256900187AB8 /* NetworkUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
 		3B7E3AAFAB6CD010B4AAF907 /* Pods_RppApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RppApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A023E0EF1D6D73DD00C47432 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
+		A023E0F11D6D740500C47432 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		A023E0F51D6D742400C47432 /* RadioStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
+		A023E0F61D6D742400C47432 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A023E0F71D6D742400C47432 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		A023E0FB1D6D745400C47432 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		A023E0FE1D6D749A00C47432 /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
+		A023E1001D6D749F00C47432 /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
+		A023E1021D6D74B200C47432 /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
+		A023E1051D6D752A00C47432 /* AnimationFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationFrames.swift; sourceTree = "<group>"; };
+		A023E1061D6D752A00C47432 /* UIImageView+Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
+		A023E1071D6D752A00C47432 /* UIImage+DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+DropShadow.swift"; sourceTree = "<group>"; };
+		A023E10C1D6D75EA00C47432 /* SwiftRadio-Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftRadio-Settings.swift"; sourceTree = "<group>"; };
 		A03D6A7C1D6BFE5A00110321 /* DetailNoticeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailNoticeVC.swift; sourceTree = "<group>"; };
 		A072873B1D693D53000561CF /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		A072873C1D693D53000561CF /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -103,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A023E0F21D6D740500C47432 /* MediaPlayer.framework in Frameworks */,
 				D698279055F6C9291AE0EC93 /* Pods_RppApp_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +215,8 @@
 		31859B251D64DBAC00187AB8 /* RppApp_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A023E10B1D6D75E000C47432 /* Supporting Files */,
+				A023E0F31D6D741200C47432 /* Streaming */,
 				A072874B1D696CB2000561CF /* View */,
 				A072873A1D693D48000561CF /* Networking */,
 				31859B601D664F3700187AB8 /* Models */,
@@ -197,7 +226,6 @@
 				31859B261D64DBAC00187AB8 /* AppDelegate.swift */,
 				31859B2A1D64DBAC00187AB8 /* Main.storyboard */,
 				31859B2F1D64DBAC00187AB8 /* LaunchScreen.storyboard */,
-				31859B321D64DBAC00187AB8 /* Info.plist */,
 			);
 			path = RppApp_iOS;
 			sourceTree = "<group>";
@@ -223,6 +251,7 @@
 		31859B561D65254900187AB8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A023E0EF1D6D73DD00C47432 /* NowPlayingViewController.swift */,
 				31859B281D64DBAC00187AB8 /* SplashViewController.swift */,
 				314208091D692236009F638D /* PortadaViewController.swift */,
 				A03D6A7C1D6BFE5A00110321 /* DetailNoticeVC.swift */,
@@ -233,6 +262,8 @@
 		31859B571D65255600187AB8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A023E0FD1D6D749300C47432 /* Spring */,
+				A023E0FB1D6D745400C47432 /* SwiftyJSON.swift */,
 				A07287471D693E1C000561CF /* NSErrorHelper.swift */,
 				31859B581D65256900187AB8 /* NetworkUtil.swift */,
 				3142080B1D692995009F638D /* TabPageViewController */,
@@ -257,6 +288,54 @@
 				06D6AFA62CC60435048A2B59 /* Pods-RppApp_iOS.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A023E0F31D6D741200C47432 /* Streaming */ = {
+			isa = PBXGroup;
+			children = (
+				A023E1041D6D751F00C47432 /* UI Helpers */,
+				A023E0F41D6D741900C47432 /* Model */,
+			);
+			name = Streaming;
+			sourceTree = "<group>";
+		};
+		A023E0F41D6D741900C47432 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A023E0F51D6D742400C47432 /* RadioStation.swift */,
+				A023E0F61D6D742400C47432 /* Player.swift */,
+				A023E0F71D6D742400C47432 /* Track.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A023E0FD1D6D749300C47432 /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				A023E1021D6D74B200C47432 /* Spring.swift */,
+				A023E1001D6D749F00C47432 /* SpringLabel.swift */,
+				A023E0FE1D6D749A00C47432 /* SpringImageView.swift */,
+			);
+			name = Spring;
+			sourceTree = "<group>";
+		};
+		A023E1041D6D751F00C47432 /* UI Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A023E1051D6D752A00C47432 /* AnimationFrames.swift */,
+				A023E1061D6D752A00C47432 /* UIImageView+Download.swift */,
+				A023E1071D6D752A00C47432 /* UIImage+DropShadow.swift */,
+			);
+			name = "UI Helpers";
+			sourceTree = "<group>";
+		};
+		A023E10B1D6D75E000C47432 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31859B321D64DBAC00187AB8 /* Info.plist */,
+				A023E10C1D6D75EA00C47432 /* SwiftRadio-Settings.swift */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A072873A1D693D48000561CF /* Networking */ = {
@@ -308,6 +387,7 @@
 		DAFA706B36579D1D2158CDC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A023E0F11D6D740500C47432 /* MediaPlayer.framework */,
 				3B7E3AAFAB6CD010B4AAF907 /* Pods_RppApp_iOS.framework */,
 			);
 			name = Frameworks;
@@ -384,6 +464,11 @@
 				TargetAttributes = {
 					31859B221D64DBAC00187AB8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					31859B361D64DBAD00187AB8 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -501,18 +586,30 @@
 			files = (
 				A07287401D693D53000561CF /* NetworkManager.swift in Sources */,
 				3142081C1D692AA2009F638D /* TabView.swift in Sources */,
+				A023E0F81D6D742400C47432 /* RadioStation.swift in Sources */,
 				A07287521D696E82000561CF /* EventDetailsCell.swift in Sources */,
+				A023E0F91D6D742400C47432 /* Player.swift in Sources */,
 				3142080A1D692236009F638D /* PortadaViewController.swift in Sources */,
+				A023E1031D6D74B200C47432 /* Spring.swift in Sources */,
 				314208191D692AA2009F638D /* TabCollectionCell.swift in Sources */,
 				A07287501D696CDA000561CF /* EventDetailsView.swift in Sources */,
+				A023E10A1D6D752A00C47432 /* UIImage+DropShadow.swift in Sources */,
 				A07287411D693D53000561CF /* JSONParser.swift in Sources */,
+				A023E0FF1D6D749A00C47432 /* SpringImageView.swift in Sources */,
 				314208081D691C4E009F638D /* Multimedia.swift in Sources */,
+				A023E1091D6D752A00C47432 /* UIImageView+Download.swift in Sources */,
+				A023E10D1D6D75EA00C47432 /* SwiftRadio-Settings.swift in Sources */,
 				3142081B1D692AA2009F638D /* TabPageViewController.swift in Sources */,
+				A023E0FA1D6D742400C47432 /* Track.swift in Sources */,
 				A07287451D693D7F000561CF /* NoticiasServices.swift in Sources */,
+				A023E1081D6D752A00C47432 /* AnimationFrames.swift in Sources */,
+				A023E0F01D6D73DD00C47432 /* NowPlayingViewController.swift in Sources */,
+				A023E1011D6D749F00C47432 /* SpringLabel.swift in Sources */,
 				3142081A1D692AA2009F638D /* TabPageOption.swift in Sources */,
 				A07287481D693E1C000561CF /* NSErrorHelper.swift in Sources */,
 				31859B591D65256900187AB8 /* NetworkUtil.swift in Sources */,
 				A072874A1D696573000561CF /* Category.swift in Sources */,
+				A023E0FC1D6D745400C47432 /* SwiftyJSON.swift in Sources */,
 				A072873F1D693D53000561CF /* RequestBuilder.swift in Sources */,
 				314208061D691685009F638D /* Noticia.swift in Sources */,
 				31859B291D64DBAC00187AB8 /* SplashViewController.swift in Sources */,
@@ -663,7 +760,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RppApp_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gruporpp.RPPNoticiasIphone.RppApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -679,7 +776,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RppApp_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "gruporpp.RPPNoticiasIphone.RppApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";

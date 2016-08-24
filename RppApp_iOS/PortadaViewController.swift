@@ -132,6 +132,11 @@ extension PortadaViewController: UITableViewDelegate {
         
         //currentShownEvent = events[indexPath.section]
         //self.toEventDetailsViewController()
+        
+        
+        let vc = self.storyboard!.instantiateViewControllerWithIdentifier("NowPlayingViewController") as! NowPlayingViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     
 }
