@@ -44,8 +44,6 @@ class EventDetailsView: UIView {
             }
             
             
-            
-            
 //            self.titleLabel.text = event.name
 //            self.categoryLabel.textColor = getEventTitleColor()
 //            self.placeLabel.text = event.placeName
