@@ -92,6 +92,24 @@
             </objects>
             <point key="canvasLocation" x="1648" y="-8"/>
         </scene>
+        <!--Detalle Multimedia NoticiaVC-->
+        <scene sceneID="8gy-0X-Iec">
+            <objects>
+                <viewController storyboardIdentifier="DetalleMultimediaNoticiaVC" id="5cM-lC-N5n" customClass="DetalleMultimediaNoticiaVC" customModule="RppApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jGu-Ze-oRN"/>
+                        <viewControllerLayoutGuide type="bottom" id="wmW-h7-a1M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b2N-gk-2Ku">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vCf-Cz-QGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="699"/>
+        </scene>
         <!--Streaming View Controller-->
         <scene sceneID="Nun-AD-q4X">
             <objects>

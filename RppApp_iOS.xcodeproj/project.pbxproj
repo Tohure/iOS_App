@@ -17,6 +17,7 @@
 		3142081A1D692AA2009F638D /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314208161D692AA2009F638D /* TabPageOption.swift */; };
 		3142081B1D692AA2009F638D /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314208171D692AA2009F638D /* TabPageViewController.swift */; };
 		3142081C1D692AA2009F638D /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314208181D692AA2009F638D /* TabView.swift */; };
+		31724F501D6EC0CF0050CBBD /* DetalleMultimediaNoticiaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31724F4F1D6EC0CF0050CBBD /* DetalleMultimediaNoticiaVC.swift */; };
 		31859B271D64DBAC00187AB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B261D64DBAC00187AB8 /* AppDelegate.swift */; };
 		31859B291D64DBAC00187AB8 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B281D64DBAC00187AB8 /* SplashViewController.swift */; };
 		31859B2C1D64DBAC00187AB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31859B2A1D64DBAC00187AB8 /* Main.storyboard */; };
@@ -84,6 +85,7 @@
 		314208171D692AA2009F638D /* TabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageViewController.swift; sourceTree = "<group>"; };
 		314208181D692AA2009F638D /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		3142081D1D694D57009F638D /* RppApp_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RppApp_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		31724F4F1D6EC0CF0050CBBD /* DetalleMultimediaNoticiaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleMultimediaNoticiaVC.swift; sourceTree = "<group>"; };
 		31859B231D64DBAC00187AB8 /* RppApp_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RppApp_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31859B261D64DBAC00187AB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31859B281D64DBAC00187AB8 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				314208091D692236009F638D /* PortadaViewController.swift */,
 				318A79441D6E61A000B2E300 /* StreamingViewController.swift */,
 				A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */,
+				31724F4F1D6EC0CF0050CBBD /* DetalleMultimediaNoticiaVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -611,6 +614,7 @@
 				A0AC567C1D6EBB1400273FD3 /* DetalleNoticiaVC.swift in Sources */,
 				A023E0FA1D6D742400C47432 /* Track.swift in Sources */,
 				A07287451D693D7F000561CF /* NoticiasServices.swift in Sources */,
+				31724F501D6EC0CF0050CBBD /* DetalleMultimediaNoticiaVC.swift in Sources */,
 				A023E1081D6D752A00C47432 /* AnimationFrames.swift in Sources */,
 				A023E0F01D6D73DD00C47432 /* NowPlayingViewController.swift in Sources */,
 				A023E1011D6D749F00C47432 /* SpringLabel.swift in Sources */,
