@@ -11,8 +11,11 @@ import UIKit
 
 class DetalleMultimediaNoticiaVC: UIViewController {
     
+    var currentShownEvent : Noticia!
+    
     override func viewDidLoad() {
        //
+        print(currentShownEvent.desarrollo)
     }
     
     override func didReceiveMemoryWarning() {

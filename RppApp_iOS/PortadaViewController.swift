@@ -133,29 +133,20 @@ extension PortadaViewController: UITableViewDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         dispatch_async(dispatch_get_main_queue(), {
-            //self.presentViewController(vc, animated: true, completion: nil)
             let event = self.events[indexPath.section]
-            let vc: UIViewController!
         
             switch event.tipo {
-            case "video":
-                vc = storyboard.instantiateViewControllerWithIdentifier("DetalleMultimediaNoticiaVC") as! DetalleMultimediaNoticiaVC
-            case "audio":
-                vc = storyboard.instantiateViewControllerWithIdentifier("DetalleMultimediaNoticiaVC") as! DetalleMultimediaNoticiaVC
-            case "galeria":
-                vc = storyboard.instantiateViewControllerWithIdentifier("DetalleNoticiaVC") as! DetalleNoticiaVC
-            case "infografia":
-                vc = storyboard.instantiateViewControllerWithIdentifier("DetalleNoticiaVC") as! DetalleNoticiaVC
+            case "video", "audio":
+                let vc = storyboard.instantiateViewControllerWithIdentifier("DetalleMultimediaNoticiaVC") as! DetalleMultimediaNoticiaVC
+                vc.currentShownEvent = event
+                self.navigationController?.pushViewController(vc, animated: true)
+            case "galeria", "infografia":
+                let vc = storyboard.instantiateViewControllerWithIdentifier("DetalleNoticiaVC") as! DetalleNoticiaVC
+                vc.currentShownEvent = event
+                self.navigationController?.pushViewController(vc, animated: true)
             default: break
-                vc = storyboard.instantiateViewControllerWithIdentifier("DetalleNoticiaVC") as! DetalleNoticiaVC
-                
             }
 
-            
-            vc.currentShownEvent = event
-            self.navigationController?.pushViewController(vc, animated: true)
-            
-            
         })
         
     }
