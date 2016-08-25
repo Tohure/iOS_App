@@ -76,7 +76,7 @@ extension PortadaViewController: UITableViewDataSource {
     
         let cell = tableView.dequeueReusableCellWithIdentifier("EventDetailsCell", forIndexPath: indexPath) as! EventDetailsCell
         
-        print(indexPath.section)
+        //print(indexPath.section)
         
         let event = events[indexPath.section]
         
@@ -135,7 +135,7 @@ extension PortadaViewController: UITableViewDelegate {
         
         dispatch_async(dispatch_get_main_queue(), {
             let event = self.events[indexPath.section]
-        
+            
             switch event.tipo {
             case "video", "audio":
                 let vc = storyboard.instantiateViewControllerWithIdentifier("DetalleMultimediaNoticiaVC") as! DetalleMultimediaNoticiaVC
@@ -146,7 +146,7 @@ extension PortadaViewController: UITableViewDelegate {
                 vc.currentShownEvent = event
                 self.navigationController?.pushViewController(vc, animated: true)
             default:
-                let vc = storyboard.instantiateViewControllerWithIdentifier("DetalleNoticiaVC") as! DetalleMultimediaNoticiaVC
+                let vc = storyboard.instantiateViewControllerWithIdentifier("DetalleNoticiaVC") as! DetalleNoticiaVC
                 vc.currentShownEvent = event
                 self.navigationController?.pushViewController(vc, animated: true)
             }

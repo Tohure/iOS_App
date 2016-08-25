@@ -24,7 +24,7 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
     
     override func viewDidLoad() {
        //
-        print(currentShownEvent.desarrollo)
+        //print(currentShownEvent.desarrollo)
     }
     
     func createPlayer() {

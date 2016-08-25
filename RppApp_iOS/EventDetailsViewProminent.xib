@@ -8,17 +8,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="PU0-YX-oE9" customClass="EventDetailsViewProminent" customModule="RppApp_iOS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="362" height="323"/>
+            <rect key="frame" x="0.0" y="0.0" width="362" height="368"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6nB-pZ-fDv" customClass="EventDetailsView" customModule="RppApp_iOS" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="362" height="323"/>
+                    <rect key="frame" x="0.0" y="0.0" width="362" height="368"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5r-RH-MqE">
-                            <rect key="frame" x="0.0" y="0.0" width="363" height="322"/>
+                            <rect key="frame" x="0.0" y="0.0" width="363" height="368"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lZN-ft-PrJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="361" height="321"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="367"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5b0-E9-759">
                                             <rect key="frame" x="0.0" y="0.0" width="361" height="210"/>
@@ -59,7 +59,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qg-Au-eIW">
-                                            <rect key="frame" x="311" y="292" width="42" height="21"/>
+                                            <rect key="frame" x="311" y="338" width="42" height="21"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Política">
                                                     <attributes>
@@ -74,16 +74,19 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="5b0-E9-759" secondAttribute="bottom" constant="111" id="8zt-mV-DNV"/>
+                                        <constraint firstAttribute="bottom" secondItem="5b0-E9-759" secondAttribute="bottom" constant="157" id="4QF-tQ-QQA"/>
+                                        <constraint firstAttribute="bottom" secondItem="5b0-E9-759" secondAttribute="bottom" constant="157" id="8zt-mV-DNV"/>
                                         <constraint firstItem="Npt-l4-nND" firstAttribute="top" secondItem="5b0-E9-759" secondAttribute="bottom" constant="8" symbolic="YES" id="DSp-az-4Ug"/>
                                         <constraint firstItem="Npt-l4-nND" firstAttribute="leading" secondItem="ocm-Qv-FCc" secondAttribute="leading" id="IAU-tQ-Ugo"/>
                                         <constraint firstItem="5b0-E9-759" firstAttribute="leading" secondItem="lZN-ft-PrJ" secondAttribute="leading" id="IKq-T9-AwT"/>
+                                        <constraint firstItem="5b0-E9-759" firstAttribute="top" secondItem="lZN-ft-PrJ" secondAttribute="top" id="O4y-uI-oaT"/>
                                         <constraint firstItem="ocm-Qv-FCc" firstAttribute="leading" secondItem="lZN-ft-PrJ" secondAttribute="leading" constant="8" id="SDD-QY-dH6"/>
-                                        <constraint firstAttribute="bottom" secondItem="ocm-Qv-FCc" secondAttribute="bottom" constant="121" id="ZPg-9f-Jbs"/>
+                                        <constraint firstAttribute="bottom" secondItem="ocm-Qv-FCc" secondAttribute="bottom" constant="167" id="ZPg-9f-Jbs"/>
                                         <constraint firstItem="eja-72-LDW" firstAttribute="top" secondItem="Npt-l4-nND" secondAttribute="bottom" constant="8" symbolic="YES" id="pNt-Nx-yxR"/>
                                         <constraint firstItem="5b0-E9-759" firstAttribute="top" secondItem="lZN-ft-PrJ" secondAttribute="top" id="sUN-oK-te6"/>
                                         <constraint firstItem="Npt-l4-nND" firstAttribute="leading" secondItem="eja-72-LDW" secondAttribute="leading" id="sgV-jN-b2C"/>
                                         <constraint firstItem="Npt-l4-nND" firstAttribute="trailing" secondItem="eja-72-LDW" secondAttribute="trailing" id="sji-CK-QTz"/>
+                                        <constraint firstItem="5b0-E9-759" firstAttribute="leading" secondItem="lZN-ft-PrJ" secondAttribute="leading" id="yqJ-b5-mui"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -100,7 +103,7 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="d5r-RH-MqE" secondAttribute="trailing" constant="-1" id="AET-1m-YYY"/>
                         <constraint firstItem="d5r-RH-MqE" firstAttribute="leading" secondItem="6nB-pZ-fDv" secondAttribute="leading" id="ALT-6k-flJ"/>
-                        <constraint firstAttribute="bottom" secondItem="d5r-RH-MqE" secondAttribute="bottom" constant="1" id="CIw-5X-KYd"/>
+                        <constraint firstAttribute="bottom" secondItem="d5r-RH-MqE" secondAttribute="bottom" id="CIw-5X-KYd"/>
                         <constraint firstItem="d5r-RH-MqE" firstAttribute="top" secondItem="6nB-pZ-fDv" secondAttribute="top" id="nZl-xM-v3r"/>
                     </constraints>
                     <connections>
@@ -120,13 +123,13 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="descriptionLabel" destination="eja-72-LDW" id="QXe-lU-UWu"/>
-                <outlet property="iconNotice" destination="5b0-E9-759" id="u0b-O2-aWw"/>
-                <outlet property="iconTypeNotice" destination="ocm-Qv-FCc" id="2o0-5o-uTW"/>
-                <outlet property="seccionLabel" destination="7Qg-Au-eIW" id="bGL-dc-ybe"/>
-                <outlet property="titleLabel" destination="Npt-l4-nND" id="9AC-nS-roJ"/>
+                <outlet property="gorroNota" destination="eja-72-LDW" id="0Wl-He-3Pk"/>
+                <outlet property="iconTypeNota" destination="ocm-Qv-FCc" id="DPI-XJ-WLU"/>
+                <outlet property="imageProminent" destination="5b0-E9-759" id="Gro-Yn-XrF"/>
+                <outlet property="seccionNotaLabel" destination="7Qg-Au-eIW" id="UKY-L8-cGP"/>
+                <outlet property="titleNota" destination="Npt-l4-nND" id="Wyp-sd-slg"/>
             </connections>
-            <point key="canvasLocation" x="489" y="173.5"/>
+            <point key="canvasLocation" x="489" y="196"/>
         </view>
     </objects>
 </document>

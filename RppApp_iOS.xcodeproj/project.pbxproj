@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3118712D1D6F5DD6003C88F7 /* EventDetailsViewProminent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3118712C1D6F5DD6003C88F7 /* EventDetailsViewProminent.xib */; };
 		311871311D6F5EB0003C88F7 /* EventDetailsViewProminent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311871301D6F5EB0003C88F7 /* EventDetailsViewProminent.swift */; };
+		311871331D6FAA81003C88F7 /* DynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311871321D6FAA81003C88F7 /* DynamicTableViewCell.swift */; };
 		314208061D691685009F638D /* Noticia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314208051D691685009F638D /* Noticia.swift */; };
 		314208081D691C4E009F638D /* Multimedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314208071D691C4E009F638D /* Multimedia.swift */; };
 		3142080A1D692236009F638D /* PortadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314208091D692236009F638D /* PortadaViewController.swift */; };
@@ -54,7 +55,6 @@
 		A07287521D696E82000561CF /* EventDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07287511D696E82000561CF /* EventDetailsCell.swift */; };
 		A0A093631D6F85CB0008DDE1 /* JWPlayer-iOS-SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A093621D6F85CB0008DDE1 /* JWPlayer-iOS-SDK.framework */; };
 		A0A093651D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A093641D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework */; };
-		A0AC567A1D6EB72800273FD3 /* DynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC56791D6EB72800273FD3 /* DynamicTableViewCell.swift */; };
 		A0AC567C1D6EBB1400273FD3 /* DetalleNoticiaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */; };
 		D698279055F6C9291AE0EC93 /* Pods_RppApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7E3AAFAB6CD010B4AAF907 /* Pods_RppApp_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +80,7 @@
 		06D6AFA62CC60435048A2B59 /* Pods-RppApp_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RppApp_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RppApp_iOS/Pods-RppApp_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		3118712C1D6F5DD6003C88F7 /* EventDetailsViewProminent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailsViewProminent.xib; sourceTree = "<group>"; };
 		311871301D6F5EB0003C88F7 /* EventDetailsViewProminent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewProminent.swift; sourceTree = "<group>"; };
+		311871321D6FAA81003C88F7 /* DynamicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCell.swift; sourceTree = "<group>"; };
 		314208051D691685009F638D /* Noticia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noticia.swift; sourceTree = "<group>"; };
 		314208071D691C4E009F638D /* Multimedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multimedia.swift; sourceTree = "<group>"; };
 		314208091D692236009F638D /* PortadaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortadaViewController.swift; sourceTree = "<group>"; };
@@ -133,7 +134,6 @@
 		A07287511D696E82000561CF /* EventDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsCell.swift; sourceTree = "<group>"; };
 		A0A093621D6F85CB0008DDE1 /* JWPlayer-iOS-SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "JWPlayer-iOS-SDK.framework"; path = "RppApp_iOS/JWPlayer-iOS-SDK.framework"; sourceTree = "<group>"; };
 		A0A093641D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInteractiveMediaAds.framework; path = RppApp_iOS/GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
-		A0AC56791D6EB72800273FD3 /* DynamicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCell.swift; sourceTree = "<group>"; };
 		A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleNoticiaVC.swift; sourceTree = "<group>"; };
 		B16530CBB2F6AFF3D9E399B8 /* Pods-RppApp_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RppApp_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RppApp_iOS/Pods-RppApp_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -379,7 +379,7 @@
 		A072874B1D696CB2000561CF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A0AC56791D6EB72800273FD3 /* DynamicTableViewCell.swift */,
+				311871321D6FAA81003C88F7 /* DynamicTableViewCell.swift */,
 				A07287511D696E82000561CF /* EventDetailsCell.swift */,
 				A072874F1D696CDA000561CF /* EventDetailsView.swift */,
 				311871301D6F5EB0003C88F7 /* EventDetailsViewProminent.swift */,
@@ -609,6 +609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A07287401D693D53000561CF /* NetworkManager.swift in Sources */,
+				311871331D6FAA81003C88F7 /* DynamicTableViewCell.swift in Sources */,
 				3142081C1D692AA2009F638D /* TabView.swift in Sources */,
 				A023E0F81D6D742400C47432 /* RadioStation.swift in Sources */,
 				A07287521D696E82000561CF /* EventDetailsCell.swift in Sources */,
@@ -623,7 +624,6 @@
 				A023E0FF1D6D749A00C47432 /* SpringImageView.swift in Sources */,
 				314208081D691C4E009F638D /* Multimedia.swift in Sources */,
 				A023E1091D6D752A00C47432 /* UIImageView+Download.swift in Sources */,
-				A0AC567A1D6EB72800273FD3 /* DynamicTableViewCell.swift in Sources */,
 				A023E10D1D6D75EA00C47432 /* SwiftRadio-Settings.swift in Sources */,
 				311871311D6F5EB0003C88F7 /* EventDetailsViewProminent.swift in Sources */,
 				3142081B1D692AA2009F638D /* TabPageViewController.swift in Sources */,

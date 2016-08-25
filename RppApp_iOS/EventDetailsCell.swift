@@ -10,18 +10,18 @@ import UIKit
 
 class EventDetailsCell: UITableViewCell {
 
-    var eventDetailView = EventDetailsView()
+    //var eventDetailView = EventDetailsView()
     
-    //var eventDetailViewProminent = EventDetailsViewProminent()
+    var eventDetailView = EventDetailsViewProminent()
+    
     
     override func awakeFromNib() {
         
         super.awakeFromNib()
         
-  
         
         
-        eventDetailView =  NSBundle.mainBundle().loadNibNamed("EventDetailsView", owner: self, options: nil)[0] as! EventDetailsView
+        eventDetailView =  NSBundle.mainBundle().loadNibNamed("EventDetailsViewProminent", owner: self, options: nil)[0] as! EventDetailsViewProminent
         eventDetailView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(eventDetailView)
         

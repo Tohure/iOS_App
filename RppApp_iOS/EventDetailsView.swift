@@ -29,7 +29,6 @@ class EventDetailsView: UIView {
             self.descriptionLabel.text = event.gorro
             self.iconNotice.sd_setImageWithURL(NSURL(string: event.linkimg), placeholderImage: UIImage(named: "placeholder_img"))
             
-            
             switch event.tipo {
             case "video":
                 iconTypeNotice.image = UIImage(named: "ic_video")
@@ -39,8 +38,10 @@ class EventDetailsView: UIView {
                 iconTypeNotice.image = UIImage(named: "ic_galeria")
             case "infografia":
                 iconTypeNotice.image = UIImage(named: "ic_infografia")
-            default: break
-                //iconTypeNotice.image = UIImage(named: String)
+            default:
+                iconTypeNotice.image = nil
+                break
+                
             }
             
 //            self.titleLabel.text = event.name
