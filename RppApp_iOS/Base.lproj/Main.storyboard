@@ -315,40 +315,39 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="136"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtS-fl-2Yk">
-                                                    <rect key="frame" x="8" y="8" width="540" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtS-fl-2Yk">
+                                                    <rect key="frame" x="23" y="18" width="554" height="23"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOJ-kz-zDG">
-                                                    <rect key="frame" x="556" y="8" width="36" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Body" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ta-mC-ttB">
-                                                    <rect key="frame" x="8" y="37" width="584" height="87"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ta-mC-ttB">
+                                                    <rect key="frame" x="23" y="51" width="554" height="73"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Body">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="19" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="2ta-mC-ttB" secondAttribute="trailing" id="AIa-QB-1AK"/>
-                                                <constraint firstItem="NtS-fl-2Yk" firstAttribute="top" secondItem="og2-xO-RWM" secondAttribute="topMargin" id="AfA-mh-Zuo"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="WOJ-kz-zDG" secondAttribute="trailing" id="Wwt-WM-2xX"/>
-                                                <constraint firstItem="NtS-fl-2Yk" firstAttribute="leading" secondItem="og2-xO-RWM" secondAttribute="leadingMargin" id="XOA-w4-58i"/>
-                                                <constraint firstItem="WOJ-kz-zDG" firstAttribute="leading" secondItem="NtS-fl-2Yk" secondAttribute="trailing" constant="8" id="cDS-5H-B9G"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="2ta-mC-ttB" secondAttribute="bottom" constant="4" id="7OQ-aj-s5B"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="2ta-mC-ttB" secondAttribute="trailing" constant="15" id="AIa-QB-1AK"/>
+                                                <constraint firstItem="NtS-fl-2Yk" firstAttribute="top" secondItem="og2-xO-RWM" secondAttribute="topMargin" constant="10" id="AfA-mh-Zuo"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="NtS-fl-2Yk" secondAttribute="trailing" constant="15" id="I4g-CW-hRg"/>
+                                                <constraint firstItem="NtS-fl-2Yk" firstAttribute="leading" secondItem="og2-xO-RWM" secondAttribute="leadingMargin" constant="15" id="XOA-w4-58i"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="2ta-mC-ttB" secondAttribute="bottom" constant="4" id="hZV-e2-nR6"/>
-                                                <constraint firstItem="2ta-mC-ttB" firstAttribute="leading" secondItem="og2-xO-RWM" secondAttribute="leadingMargin" id="llp-ay-2EI"/>
-                                                <constraint firstItem="2ta-mC-ttB" firstAttribute="top" secondItem="NtS-fl-2Yk" secondAttribute="bottom" constant="8" id="vSO-HI-k79"/>
-                                                <constraint firstItem="WOJ-kz-zDG" firstAttribute="top" secondItem="og2-xO-RWM" secondAttribute="topMargin" id="zuk-3J-O7P"/>
+                                                <constraint firstItem="2ta-mC-ttB" firstAttribute="leading" secondItem="og2-xO-RWM" secondAttribute="leadingMargin" constant="15" id="llp-ay-2EI"/>
+                                                <constraint firstItem="2ta-mC-ttB" firstAttribute="top" secondItem="NtS-fl-2Yk" secondAttribute="bottom" constant="10" id="vSO-HI-k79"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="bodyLabel" destination="2ta-mC-ttB" id="PNl-lB-4rP"/>
-                                            <outlet property="dateLabel" destination="WOJ-kz-zDG" id="4AS-2H-frP"/>
                                             <outlet property="titleLabel" destination="NtS-fl-2Yk" id="POU-w8-HEu"/>
                                         </connections>
                                     </tableViewCell>

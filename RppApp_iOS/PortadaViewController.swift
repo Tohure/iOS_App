@@ -73,7 +73,7 @@ extension PortadaViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
+    
         let cell = tableView.dequeueReusableCellWithIdentifier("EventDetailsCell", forIndexPath: indexPath) as! EventDetailsCell
         
         let event = events[indexPath.section]
@@ -85,7 +85,6 @@ extension PortadaViewController: UITableViewDataSource {
         cell.layer.shadowRadius = 1.7
         cell.layer.shadowColor = UIColor.blackColor().CGColor
         cell.layer.shadowOffset = CGSizeMake(0.0, 0.0)
-        
         return cell
     }
     

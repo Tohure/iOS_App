@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3118712D1D6F5DD6003C88F7 /* EventDetailsViewProminent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3118712C1D6F5DD6003C88F7 /* EventDetailsViewProminent.xib */; };
+		311871311D6F5EB0003C88F7 /* EventDetailsViewProminent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311871301D6F5EB0003C88F7 /* EventDetailsViewProminent.swift */; };
 		314208061D691685009F638D /* Noticia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314208051D691685009F638D /* Noticia.swift */; };
 		314208081D691C4E009F638D /* Multimedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314208071D691C4E009F638D /* Multimedia.swift */; };
 		3142080A1D692236009F638D /* PortadaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314208091D692236009F638D /* PortadaViewController.swift */; };
@@ -74,6 +76,8 @@
 
 /* Begin PBXFileReference section */
 		06D6AFA62CC60435048A2B59 /* Pods-RppApp_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RppApp_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RppApp_iOS/Pods-RppApp_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		3118712C1D6F5DD6003C88F7 /* EventDetailsViewProminent.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailsViewProminent.xib; sourceTree = "<group>"; };
+		311871301D6F5EB0003C88F7 /* EventDetailsViewProminent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewProminent.swift; sourceTree = "<group>"; };
 		314208051D691685009F638D /* Noticia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Noticia.swift; sourceTree = "<group>"; };
 		314208071D691C4E009F638D /* Multimedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multimedia.swift; sourceTree = "<group>"; };
 		314208091D692236009F638D /* PortadaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortadaViewController.swift; sourceTree = "<group>"; };
@@ -372,6 +376,7 @@
 				A0AC56791D6EB72800273FD3 /* DynamicTableViewCell.swift */,
 				A07287511D696E82000561CF /* EventDetailsCell.swift */,
 				A072874F1D696CDA000561CF /* EventDetailsView.swift */,
+				311871301D6F5EB0003C88F7 /* EventDetailsViewProminent.swift */,
 				A072874C1D696CC9000561CF /* Xib */,
 			);
 			name = View;
@@ -381,6 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				A072874D1D696CD1000561CF /* EventDetailsView.xib */,
+				3118712C1D6F5DD6003C88F7 /* EventDetailsViewProminent.xib */,
 			);
 			name = Xib;
 			sourceTree = "<group>";
@@ -519,6 +525,7 @@
 				31859B311D64DBAC00187AB8 /* LaunchScreen.storyboard in Resources */,
 				314208131D692A57009F638D /* TabView.xib in Resources */,
 				314208111D692A57009F638D /* TabCollectionCell.xib in Resources */,
+				3118712D1D6F5DD6003C88F7 /* EventDetailsViewProminent.xib in Resources */,
 				31859B2E1D64DBAC00187AB8 /* Assets.xcassets in Resources */,
 				31859B2C1D64DBAC00187AB8 /* Main.storyboard in Resources */,
 			);
@@ -610,6 +617,7 @@
 				A023E1091D6D752A00C47432 /* UIImageView+Download.swift in Sources */,
 				A0AC567A1D6EB72800273FD3 /* DynamicTableViewCell.swift in Sources */,
 				A023E10D1D6D75EA00C47432 /* SwiftRadio-Settings.swift in Sources */,
+				311871311D6F5EB0003C88F7 /* EventDetailsViewProminent.swift in Sources */,
 				3142081B1D692AA2009F638D /* TabPageViewController.swift in Sources */,
 				A0AC567C1D6EBB1400273FD3 /* DetalleNoticiaVC.swift in Sources */,
 				A023E0FA1D6D742400C47432 /* Track.swift in Sources */,
