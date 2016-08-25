@@ -144,7 +144,10 @@ extension PortadaViewController: UITableViewDelegate {
                 let vc = storyboard.instantiateViewControllerWithIdentifier("DetalleNoticiaVC") as! DetalleNoticiaVC
                 vc.currentShownEvent = event
                 self.navigationController?.pushViewController(vc, animated: true)
-            default: break
+            default:
+                let vc = storyboard.instantiateViewControllerWithIdentifier("DetalleNoticiaVC") as! DetalleNoticiaVC
+                vc.currentShownEvent = event
+                self.navigationController?.pushViewController(vc, animated: true)
             }
 
         })
