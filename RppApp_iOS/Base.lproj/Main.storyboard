@@ -91,6 +91,24 @@
             </objects>
             <point key="canvasLocation" x="1648" y="-8"/>
         </scene>
+        <!--Streaming View Controller-->
+        <scene sceneID="Nun-AD-q4X">
+            <objects>
+                <viewController storyboardIdentifier="StreamingViewController" id="mEY-mv-IyG" customClass="StreamingViewController" customModule="RppApp_iOS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EFy-Jj-Nd0"/>
+                        <viewControllerLayoutGuide type="bottom" id="6UP-um-efo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B1V-oi-J1m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.37647058820000001" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sm5-OP-3tf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813" y="719"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="sm4-UV-0Gf">
             <objects>

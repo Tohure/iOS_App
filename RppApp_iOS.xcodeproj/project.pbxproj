@@ -25,6 +25,7 @@
 		31859B3C1D64DBAD00187AB8 /* RppApp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B3B1D64DBAD00187AB8 /* RppApp_iOSTests.swift */; };
 		31859B471D64DBAD00187AB8 /* RppApp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B461D64DBAD00187AB8 /* RppApp_iOSUITests.swift */; };
 		31859B591D65256900187AB8 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B581D65256900187AB8 /* NetworkUtil.swift */; };
+		318A79451D6E61A000B2E300 /* StreamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318A79441D6E61A000B2E300 /* StreamingViewController.swift */; };
 		A023E0F01D6D73DD00C47432 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0EF1D6D73DD00C47432 /* NowPlayingViewController.swift */; };
 		A023E0F21D6D740500C47432 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A023E0F11D6D740500C47432 /* MediaPlayer.framework */; };
 		A023E0F81D6D742400C47432 /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0F51D6D742400C47432 /* RadioStation.swift */; };
@@ -96,6 +97,7 @@
 		31859B461D64DBAD00187AB8 /* RppApp_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RppApp_iOSUITests.swift; sourceTree = "<group>"; };
 		31859B481D64DBAD00187AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31859B581D65256900187AB8 /* NetworkUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
+		318A79441D6E61A000B2E300 /* StreamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingViewController.swift; sourceTree = "<group>"; };
 		3B7E3AAFAB6CD010B4AAF907 /* Pods_RppApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RppApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A023E0EF1D6D73DD00C47432 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		A023E0F11D6D740500C47432 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -255,6 +257,7 @@
 				31859B281D64DBAC00187AB8 /* SplashViewController.swift */,
 				314208091D692236009F638D /* PortadaViewController.swift */,
 				A03D6A7C1D6BFE5A00110321 /* DetailNoticeVC.swift */,
+				318A79441D6E61A000B2E300 /* StreamingViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 				A023E0F81D6D742400C47432 /* RadioStation.swift in Sources */,
 				A07287521D696E82000561CF /* EventDetailsCell.swift in Sources */,
 				A023E0F91D6D742400C47432 /* Player.swift in Sources */,
+				318A79451D6E61A000B2E300 /* StreamingViewController.swift in Sources */,
 				3142080A1D692236009F638D /* PortadaViewController.swift in Sources */,
 				A023E1031D6D74B200C47432 /* Spring.swift in Sources */,
 				314208191D692AA2009F638D /* TabCollectionCell.swift in Sources */,

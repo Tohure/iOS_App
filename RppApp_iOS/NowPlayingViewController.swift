@@ -167,15 +167,6 @@ class NowPlayingViewController: UIViewController {
         radioPlayer.prepareToPlay()
         radioPlayer.play()
         
-        // songLabel animate
-        /*
-        songLabel.animation = "flash"
-        songLabel.repeatCount = 3
-        songLabel.animate()
- 
-        resetAlbumArtwork()
-        */
-        
         track.isPlaying = true
     }
     

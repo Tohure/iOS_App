@@ -78,6 +78,9 @@ public class TabPageViewController: UIPageViewController {
     
     func loadRadioInLive() {
         print("loadRadioInLive")
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("StreamingViewController") as! StreamingViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     override public func viewWillAppear(animated: Bool) {
