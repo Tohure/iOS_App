@@ -25,6 +25,7 @@ class StreamingViewController: UIViewController {
  
     
     override func viewDidLoad() {
+        
         myPlayer.player.play()
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)

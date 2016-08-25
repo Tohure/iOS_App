@@ -50,6 +50,8 @@
 		A072874E1D696CD1000561CF /* EventDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A072874D1D696CD1000561CF /* EventDetailsView.xib */; };
 		A07287501D696CDA000561CF /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072874F1D696CDA000561CF /* EventDetailsView.swift */; };
 		A07287521D696E82000561CF /* EventDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07287511D696E82000561CF /* EventDetailsCell.swift */; };
+		A0A093631D6F85CB0008DDE1 /* JWPlayer-iOS-SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A093621D6F85CB0008DDE1 /* JWPlayer-iOS-SDK.framework */; };
+		A0A093651D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A093641D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework */; };
 		A0AC567A1D6EB72800273FD3 /* DynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC56791D6EB72800273FD3 /* DynamicTableViewCell.swift */; };
 		A0AC567C1D6EBB1400273FD3 /* DetalleNoticiaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */; };
 		D698279055F6C9291AE0EC93 /* Pods_RppApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7E3AAFAB6CD010B4AAF907 /* Pods_RppApp_iOS.framework */; };
@@ -125,6 +127,8 @@
 		A072874D1D696CD1000561CF /* EventDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailsView.xib; sourceTree = "<group>"; };
 		A072874F1D696CDA000561CF /* EventDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
 		A07287511D696E82000561CF /* EventDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsCell.swift; sourceTree = "<group>"; };
+		A0A093621D6F85CB0008DDE1 /* JWPlayer-iOS-SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "JWPlayer-iOS-SDK.framework"; path = "RppApp_iOS/JWPlayer-iOS-SDK.framework"; sourceTree = "<group>"; };
+		A0A093641D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInteractiveMediaAds.framework; path = RppApp_iOS/GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
 		A0AC56791D6EB72800273FD3 /* DynamicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCell.swift; sourceTree = "<group>"; };
 		A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleNoticiaVC.swift; sourceTree = "<group>"; };
 		B16530CBB2F6AFF3D9E399B8 /* Pods-RppApp_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RppApp_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RppApp_iOS/Pods-RppApp_iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 			files = (
 				A023E0F21D6D740500C47432 /* MediaPlayer.framework in Frameworks */,
 				D698279055F6C9291AE0EC93 /* Pods_RppApp_iOS.framework in Frameworks */,
+				A0A093651D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework in Frameworks */,
+				A0A093631D6F85CB0008DDE1 /* JWPlayer-iOS-SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +402,8 @@
 		DAFA706B36579D1D2158CDC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0A093641D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework */,
+				A0A093621D6F85CB0008DDE1 /* JWPlayer-iOS-SDK.framework */,
 				A023E0F11D6D740500C47432 /* MediaPlayer.framework */,
 				3B7E3AAFAB6CD010B4AAF907 /* Pods_RppApp_iOS.framework */,
 			);
@@ -771,9 +779,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RppApp_iOS",
+				);
 				INFOPLIST_FILE = RppApp_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SWRevealViewController\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gruporpp.RPPNoticiasIphone.RppApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RppApp_iOS-Bridging-Header.h";
@@ -787,9 +807,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RppApp_iOS",
+				);
 				INFOPLIST_FILE = RppApp_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SWRevealViewController\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gruporpp.RPPNoticiasIphone.RppApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RppApp_iOS-Bridging-Header.h";

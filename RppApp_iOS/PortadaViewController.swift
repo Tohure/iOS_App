@@ -76,6 +76,8 @@ extension PortadaViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("EventDetailsCell", forIndexPath: indexPath) as! EventDetailsCell
         
+        print(indexPath.section)
+        
         let event = events[indexPath.section]
         
         cell.eventDetailView.userInteractionEnabled = true
