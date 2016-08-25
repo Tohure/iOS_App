@@ -131,7 +131,7 @@ extension PortadaViewController: UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print(indexPath.section)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("DetailNoticeVC") as! DetailNoticeVC
+        let vc = storyboard.instantiateViewControllerWithIdentifier("DetalleNoticiaVC") as! DetalleNoticiaVC
         dispatch_async(dispatch_get_main_queue(), {
             //self.presentViewController(vc, animated: true, completion: nil)
             let event = self.events[indexPath.section]
