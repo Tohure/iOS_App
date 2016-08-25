@@ -15,15 +15,29 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
     private var player:JWPlayerController!
     var currentShownEvent : Noticia!
     
+    @IBOutlet weak var tableViewNew: UITableView!
+    
     override func viewDidAppear(animated: Bool) {
         self.createPlayer()
         self.view.addSubview(player.view)
+        dispatch_async(dispatch_get_main_queue()) {
+            self.tableViewNew .setContentOffset(CGPointMake(0, -295), animated: true)
+        }
         //self.setupCallbacks()
         super.viewDidAppear(animated)
     }
     
     override func viewDidLoad() {
-       //
+        self.tableViewNew.estimatedRowHeight = 80
+        self.tableViewNew.rowHeight = UITableViewAutomaticDimension
+        
+        self.tableViewNew.setNeedsLayout()
+        self.tableViewNew.layoutIfNeeded()
+        
+        //self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0) // Status bar inset
+        
+        self.automaticallyAdjustsScrollViewInsets = false
+        self.edgesForExtendedLayout = .None
         //print(currentShownEvent.desarrollo)
     }
     
@@ -108,4 +122,35 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+}
+
+extension DetalleMultimediaNoticiaVC : UITableViewDataSource {
+    
+    // MARK: - Table view data source
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("DynamicCell", forIndexPath: indexPath) as! DynamicTableViewCell
+        
+        cell.titleLabel.text = currentShownEvent.titular
+        //cell.bodyLabel.text = currentShownEvent.desarrollo
+        
+        let attrStr = try! NSAttributedString(
+            data: currentShownEvent.desarrollo.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
+            options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
+            documentAttributes: nil)
+        cell.bodyLabel.attributedText = attrStr
+        
+        return cell
+    }
+    
 }

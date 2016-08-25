@@ -15,6 +15,11 @@ protocol EventDetailsViewProminentDelegate {
 class EventDetailsViewProminent: UIView {
     
     var delegate: EventDetailsViewProminentDelegate?
+    /*@IBOutlet weak var iconNotice: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var iconTypeNotice: UIImageView!
+    @IBOutlet weak var seccionLabel: UILabel!*/
     
     @IBOutlet weak var imageProminent: UIImageView!
     @IBOutlet weak var iconTypeNota: UIImageView!
