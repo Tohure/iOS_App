@@ -1,9 +1,9 @@
 //
 //  JSONParser.swift
-//  Culture
+//  
 //
-//  Created by J on 3/18/16.
-//  Copyright © 2016 LIMAAPP E.I.R.L. All rights reserved.
+//  Created by Tohure on 4/21/16.
+//  Copyright © 2016 RPP All rights reserved.
 //
 
 import UIKit

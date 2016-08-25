@@ -45,14 +45,6 @@ class EventDetailsViewProminent: UIView {
                 //iconTypeNotice.image = UIImage(named: String)
             }
             
-            //            self.titleLabel.text = event.name
-            //            self.categoryLabel.textColor = getEventTitleColor()
-            //            self.placeLabel.text = event.placeName
-            //            self.categoryLabel.text = event.displayCategoryInformation()
-            //            self.priceLabel.text = event.payments.first?.displayPayment()
-            //            self.dateLabel.text = event.EventDate
-            //            self.timeLabel.text = event.EventTime + " hrs."
-            
         }
     }
     
@@ -60,7 +52,7 @@ class EventDetailsViewProminent: UIView {
         
         super.awakeFromNib()
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(EventDetailsView.tapView(_:)))
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(EventDetailsViewProminent.tapView(_:)))
         addGestureRecognizer(tapGesture)
         tapGesture.cancelsTouchesInView = false
     }

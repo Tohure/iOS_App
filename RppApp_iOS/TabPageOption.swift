@@ -2,8 +2,8 @@
 //  TabPageOption.swift
 //  TabPageViewController
 //
-//  Created by EndouMari on 2016/02/24.
-//  Copyright © 2016年 EndouMari. All rights reserved.
+//  Created by Tohure on 4/21/16.
+//  Copyright © 2016 RPP All rights reserved.
 //
 
 import UIKit

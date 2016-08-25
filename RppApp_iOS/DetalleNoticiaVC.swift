@@ -2,8 +2,8 @@
 //  DetalleNoticiaVC.swift
 //  RppApp_iOS
 //
-//  Created by Luis on 25/08/16.
-//  Copyright © 2016 Grupo RPP. All rights reserved.
+//  Created by Tohure on 4/21/16.
+//  Copyright © 2016 RPP All rights reserved.
 //
 
 import UIKit

@@ -1,9 +1,9 @@
 //
 //  ContentLoadingManager.swift
-//  Culture
+//  
 //
-//  Created by Franti Saúl Huamán Mera on 4/23/16.
-//  Copyright © 2016 LIMAAPP E.I.R.L. All rights reserved.
+//  Created by Tohure on 4/21/16.
+//  Copyright © 2016 RPP All rights reserved.
 //
 
 import UIKit

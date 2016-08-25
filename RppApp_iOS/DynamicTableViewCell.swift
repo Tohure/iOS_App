@@ -2,8 +2,8 @@
 //  DynamicTableViewCell.swift
 //  DynamicTableRows
 //
-//  Created by Jure Zove on 03/08/15.
-//  Copyright (c) 2015 Candy Code. All rights reserved.
+//  Created by Tohure on 4/21/16.
+//  Copyright © 2016 RPP All rights reserved.
 //
 
 import UIKit
