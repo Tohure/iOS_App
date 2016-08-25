@@ -2,8 +2,8 @@
 //  EventDetailsCell.swift
 //  Culture
 //
-//  Created by Franti Saúl Huamán Mera on 4/21/16.
-//  Copyright © 2016 LIMAAPP E.I.R.L. All rights reserved.
+//  Created by Tohure on 4/21/16.
+//  Copyright © 2016 RPP All rights reserved.
 //
 
 import UIKit
@@ -12,9 +12,14 @@ class EventDetailsCell: UITableViewCell {
 
     var eventDetailView = EventDetailsView()
     
+    //var eventDetailViewProminent = EventDetailsViewProminent()
+    
     override func awakeFromNib() {
         
         super.awakeFromNib()
+        
+  
+        
         
         eventDetailView =  NSBundle.mainBundle().loadNibNamed("EventDetailsView", owner: self, options: nil)[0] as! EventDetailsView
         eventDetailView.translatesAutoresizingMaskIntoConstraints = false

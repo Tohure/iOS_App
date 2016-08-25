@@ -9,14 +9,76 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RppApp_iOS/PortadaViewController.swift"
-            timestampString = "493714687.612943"
+            filePath = "RppApp_iOS/EventDetailsViewProminent.swift"
+            timestampString = "493839908.703872"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
-            landmarkType = "5">
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "EventDetailsViewProminent"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RppApp_iOS.EventDetailsViewProminent.iconNotice.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "RppApp_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chuaman/Documents/Develop/ios_app/RppApp_iOS/EventDetailsViewProminent.swift"
+                  timestampString = "493839911.116017"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RppApp_iOS.EventDetailsViewProminent.iconNotice.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIImageView&gt;"
+                  moduleName = "RppApp_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chuaman/Documents/Develop/ios_app/RppApp_iOS/EventDetailsViewProminent.swift"
+                  timestampString = "493839911.119439"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RppApp_iOS.EventDetailsViewProminent.init (frame : __C.CGRect) -&gt; RppApp_iOS.EventDetailsViewProminent"
+                  moduleName = "RppApp_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chuaman/Documents/Develop/ios_app/RppApp_iOS/EventDetailsViewProminent.swift"
+                  timestampString = "493839911.119735"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RppApp_iOS.EventDetailsViewProminent.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;RppApp_iOS.EventDetailsViewProminent&gt;"
+                  moduleName = "RppApp_iOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/chuaman/Documents/Develop/ios_app/RppApp_iOS/EventDetailsViewProminent.swift"
+                  timestampString = "493839911.119975"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
