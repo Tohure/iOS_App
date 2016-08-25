@@ -130,11 +130,15 @@ extension PortadaViewController: UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print(indexPath.section)
-        /*let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("portadaView") as! PortadaViewController
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("DetailNoticeVC") as! DetailNoticeVC
         dispatch_async(dispatch_get_main_queue(), {
-            self.presentViewController(vc, animated: true, completion: nil)
-        })*/
+            //self.presentViewController(vc, animated: true, completion: nil)
+            let event = self.events[indexPath.section]
+            vc.currentShownEvent = event
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        })
         //currentShownEvent = events[indexPath.section]
         //self.toEventDetailsViewController() y????
         

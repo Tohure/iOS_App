@@ -39,7 +39,6 @@
 		A023E1091D6D752A00C47432 /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1061D6D752A00C47432 /* UIImageView+Download.swift */; };
 		A023E10A1D6D752A00C47432 /* UIImage+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1071D6D752A00C47432 /* UIImage+DropShadow.swift */; };
 		A023E10D1D6D75EA00C47432 /* SwiftRadio-Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E10C1D6D75EA00C47432 /* SwiftRadio-Settings.swift */; };
-		A03D6A7D1D6BFE5A00110321 /* DetailNoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03D6A7C1D6BFE5A00110321 /* DetailNoticeVC.swift */; };
 		A072873F1D693D53000561CF /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072873B1D693D53000561CF /* RequestBuilder.swift */; };
 		A07287401D693D53000561CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072873C1D693D53000561CF /* NetworkManager.swift */; };
 		A07287411D693D53000561CF /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072873D1D693D53000561CF /* JSONParser.swift */; };
@@ -50,6 +49,8 @@
 		A072874E1D696CD1000561CF /* EventDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A072874D1D696CD1000561CF /* EventDetailsView.xib */; };
 		A07287501D696CDA000561CF /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072874F1D696CDA000561CF /* EventDetailsView.swift */; };
 		A07287521D696E82000561CF /* EventDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07287511D696E82000561CF /* EventDetailsCell.swift */; };
+		A0AC56781D6EB70600273FD3 /* DetailNoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC56771D6EB70600273FD3 /* DetailNoticeVC.swift */; };
+		A0AC567A1D6EB72800273FD3 /* DynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC56791D6EB72800273FD3 /* DynamicTableViewCell.swift */; };
 		D698279055F6C9291AE0EC93 /* Pods_RppApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7E3AAFAB6CD010B4AAF907 /* Pods_RppApp_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -112,7 +113,6 @@
 		A023E1061D6D752A00C47432 /* UIImageView+Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
 		A023E1071D6D752A00C47432 /* UIImage+DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+DropShadow.swift"; sourceTree = "<group>"; };
 		A023E10C1D6D75EA00C47432 /* SwiftRadio-Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftRadio-Settings.swift"; sourceTree = "<group>"; };
-		A03D6A7C1D6BFE5A00110321 /* DetailNoticeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailNoticeVC.swift; sourceTree = "<group>"; };
 		A072873B1D693D53000561CF /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		A072873C1D693D53000561CF /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A072873D1D693D53000561CF /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
@@ -123,6 +123,8 @@
 		A072874D1D696CD1000561CF /* EventDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventDetailsView.xib; sourceTree = "<group>"; };
 		A072874F1D696CDA000561CF /* EventDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
 		A07287511D696E82000561CF /* EventDetailsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsCell.swift; sourceTree = "<group>"; };
+		A0AC56771D6EB70600273FD3 /* DetailNoticeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailNoticeVC.swift; sourceTree = "<group>"; };
+		A0AC56791D6EB72800273FD3 /* DynamicTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCell.swift; sourceTree = "<group>"; };
 		B16530CBB2F6AFF3D9E399B8 /* Pods-RppApp_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RppApp_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RppApp_iOS/Pods-RppApp_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -256,8 +258,8 @@
 				A023E0EF1D6D73DD00C47432 /* NowPlayingViewController.swift */,
 				31859B281D64DBAC00187AB8 /* SplashViewController.swift */,
 				314208091D692236009F638D /* PortadaViewController.swift */,
-				A03D6A7C1D6BFE5A00110321 /* DetailNoticeVC.swift */,
 				318A79441D6E61A000B2E300 /* StreamingViewController.swift */,
+				A0AC56771D6EB70600273FD3 /* DetailNoticeVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -364,6 +366,7 @@
 		A072874B1D696CB2000561CF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A0AC56791D6EB72800273FD3 /* DynamicTableViewCell.swift */,
 				A07287511D696E82000561CF /* EventDetailsCell.swift */,
 				A072874F1D696CDA000561CF /* EventDetailsView.swift */,
 				A072874C1D696CC9000561CF /* Xib */,
@@ -602,11 +605,13 @@
 				A023E0FF1D6D749A00C47432 /* SpringImageView.swift in Sources */,
 				314208081D691C4E009F638D /* Multimedia.swift in Sources */,
 				A023E1091D6D752A00C47432 /* UIImageView+Download.swift in Sources */,
+				A0AC567A1D6EB72800273FD3 /* DynamicTableViewCell.swift in Sources */,
 				A023E10D1D6D75EA00C47432 /* SwiftRadio-Settings.swift in Sources */,
 				3142081B1D692AA2009F638D /* TabPageViewController.swift in Sources */,
 				A023E0FA1D6D742400C47432 /* Track.swift in Sources */,
 				A07287451D693D7F000561CF /* NoticiasServices.swift in Sources */,
 				A023E1081D6D752A00C47432 /* AnimationFrames.swift in Sources */,
+				A0AC56781D6EB70600273FD3 /* DetailNoticeVC.swift in Sources */,
 				A023E0F01D6D73DD00C47432 /* NowPlayingViewController.swift in Sources */,
 				A023E1011D6D749F00C47432 /* SpringLabel.swift in Sources */,
 				3142081A1D692AA2009F638D /* TabPageOption.swift in Sources */,
@@ -617,7 +622,6 @@
 				A072873F1D693D53000561CF /* RequestBuilder.swift in Sources */,
 				314208061D691685009F638D /* Noticia.swift in Sources */,
 				31859B291D64DBAC00187AB8 /* SplashViewController.swift in Sources */,
-				A03D6A7D1D6BFE5A00110321 /* DetailNoticeVC.swift in Sources */,
 				A07287421D693D53000561CF /* ContentLoadingManager.swift in Sources */,
 				31859B271D64DBAC00187AB8 /* AppDelegate.swift in Sources */,
 			);
