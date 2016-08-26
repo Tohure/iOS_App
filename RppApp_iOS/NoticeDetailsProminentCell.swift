@@ -9,7 +9,7 @@
 import UIKit
 
 class NoticeDetailsProminentCell: UITableViewCell {
-    
+
     @IBOutlet weak var imageProminent: UIImageView!
     @IBOutlet weak var iconTypeNota: UIImageView!
     @IBOutlet weak var titleNota: UILabel!

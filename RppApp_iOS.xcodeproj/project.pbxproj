@@ -52,6 +52,7 @@
 		A0A093631D6F85CB0008DDE1 /* JWPlayer-iOS-SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A093621D6F85CB0008DDE1 /* JWPlayer-iOS-SDK.framework */; };
 		A0A093651D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A093641D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework */; };
 		A0A093691D6FE7860008DDE1 /* NoticeDetailsProminentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A093681D6FE7860008DDE1 /* NoticeDetailsProminentCell.swift */; };
+		A0A0936B1D6FF52C0008DDE1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A0936A1D6FF52C0008DDE1 /* QuartzCore.framework */; };
 		A0AC567C1D6EBB1400273FD3 /* DetalleNoticiaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */; };
 		D698279055F6C9291AE0EC93 /* Pods_RppApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7E3AAFAB6CD010B4AAF907 /* Pods_RppApp_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -128,6 +129,7 @@
 		A0A093621D6F85CB0008DDE1 /* JWPlayer-iOS-SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "JWPlayer-iOS-SDK.framework"; path = "RppApp_iOS/JWPlayer-iOS-SDK.framework"; sourceTree = "<group>"; };
 		A0A093641D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInteractiveMediaAds.framework; path = RppApp_iOS/GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
 		A0A093681D6FE7860008DDE1 /* NoticeDetailsProminentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeDetailsProminentCell.swift; sourceTree = "<group>"; };
+		A0A0936A1D6FF52C0008DDE1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleNoticiaVC.swift; sourceTree = "<group>"; };
 		B16530CBB2F6AFF3D9E399B8 /* Pods-RppApp_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RppApp_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RppApp_iOS/Pods-RppApp_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A0936B1D6FF52C0008DDE1 /* QuartzCore.framework in Frameworks */,
 				A023E0F21D6D740500C47432 /* MediaPlayer.framework in Frameworks */,
 				D698279055F6C9291AE0EC93 /* Pods_RppApp_iOS.framework in Frameworks */,
 				A0A093651D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework in Frameworks */,
@@ -391,6 +394,7 @@
 		DAFA706B36579D1D2158CDC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0A0936A1D6FF52C0008DDE1 /* QuartzCore.framework */,
 				A0A093641D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework */,
 				A0A093621D6F85CB0008DDE1 /* JWPlayer-iOS-SDK.framework */,
 				A023E0F11D6D740500C47432 /* MediaPlayer.framework */,

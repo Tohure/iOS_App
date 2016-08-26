@@ -34,6 +34,9 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
         self.tableViewNew.setNeedsLayout()
         self.tableViewNew.layoutIfNeeded()
         
+        print(currentShownEvent.seccionruta)
+        
+        
         //self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0) // Status bar inset
         
         self.automaticallyAdjustsScrollViewInsets = false
@@ -50,11 +53,9 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
          */
         
         let config: JWConfig = JWConfig()
-        config.sources = [JWSource (file: "http://content.bitsontherun.com/videos/bkaovAYt-injeKYZS.mp4", label: "180p Streaming", isDefault: true),
-                          JWSource (file: "http://content.bitsontherun.com/videos/bkaovAYt-52qL9xLP.mp4", label: "270p Streaming"),
-                          JWSource (file: "http://content.bitsontherun.com/videos/bkaovAYt-DZ7jSYgM.mp4", label: "720p Streaming")]
+        config.sources = [JWSource (file: "http://rpp-noticias.io/2016/08/18/para-que-te-traje-de-batalla-santa-fe-vs-river-plate-recopa_223374.mp4", label: "180p Streaming", isDefault: true)]
         
-        config.image = "http://content.bitsontherun.com/thumbs/bkaovAYt-480.jpg"
+        config.image = currentShownEvent.linkimg
         config.title = "JWPlayer Demo"
         config.controls = true  //default
         config.`repeat` = false   //default

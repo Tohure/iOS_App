@@ -68,7 +68,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="580" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkB-6P-ahi">
+                                                <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkB-6P-ahi">
                                                     <rect key="frame" x="0.0" y="0.0" width="580" height="100"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qI0-qR-xkr">
@@ -104,7 +104,7 @@
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="XsN-Xp-1Fn" secondAttribute="trailing" constant="8" id="06C-nV-59Q"/>
                                                         <constraint firstItem="QPE-UH-ceD" firstAttribute="leading" secondItem="qI0-qR-xkr" secondAttribute="trailing" constant="8" id="1zr-ZL-S2V"/>
@@ -183,10 +183,9 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vam-On-fOL">
-                                                            <rect key="frame" x="482" y="338" width="90" height="21"/>
+                                                            <rect key="frame" x="0.0" y="338" width="572" height="21"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="5wt-QK-YHH"/>
-                                                                <constraint firstAttribute="width" constant="90" id="rN3-Rc-tOl"/>
+                                                                <constraint firstAttribute="height" constant="21" id="V9P-Ex-uoj"/>
                                                             </constraints>
                                                             <attributedString key="attributedText">
                                                                 <fragment content="Política">
@@ -205,11 +204,12 @@
                                                         <constraint firstAttribute="trailing" secondItem="Z13-3T-2TM" secondAttribute="trailing" constant="8" id="CLX-2p-BWo"/>
                                                         <constraint firstItem="WrR-VR-6xy" firstAttribute="leading" secondItem="ybn-gW-5qf" secondAttribute="leading" constant="8" id="Cok-dF-KaN"/>
                                                         <constraint firstItem="Z13-3T-2TM" firstAttribute="leading" secondItem="ybn-gW-5qf" secondAttribute="leading" constant="8" id="Etp-ct-D7X"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Vam-On-fOL" secondAttribute="bottom" constant="8" id="RkN-tj-css"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Vam-On-fOL" secondAttribute="trailing" constant="8" id="TTd-4P-jjk"/>
                                                         <constraint firstAttribute="trailing" secondItem="iU4-jE-1JN" secondAttribute="trailing" id="Tel-B1-JJt"/>
                                                         <constraint firstItem="f2I-fJ-oO3" firstAttribute="top" secondItem="ybn-gW-5qf" secondAttribute="top" constant="170" id="Zm8-8f-YvE"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Vam-On-fOL" secondAttribute="bottom" constant="8" id="bAB-ta-qPH"/>
+                                                        <constraint firstItem="Vam-On-fOL" firstAttribute="leading" secondItem="ybn-gW-5qf" secondAttribute="leading" id="cAN-5g-bUC"/>
                                                         <constraint firstItem="f2I-fJ-oO3" firstAttribute="leading" secondItem="ybn-gW-5qf" secondAttribute="leading" constant="8" id="cQ3-oA-4Wx"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Vam-On-fOL" secondAttribute="trailing" constant="8" id="fJh-b2-lcQ"/>
                                                         <constraint firstItem="Z13-3T-2TM" firstAttribute="top" secondItem="iU4-jE-1JN" secondAttribute="bottom" constant="8" id="hCe-wH-btu"/>
                                                         <constraint firstItem="iU4-jE-1JN" firstAttribute="leading" secondItem="ybn-gW-5qf" secondAttribute="leading" id="iBh-w1-PNd"/>
                                                         <constraint firstItem="iU4-jE-1JN" firstAttribute="top" secondItem="ybn-gW-5qf" secondAttribute="top" id="m8F-6m-gmw"/>

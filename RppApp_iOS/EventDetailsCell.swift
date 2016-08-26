@@ -10,6 +10,7 @@ import UIKit
 
 class EventDetailsCell: UITableViewCell {
     
+    
     @IBOutlet weak var iconNotice: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
