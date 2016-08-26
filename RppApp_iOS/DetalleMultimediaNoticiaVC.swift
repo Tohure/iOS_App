@@ -20,11 +20,23 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
     override func viewDidAppear(animated: Bool) {
         self.createPlayer()
         self.view.addSubview(player.view)
+        
+        let btnBack = UIButton(type: .Custom)
+        btnBack.frame = CGRectMake(10, 10, 40, 40)
+        btnBack.setBackgroundImage(UIImage(named: "back_button"), forState: .Normal)
+        btnBack.adjustsImageWhenHighlighted = false
+        btnBack.addTarget(self, action: #selector(DetalleMultimediaNoticiaVC.popToViewController), forControlEvents: .TouchUpInside)
+        self.view.addSubview(btnBack)
+        
         dispatch_async(dispatch_get_main_queue()) {
             self.tableViewNew .setContentOffset(CGPointMake(0, -295), animated: true)
         }
         //self.setupCallbacks()
         super.viewDidAppear(animated)
+    }
+    
+    func popToViewController() {
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
     override func viewDidLoad() {
@@ -34,8 +46,7 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
         self.tableViewNew.setNeedsLayout()
         self.tableViewNew.layoutIfNeeded()
         
-        print(currentShownEvent.seccionruta)
-        
+        print(currentShownEvent.elemento)
         
         //self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0) // Status bar inset
         
@@ -52,11 +63,19 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
          var config: JWConfig = JWConfig(contentURL:"http://content.bitsontherun.com/videos/3XnJSIm4-injeKYZS.mp4")
          */
         
+        let imageURLArray = currentShownEvent.elemento.componentsSeparatedByString("dev.")
+        
         let config: JWConfig = JWConfig()
-        config.sources = [JWSource (file: "http://rpp-noticias.io/2016/08/18/para-que-te-traje-de-batalla-santa-fe-vs-river-plate-recopa_223374.mp4", label: "180p Streaming", isDefault: true)]
+        
+        if imageURLArray.count > 1 {
+            
+            config.sources = [JWSource (file: "http://\(String(format: "%@",imageURLArray.last!))" , label: "180p Streaming", isDefault: true)]
+        }
+        
+
         
         config.image = currentShownEvent.linkimg
-        config.title = "JWPlayer Demo"
+        config.title = currentShownEvent.titular
         config.controls = true  //default
         config.`repeat` = false   //default
         config.premiumSkin = JWPremiumSkinRoundster
