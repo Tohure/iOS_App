@@ -61,7 +61,12 @@ extension PortadaViewController {
 extension PortadaViewController: UITableViewDataSource {
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 100
+        
+        if indexPath.section == 0 {
+            return 368
+        }
+        
+        return 102
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,21 +78,34 @@ extension PortadaViewController: UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        if indexPath.section == 0 {
+            
+            let cell = tableView.dequeueReusableCellWithIdentifier("NoticeDetailsProminentCell", forIndexPath: indexPath) as! NoticeDetailsProminentCell
+            
+            let event = events[indexPath.section]
+            
+            cell.loadNoticia(event)
+            
+            return cell
+            
+        }else {
+            
+            let cell = tableView.dequeueReusableCellWithIdentifier("EventDetailsCell", forIndexPath: indexPath) as! EventDetailsCell
+            
+            let event = events[indexPath.section]
+            
+            cell.loadNoticia(event)
+            /*
+             cell.layer.shadowOpacity = 1.0
+             cell.layer.shadowRadius = 1.7
+             cell.layer.shadowColor = UIColor.blackColor().CGColor
+             cell.layer.shadowOffset = CGSizeMake(0.0, 0.0)*/
+            
+            return cell
+        }
     
-        let cell = tableView.dequeueReusableCellWithIdentifier("EventDetailsCell", forIndexPath: indexPath) as! EventDetailsCell
-        
-        //print(indexPath.section)
-        
-        let event = events[indexPath.section]
-        
-        cell.eventDetailView.userInteractionEnabled = true
-        cell.eventDetailView.event = event
-        
-        cell.layer.shadowOpacity = 1.0
-        cell.layer.shadowRadius = 1.7
-        cell.layer.shadowColor = UIColor.blackColor().CGColor
-        cell.layer.shadowOffset = CGSizeMake(0.0, 0.0)
-        return cell
+
     }
     
     func toEventDetailsViewController() {
@@ -109,7 +127,7 @@ extension PortadaViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         
         if section != 0 {
-            return 15
+            return 10
         }
         
         return 0
