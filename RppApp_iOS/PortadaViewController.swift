@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class PortadaViewController: UIViewController {
     
@@ -66,7 +67,7 @@ extension PortadaViewController: UITableViewDataSource {
             return 368
         }
         
-        return 102
+        return 112
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -96,11 +97,15 @@ extension PortadaViewController: UITableViewDataSource {
             let event = events[indexPath.section]
             
             cell.loadNoticia(event)
-            /*
-             cell.layer.shadowOpacity = 1.0
-             cell.layer.shadowRadius = 1.7
-             cell.layer.shadowColor = UIColor.blackColor().CGColor
-             cell.layer.shadowOffset = CGSizeMake(0.0, 0.0)*/
+            
+            let contentView = cell.viewWithTag(10)! as UIView
+            
+            contentView.layer.shadowColor = UIColor.lightGrayColor().CGColor
+            contentView.layer.shadowOpacity = 1
+            contentView.layer.shadowOffset = CGSizeMake(0.0, 0.0)
+            contentView.layer.shadowRadius = 10
+            contentView.layer.shadowPath = UIBezierPath(rect: contentView.bounds).CGPath
+            contentView.layer.shouldRasterize = true
             
             return cell
         }
