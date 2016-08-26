@@ -12,10 +12,15 @@ class DetalleNoticiaVC: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var thumbNotice: UIImageView!
+    
     var currentShownEvent : Noticia!
     
     let tableHeaderHeight: CGFloat = 300.0
     var headerView: UIView!
+    
+    override func viewDidDisappear(animated: Bool) {
+        self.navigationController?.navigationItem.setHidesBackButton(false, animated: true)
+    }
     
     override func viewWillAppear(animated: Bool) {
         dispatch_async(dispatch_get_main_queue()) {
@@ -53,6 +58,11 @@ class DetalleNoticiaVC: UIViewController {
         tableView .reloadData()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func onClickInput(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
