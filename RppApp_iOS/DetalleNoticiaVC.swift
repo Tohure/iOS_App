@@ -18,8 +18,8 @@ class DetalleNoticiaVC: UIViewController {
     let tableHeaderHeight: CGFloat = 300.0
     var headerView: UIView!
     
-    override func viewDidDisappear(animated: Bool) {
-        self.navigationController?.navigationItem.setHidesBackButton(false, animated: true)
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().postNotificationName("llamaMiControlador", object: false)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -30,6 +30,7 @@ class DetalleNoticiaVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSNotificationCenter.defaultCenter().postNotificationName("llamaMiControlador", object: true)
         
         self.tableView.estimatedRowHeight = 80
         self.tableView.rowHeight = UITableViewAutomaticDimension

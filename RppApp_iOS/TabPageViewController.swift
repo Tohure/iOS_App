@@ -37,7 +37,6 @@ public class TabPageViewController: UIPageViewController {
     }
     
     override public func viewDidLayoutSubviews() {
-        self.navigationController! .setNavigationBarHidden(true, animated: false)
         self.navigationItem .setHidesBackButton(true, animated: true)
     }
 
@@ -45,11 +44,24 @@ public class TabPageViewController: UIPageViewController {
         super.viewDidLoad()
         generalConfiguration()
         
-
-
+        registerForControllerNotifications()
+        
         setupPageViewController()
         setupScrollView()
         updateNavigationBar()
+    }
+    
+    func registerForControllerNotifications() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(TabPageViewController.reloadEventos(_:)), name: "llamaMiControlador", object: nil)
+    }
+    
+    func deregisterFromControllerNotification() {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: "llamaMiControlador", object: nil)
+    }
+    
+    func reloadEventos(notification: NSNotification) {
+        let isOcultar = notification.object as! Bool
+        self.navigationController! .setNavigationBarHidden(isOcultar, animated: false)
     }
     
     func generalConfiguration() {
