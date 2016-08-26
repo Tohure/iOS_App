@@ -53,6 +53,7 @@
 		A0A093651D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A093641D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework */; };
 		A0A093691D6FE7860008DDE1 /* NoticeDetailsProminentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A093681D6FE7860008DDE1 /* NoticeDetailsProminentCell.swift */; };
 		A0A0936B1D6FF52C0008DDE1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A0936A1D6FF52C0008DDE1 /* QuartzCore.framework */; };
+		A0A0936D1D6FF8A50008DDE1 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A0936C1D6FF8A50008DDE1 /* Validator.swift */; };
 		A0AC567C1D6EBB1400273FD3 /* DetalleNoticiaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */; };
 		D698279055F6C9291AE0EC93 /* Pods_RppApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B7E3AAFAB6CD010B4AAF907 /* Pods_RppApp_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -130,6 +131,7 @@
 		A0A093641D6F87100008DDE1 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInteractiveMediaAds.framework; path = RppApp_iOS/GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
 		A0A093681D6FE7860008DDE1 /* NoticeDetailsProminentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeDetailsProminentCell.swift; sourceTree = "<group>"; };
 		A0A0936A1D6FF52C0008DDE1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A0A0936C1D6FF8A50008DDE1 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleNoticiaVC.swift; sourceTree = "<group>"; };
 		B16530CBB2F6AFF3D9E399B8 /* Pods-RppApp_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RppApp_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RppApp_iOS/Pods-RppApp_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -277,6 +279,7 @@
 		31859B571D65255600187AB8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A0A0936C1D6FF8A50008DDE1 /* Validator.swift */,
 				A023E0FD1D6D749300C47432 /* Spring */,
 				A023E0FB1D6D745400C47432 /* SwiftyJSON.swift */,
 				A07287471D693E1C000561CF /* NSErrorHelper.swift */,
@@ -621,6 +624,7 @@
 				3142081A1D692AA2009F638D /* TabPageOption.swift in Sources */,
 				A07287481D693E1C000561CF /* NSErrorHelper.swift in Sources */,
 				31859B591D65256900187AB8 /* NetworkUtil.swift in Sources */,
+				A0A0936D1D6FF8A50008DDE1 /* Validator.swift in Sources */,
 				A072874A1D696573000561CF /* Category.swift in Sources */,
 				A023E0FC1D6D745400C47432 /* SwiftyJSON.swift in Sources */,
 				A072873F1D693D53000561CF /* RequestBuilder.swift in Sources */,
