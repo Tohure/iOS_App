@@ -19,6 +19,7 @@ class PortadaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchShares()
+        NSNotificationCenter.defaultCenter().postNotificationName("llamaMiControlador", object: false)
     }
     
     func fetchShares() {
@@ -98,14 +99,14 @@ extension PortadaViewController: UITableViewDataSource {
             
             cell.loadNoticia(event)
             
-            let contentView = cell.viewWithTag(10)! as UIView
-            
-            contentView.layer.shadowColor = UIColor.lightGrayColor().CGColor
-            contentView.layer.shadowOpacity = 1
-            contentView.layer.shadowOffset = CGSizeMake(0.0, 0.0)
-            contentView.layer.shadowRadius = 10
-            contentView.layer.shadowPath = UIBezierPath(rect: contentView.bounds).CGPath
-            contentView.layer.shouldRasterize = true
+//            let contentView = cell.viewWithTag(10)! as UIView
+//            
+//            contentView.layer.shadowColor = UIColor.lightGrayColor().CGColor
+//            contentView.layer.shadowOpacity = 1
+//            contentView.layer.shadowOffset = CGSizeMake(0.0, 0.0)
+//            contentView.layer.shadowRadius = 10
+//            contentView.layer.shadowPath = UIBezierPath(rect: contentView.bounds).CGPath
+//            contentView.layer.shouldRasterize = true
             
             return cell
         }

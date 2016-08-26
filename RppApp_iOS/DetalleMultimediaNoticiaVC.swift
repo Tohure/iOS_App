@@ -17,7 +17,13 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
     
     @IBOutlet weak var tableViewNew: UITableView!
     
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().postNotificationName("llamaMiControlador", object: false)
+    }
+    
     override func viewDidAppear(animated: Bool) {
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("llamaMiControlador", object: true)
         self.createPlayer()
         self.view.addSubview(player.view)
         
@@ -40,6 +46,7 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
     }
     
     override func viewDidLoad() {
+        
         self.tableViewNew.estimatedRowHeight = 80
         self.tableViewNew.rowHeight = UITableViewAutomaticDimension
         
