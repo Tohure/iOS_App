@@ -126,13 +126,25 @@ extension DetalleNoticiaVC : UITableViewDataSource {
         cell.titleLabel.text = currentShownEvent.titular
         //cell.bodyLabel.text = currentShownEvent.desarrollo
         
-        let attrStr = try! NSAttributedString(
-            data: currentShownEvent.desarrollo.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
-            options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
-            documentAttributes: nil)
-        cell.bodyLabel.attributedText = attrStr
+        cell.bodyLabel.attributedText = handleHtml(currentShownEvent.desarrollo)
         
         return cell
     }
     
+    func handleHtml(string : String) -> NSAttributedString{
+        var returnStr = NSMutableAttributedString()
+        do {
+            returnStr = try NSMutableAttributedString(data: string.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!, options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
+            
+            let fullRange : NSRange = NSMakeRange(0, returnStr.length)
+            returnStr.addAttributes([NSFontAttributeName : UIFont(name: "Chalkduster", size: 25.0)!], range: fullRange)
+            
+        } catch {
+            print(error)
+        }
+        return returnStr
+    }
+    
 }
+
+
