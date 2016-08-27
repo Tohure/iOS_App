@@ -99,14 +99,13 @@ extension PortadaViewController: UITableViewDataSource {
             
             cell.loadNoticia(event)
             
-//            let contentView = cell.viewWithTag(10)! as UIView
-//            
-//            contentView.layer.shadowColor = UIColor.lightGrayColor().CGColor
-//            contentView.layer.shadowOpacity = 1
-//            contentView.layer.shadowOffset = CGSizeMake(0.0, 0.0)
-//            contentView.layer.shadowRadius = 10
-//            contentView.layer.shadowPath = UIBezierPath(rect: contentView.bounds).CGPath
-//            contentView.layer.shouldRasterize = true
+            let contentView = cell.viewWithTag(10)! as UIView
+            let shadowPath = UIBezierPath(rect: view.bounds)
+            contentView.layer.masksToBounds = false
+            contentView.layer.shadowColor = UIColor.lightGrayColor().CGColor
+            contentView.layer.shadowOffset = CGSize(width: 0, height: 0.5)
+            contentView.layer.shadowOpacity = 0.2
+            contentView.layer.shadowPath = shadowPath.CGPath
             
             return cell
         }
@@ -149,6 +148,8 @@ extension PortadaViewController: UITableViewDataSource {
         
         return nil
     }
+    
+    
 }
 
 extension PortadaViewController: UITableViewDelegate {
