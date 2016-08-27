@@ -68,7 +68,7 @@ extension PortadaViewController: UITableViewDataSource {
             return 368
         }
         
-        return 112
+        return 100
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
