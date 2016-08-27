@@ -33,11 +33,7 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
         btnBack.adjustsImageWhenHighlighted = false
         btnBack.addTarget(self, action: #selector(DetalleMultimediaNoticiaVC.popToViewController), forControlEvents: .TouchUpInside)
         self.view.addSubview(btnBack)
-        
-        dispatch_async(dispatch_get_main_queue()) {
-            self.tableViewNew .setContentOffset(CGPointMake(0, -295), animated: true)
-        }
-        //self.setupCallbacks()
+
         super.viewDidAppear(animated)
     }
     
@@ -59,7 +55,7 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
         
         self.automaticallyAdjustsScrollViewInsets = false
         self.edgesForExtendedLayout = .None
-        //print(currentShownEvent.desarrollo)
+        tableViewNew .reloadData()
     }
     
     func createPlayer() {
