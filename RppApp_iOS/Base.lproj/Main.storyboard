@@ -135,7 +135,7 @@
                                             <outlet property="titleLabel" destination="QPE-UH-ceD" id="fFv-Ot-sV8"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoticeDetailsProminentCell" rowHeight="368" id="HwJ-9R-Fy6" customClass="NoticeDetailsProminentCell" customModule="RppApp_iOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NoticeDetailsProminentCell" rowHeight="368" id="HwJ-9R-Fy6" customClass="NoticeDetailsProminentCell" customModule="RppApp_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="130" width="580" height="368"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HwJ-9R-Fy6" id="Jxv-cI-d3g">
