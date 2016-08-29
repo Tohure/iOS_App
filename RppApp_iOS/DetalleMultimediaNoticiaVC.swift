@@ -105,7 +105,7 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
         //ad config
         let adConfig: JWAdConfig = JWAdConfig()
         adConfig.adMessage = "Ad duration countdown xx"
-        adConfig.skipMessage = "Skip in xx"
+        adConfig.skipMessage = "Saltar en xx"
         adConfig.skipText = "Move on"
         adConfig.skipOffset = 3
         adConfig.adClient = vastPlugin
@@ -115,14 +115,14 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
         //        config.autostart = true
         
         //waterfall tags
-        let waterfallTags: NSArray = ["bad tag", "another bad tag", "http://playertest.longtailvideo.com/adtags/preroll_newer.xml"]
+        //let waterfallTags: NSArray = ["bad tag", "another bad tag", "http://playertest.longtailvideo.com/adtags/preroll_newer.xml"]
         //ad breaks
-        config.adSchedule = [JWAdBreak(tags:waterfallTags as! [String], offset:"1"),
-                             JWAdBreak(tag: "http://playertest.longtailvideo.com/adtags/preroll_newer.xml", offset:"5"),
-                             JWAdBreak(tag: "http://demo.jwplayer.com/player-demos/assets/overlay.xml", offset: "7", nonLinear: true),
-                             //                           JWAdBreak(tag: "http://playertest.longtailvideo.com/adtags/preroll_newer.xml", offset:"0:00:05"),
-            JWAdBreak(tag: "http://playertest.longtailvideo.com/adtags/preroll_newer.xml", offset:"50%"),
-            JWAdBreak(tag: "http://playertest.longtailvideo.com/adtags/preroll_newer.xml", offset:"post")]
+        /*config.adSchedule = [JWAdBreak(tags:waterfallTags as! [String], offset:"20"),
+                             JWAdBreak(tag: "http://playertest.longtailvideo.com/adtags/preroll_newer.xml", offset:"27"),
+                             JWAdBreak(tag: "http://demo.jwplayer.com/player-demos/assets/overlay.xml", offset: "30", nonLinear: true),
+                             JWAdBreak(tag: "http://playertest.longtailvideo.com/adtags/preroll_newer.xml", offset:"0:00:05"),
+                             JWAdBreak(tag: "http://playertest.longtailvideo.com/adtags/preroll_newer.xml", offset:"50%"),
+                             JWAdBreak(tag: "http://playertest.longtailvideo.com/adtags/preroll_newer.xml", offset:"post")]*/
         
         self.player = JWPlayerController(config: config)
         self.player.delegate = self
