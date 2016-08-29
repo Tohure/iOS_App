@@ -7,5 +7,5 @@ target 'RppApp_iOS' do
     
     pod 'SDWebImage', '~>3.7'
     pod 'SWRevealViewController', '~> 2.3.0'
-    
+    pod 'ImageSlideshow', '~> 0.5'
 end

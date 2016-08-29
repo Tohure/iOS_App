@@ -256,6 +256,37 @@
             </objects>
             <point key="canvasLocation" x="1634" y="-8"/>
         </scene>
+        <!--Detalle GaleriaVC-->
+        <scene sceneID="zsR-Lh-KVP">
+            <objects>
+                <viewController storyboardIdentifier="DetalleGaleriaVC" id="OkN-e4-bx2" customClass="DetalleGaleriaVC" customModule="RppApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0gC-YF-Syz"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZSP-yu-a1Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EvS-PU-PQv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UMW-pe-8pJ" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="20" width="600" height="279"/>
+                                <color key="backgroundColor" red="0.75957532049999998" green="0.75957532049999998" blue="0.75957532049999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GiC-Mg-5tQ">
+                                <rect key="frame" x="0.0" y="299" width="600" height="301"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.37647058820000001" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="slideShow" destination="UMW-pe-8pJ" id="EYY-x5-bGb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uti-2j-nBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647" y="659"/>
+        </scene>
         <!--Detalle Multimedia NoticiaVC-->
         <scene sceneID="8gy-0X-Iec">
             <objects>
@@ -336,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vCf-Cz-QGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="813"/>
+            <point key="canvasLocation" x="3121" y="669"/>
         </scene>
         <!--Streaming View Controller-->
         <scene sceneID="Nun-AD-q4X">
@@ -354,7 +385,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sm5-OP-3tf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527" y="813"/>
+            <point key="canvasLocation" x="3051" y="-3"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sm4-UV-0Gf">

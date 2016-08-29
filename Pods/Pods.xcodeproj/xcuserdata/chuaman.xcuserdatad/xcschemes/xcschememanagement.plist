@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ImageSlideshow-ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ImageSlideshow.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-RppApp_iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>411A6C91FC1487690EAD1F8938B41820</key>
+		<key>11D2118DE064101405D62BD9F89994C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B4B78EEA5BA0E0E91E554E3CD596D5C6</key>
+		<key>B0A49440B28B048EC91710D62624C38E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BB1A6DEBB4CB4CC5149CC2158958A966</key>
+		<key>C15C986904B4FDA1D278FECFB1CFF1FE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C857076DD7B02308E8CC60F6698B4F1E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7BEAF4DCE4B39E319ED8628F0399557</key>
 		<dict>
 			<key>primary</key>
 			<true/>
