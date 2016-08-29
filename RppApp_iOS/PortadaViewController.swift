@@ -89,6 +89,14 @@ extension PortadaViewController: UITableViewDataSource {
             
             cell.loadNoticia(event)
             
+            /*let contentView = cell.viewWithTag(10)! as UIView
+            let shadowPath = UIBezierPath(rect: view.bounds)
+            contentView.layer.masksToBounds = false
+            contentView.layer.shadowColor = UIColor.lightGrayColor().CGColor
+            contentView.layer.shadowOffset = CGSize(width: 0, height: 0.5)
+            contentView.layer.shadowOpacity = 0.2
+            contentView.layer.shadowPath = shadowPath.CGPath*/
+            
             return cell
             
         }else {

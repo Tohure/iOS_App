@@ -137,7 +137,7 @@ extension DetalleNoticiaVC : UITableViewDataSource {
             returnStr = try NSMutableAttributedString(data: string.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!, options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
             
             let fullRange : NSRange = NSMakeRange(0, returnStr.length)
-            returnStr.addAttributes([NSFontAttributeName : UIFont(name: "Chalkduster", size: 25.0)!], range: fullRange)
+            returnStr.addAttributes([NSFontAttributeName : UIFont(name: "Helvetica Neue", size: 18.0)!], range: fullRange)
             
         } catch {
             print(error)

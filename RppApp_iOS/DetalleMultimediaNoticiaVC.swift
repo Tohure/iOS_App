@@ -28,7 +28,7 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
         self.view.addSubview(player.view)
         
         let btnBack = UIButton(type: .Custom)
-        btnBack.frame = CGRectMake(10, 10, 40, 40)
+        btnBack.frame = CGRectMake(13, 20, 40, 40)
         btnBack.setBackgroundImage(UIImage(named: "back_button"), forState: .Normal)
         btnBack.adjustsImageWhenHighlighted = false
         btnBack.addTarget(self, action: #selector(DetalleMultimediaNoticiaVC.popToViewController), forControlEvents: .TouchUpInside)
@@ -78,7 +78,7 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
 
         
         config.image = currentShownEvent.linkimg
-        config.title = currentShownEvent.titular
+        //config.title = currentShownEvent.titular
         config.controls = true  //default
         config.`repeat` = false   //default
         config.premiumSkin = JWPremiumSkinRoundster
@@ -169,13 +169,29 @@ extension DetalleMultimediaNoticiaVC : UITableViewDataSource {
         cell.titleLabel.text = currentShownEvent.titular
         //cell.bodyLabel.text = currentShownEvent.desarrollo
         
-        let attrStr = try! NSAttributedString(
+        /*let attrStr = try! NSAttributedString(
             data: currentShownEvent.desarrollo.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
             options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
             documentAttributes: nil)
-        cell.bodyLabel.attributedText = attrStr
+        cell.bodyLabel.attributedText = attrStr*/
+        
+        cell.bodyLabel.attributedText = handleHtml(currentShownEvent.desarrollo)
         
         return cell
+    }
+    
+    func handleHtml(string : String) -> NSAttributedString{
+        var returnStr = NSMutableAttributedString()
+        do {
+            returnStr = try NSMutableAttributedString(data: string.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!, options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
+            
+            let fullRange : NSRange = NSMakeRange(0, returnStr.length)
+            returnStr.addAttributes([NSFontAttributeName : UIFont(name: "Helvetica Neue", size: 18.0)!], range: fullRange)
+            
+        } catch {
+            print(error)
+        }
+        return returnStr
     }
     
 }
