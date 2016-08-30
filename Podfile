@@ -4,8 +4,7 @@ platform :ios, ‘9.0’
 use_frameworks!
 
 target 'RppApp_iOS' do
-    
+    pod 'ImageSlideshow', '~> 0.5’
     pod 'SDWebImage', '~>3.7'
     pod 'SWRevealViewController', '~> 2.3.0'
-    pod 'ImageSlideshow', '~> 0.5'
 end

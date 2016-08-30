@@ -8,25 +8,20 @@
 
 import UIKit
 import ImageSlideshow
-import SDWebImage
 
 class DetalleGaleriaVC: UIViewController {
-
     
-    @IBOutlet weak var slideshow: ImageSlideshow!
+   
+    @IBOutlet var slideshow: ImageSlideshow!
     var slideshowTransitioningDelegate: ZoomAnimatedTransitioningDelegate?
     
     var currentShownEvent : Noticia!
     
-    let sdWebImageSource = [SDWebImage(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, SDWebImage(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, SDWebImage(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!]
+    let sdWebImageSource = [SDWebImageSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, SDWebImageSource(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, SDWebImageSource(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!]
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         
-        
-        
-        
-        //thumbNotice.sd_setImageWithURL(NSURL(string: currentShownEvent.linkimg), placeholderImage: UIImage(named: "placeholder_img"))
-
         slideshow.backgroundColor = UIColor.whiteColor()
         slideshow.slideshowInterval = 5.0
         slideshow.pageControlPosition = PageControlPosition.UnderScrollView
@@ -34,8 +29,7 @@ class DetalleGaleriaVC: UIViewController {
         slideshow.pageControl.pageIndicatorTintColor = UIColor.blackColor();
         slideshow.contentScaleMode = UIViewContentMode.ScaleAspectFill
         
-        // try out other sources such as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource`
-        slideshow.setImageInputs(localSource)
+        slideshow.setImageInputs(sdWebImageSource)
         
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(DetalleGaleriaVC.click))
         slideshow.addGestureRecognizer(recognizer)
@@ -45,7 +39,7 @@ class DetalleGaleriaVC: UIViewController {
         super.viewDidAppear(animated)
         
     }
-
+    
     func click() {
         let ctr = FullScreenSlideshowViewController()
         ctr.pageSelected = {(page: Int) in

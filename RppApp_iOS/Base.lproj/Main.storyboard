@@ -281,6 +281,7 @@
                     </view>
                     <connections>
                         <outlet property="slideShow" destination="UMW-pe-8pJ" id="EYY-x5-bGb"/>
+                        <outlet property="slideshow" destination="UMW-pe-8pJ" id="V3U-b0-Iag"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uti-2j-nBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
