@@ -7,6 +7,7 @@
 //
 
 import SDWebImage
+import ImageSlideshow
 
 public class SDWebImageSource: NSObject, InputSource {
     var url: NSURL

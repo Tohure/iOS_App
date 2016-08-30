@@ -101,15 +101,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
-        
-        /*if ([identifier isEqualToString:@"READ_IDENTIFIER"]){
-            NSString *msg = [NSString stringWithFormat:@"%@", @"read"];
-            [self createAlert:msg];
-        }else if ([identifier isEqualToString:@"DELETE_IDENTIFIER"]){
-            NSString *msg = [NSString stringWithFormat:@"%@", @"delete"];
-            [self createAlert:msg];
-        }*/
-        
+
         if identifier == "READ_IDENTIFIER" {
             let msg = String(format: "%@","read")
             createAlert(msg)

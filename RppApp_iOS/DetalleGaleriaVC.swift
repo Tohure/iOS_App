@@ -12,7 +12,7 @@ import ImageSlideshow
 class DetalleGaleriaVC: UIViewController {
     
    
-    @IBOutlet var slideshow: ImageSlideshow!
+    @IBOutlet weak var slideshow: ImageSlideshow!
     var slideshowTransitioningDelegate: ZoomAnimatedTransitioningDelegate?
     
     var currentShownEvent : Noticia!
@@ -35,9 +35,17 @@ class DetalleGaleriaVC: UIViewController {
         slideshow.addGestureRecognizer(recognizer)
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().postNotificationName("llamaMiControlador", object: false)
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
     
     func click() {
