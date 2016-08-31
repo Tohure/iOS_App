@@ -30,6 +30,8 @@
 		318A79451D6E61A000B2E300 /* StreamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318A79441D6E61A000B2E300 /* StreamingViewController.swift */; };
 		318DC58A1D74AD4F0068617A /* DetalleGaleriaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318DC5891D74AD4F0068617A /* DetalleGaleriaVC.swift */; };
 		318DC5941D75081C0068617A /* SDWebImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318DC5931D75081C0068617A /* SDWebImageSource.swift */; };
+		31B3ADD91D776F6B009026F4 /* ShortcutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B3ADD81D776F6B009026F4 /* ShortcutDetailViewController.swift */; };
+		31B3ADDB1D776FC7009026F4 /* ShortcutsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B3ADDA1D776FC7009026F4 /* ShortcutsTableViewController.swift */; };
 		6F4D83DFFC97AA314D826660 /* Pods_RppApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2B7765FE1A21F1C6BB996F /* Pods_RppApp_iOS.framework */; };
 		A023E0F01D6D73DD00C47432 /* NowPlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0EF1D6D73DD00C47432 /* NowPlayingViewController.swift */; };
 		A023E0F21D6D740500C47432 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A023E0F11D6D740500C47432 /* MediaPlayer.framework */; };
@@ -109,6 +111,8 @@
 		318A79441D6E61A000B2E300 /* StreamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingViewController.swift; sourceTree = "<group>"; };
 		318DC5891D74AD4F0068617A /* DetalleGaleriaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleGaleriaVC.swift; sourceTree = "<group>"; };
 		318DC5931D75081C0068617A /* SDWebImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDWebImageSource.swift; sourceTree = "<group>"; };
+		31B3ADD81D776F6B009026F4 /* ShortcutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutDetailViewController.swift; sourceTree = "<group>"; };
+		31B3ADDA1D776FC7009026F4 /* ShortcutsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutsTableViewController.swift; sourceTree = "<group>"; };
 		7F2B7765FE1A21F1C6BB996F /* Pods_RppApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RppApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A023E0EF1D6D73DD00C47432 /* NowPlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingViewController.swift; sourceTree = "<group>"; };
 		A023E0F11D6D740500C47432 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -277,6 +281,8 @@
 				A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */,
 				31724F4F1D6EC0CF0050CBBD /* DetalleMultimediaNoticiaVC.swift */,
 				318DC5891D74AD4F0068617A /* DetalleGaleriaVC.swift */,
+				31B3ADD81D776F6B009026F4 /* ShortcutDetailViewController.swift */,
+				31B3ADDA1D776FC7009026F4 /* ShortcutsTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -609,6 +615,7 @@
 				A07287521D696E82000561CF /* EventDetailsCell.swift in Sources */,
 				A023E0F91D6D742400C47432 /* Player.swift in Sources */,
 				318A79451D6E61A000B2E300 /* StreamingViewController.swift in Sources */,
+				31B3ADDB1D776FC7009026F4 /* ShortcutsTableViewController.swift in Sources */,
 				3142080A1D692236009F638D /* PortadaViewController.swift in Sources */,
 				A023E1031D6D74B200C47432 /* Spring.swift in Sources */,
 				314208191D692AA2009F638D /* TabCollectionCell.swift in Sources */,
@@ -624,6 +631,7 @@
 				A0AC567C1D6EBB1400273FD3 /* DetalleNoticiaVC.swift in Sources */,
 				A023E0FA1D6D742400C47432 /* Track.swift in Sources */,
 				A07287451D693D7F000561CF /* NoticiasServices.swift in Sources */,
+				31B3ADD91D776F6B009026F4 /* ShortcutDetailViewController.swift in Sources */,
 				31724F501D6EC0CF0050CBBD /* DetalleMultimediaNoticiaVC.swift in Sources */,
 				A023E1081D6D752A00C47432 /* AnimationFrames.swift in Sources */,
 				A023E0F01D6D73DD00C47432 /* NowPlayingViewController.swift in Sources */,
