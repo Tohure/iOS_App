@@ -16,13 +16,19 @@ class DetalleGaleriaVC: UIViewController {
     var slideshowTransitioningDelegate: ZoomAnimatedTransitioningDelegate?
     
     var currentShownEvent : Noticia!
-    
-    let sdWebImageSource = [SDWebImageSource(urlString: "https://images.unsplash.com/photo-1432679963831-2dab49187847?w=1080")!, SDWebImageSource(urlString: "https://images.unsplash.com/photo-1447746249824-4be4e1b76d66?w=1080")!, SDWebImageSource(urlString: "https://images.unsplash.com/photo-1463595373836-6e0b0a8ee322?w=1080")!]
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  
+    override func viewDidLayoutSubviews() {
         
-        slideshow.backgroundColor = UIColor.whiteColor()
+        print(currentShownEvent.urlBullets.count)
+        
+        var sdWebImageSource = [InputSource]()
+        
+        for item in currentShownEvent.urlBullets {
+            print(item.foto)
+            sdWebImageSource.append(SDWebImageSource(urlString: item.foto)!)
+        }
+        
+        slideshow.backgroundColor = UIColor.redColor()
         slideshow.slideshowInterval = 5.0
         slideshow.pageControlPosition = PageControlPosition.UnderScrollView
         slideshow.pageControl.currentPageIndicatorTintColor = UIColor.lightGrayColor();
@@ -33,6 +39,13 @@ class DetalleGaleriaVC: UIViewController {
         
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(DetalleGaleriaVC.click))
         slideshow.addGestureRecognizer(recognizer)
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+
     }
     
     override func viewWillDisappear(animated: Bool) {

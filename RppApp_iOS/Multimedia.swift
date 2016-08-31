@@ -43,7 +43,15 @@ class Multimedia: NSObject {
         }
         
         if let foto = jsonObject[MultimediaJSONKeys.foto] {
-            self.foto = foto as! String
+            
+            let imageURLArray = foto.componentsSeparatedByString("dev.")
+            
+            if imageURLArray.count > 1 {
+                self.foto = String(format: "http://%@",imageURLArray.last!)
+            }else {
+                self.foto = ""
+            }
+            
         }
         
     }
