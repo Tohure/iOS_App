@@ -28,6 +28,7 @@ class Noticia: NSObject {
         static let elemento = "elemento"
         static let desarrollo = "desarrollo"
         static let seccionruta = "seccionruta"
+        static let bullets = "bullets"
     }
     
     var noticiaID: String!
@@ -47,6 +48,7 @@ class Noticia: NSObject {
     var elemento: String!
     var desarrollo: String!
     var seccionruta: String!
+    var urlBullets = [Multimedia]()
     
     init(jsonObject: [String:AnyObject]) {
         
@@ -118,7 +120,16 @@ class Noticia: NSObject {
         if let seccionruta = jsonObject[NoticiaJSONKeys.seccionruta] {
             self.seccionruta = seccionruta as! String
         }
-    }        
+        
+        
+        if let multimedia = jsonObject[NoticiaJSONKeys.bullets] {
+            
+            for bullet in (multimedia as! [[String:AnyObject]]) {
+                
+                self.urlBullets.append(Multimedia(jsonObject: bullet))
+            }
+        }
+    }
     
 }
 

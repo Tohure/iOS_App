@@ -11,34 +11,20 @@ import UIKit
 class Multimedia: NSObject {
     
     struct MultimediaJSONKeys {
-        static let multimediaID = "id"
-        static let nid = "nid"
         static let leyenda = "leyenda"
         static let fuente = "fuente"
         static let gorro = "gorro"
         static let creditos = "creditos"
-        static let seccionSlug = "seccionSlug"
-        static let urlElemento = "urlElemento"
+        static let foto = "foto"
     }
     
-    var multimediaID :String!
-    var nid :String!
     var leyenda :String!
     var fuente :String!
     var gorro :String!
     var creditos :String!
-    var seccionSlug :String!
-    var urlElemento :String!
+    var foto :String!
     
     init(jsonObject: [String:AnyObject]) {
-        
-        if let multimediaID = jsonObject[MultimediaJSONKeys.multimediaID] {
-            self.multimediaID = multimediaID as! String
-        }
-        
-        if let nid = jsonObject[MultimediaJSONKeys.nid] {
-            self.nid = nid as! String
-        }
         
         if let leyenda = jsonObject[MultimediaJSONKeys.leyenda] {
             self.leyenda = leyenda as! String
@@ -56,13 +42,10 @@ class Multimedia: NSObject {
             self.creditos = creditos as! String
         }
         
-        if let seccionSlug = jsonObject[MultimediaJSONKeys.seccionSlug] {
-            self.seccionSlug = seccionSlug as! String
+        if let foto = jsonObject[MultimediaJSONKeys.foto] {
+            self.foto = foto as! String
         }
         
-        if let urlElemento = jsonObject[MultimediaJSONKeys.urlElemento] {
-            self.urlElemento = urlElemento as! String
-        }
     }
     
 }
