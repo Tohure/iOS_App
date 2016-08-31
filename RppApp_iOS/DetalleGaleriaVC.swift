@@ -26,7 +26,7 @@ class DetalleGaleriaVC: UIViewController {
             sdWebImageSource.append(SDWebImageSource(urlString: item.foto)!)
         }
         
-        slideshow.backgroundColor = UIColor.redColor()
+        slideshow.backgroundColor = UIColor.whiteColor()
         slideshow.slideshowInterval = 5.0
         slideshow.pageControlPosition = PageControlPosition.InsideScrollView
         slideshow.pageControl.currentPageIndicatorTintColor = UIColor.lightGrayColor();
