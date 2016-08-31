@@ -49,8 +49,6 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
         self.tableViewNew.setNeedsLayout()
         self.tableViewNew.layoutIfNeeded()
         
-        print(currentShownEvent.elemento)
-        
         //self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0) // Status bar inset
         
         self.automaticallyAdjustsScrollViewInsets = false

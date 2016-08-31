@@ -12,6 +12,7 @@ import ImageSlideshow
 class DetalleGaleriaVC: UIViewController {
     
    
+    @IBOutlet weak var talbeContent: UITableView!
     @IBOutlet weak var slideshow: ImageSlideshow!
     var slideshowTransitioningDelegate: ZoomAnimatedTransitioningDelegate?
     
@@ -41,6 +42,17 @@ class DetalleGaleriaVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.talbeContent.estimatedRowHeight = 80
+        self.talbeContent.rowHeight = UITableViewAutomaticDimension
+        
+        self.talbeContent.setNeedsLayout()
+        self.talbeContent.layoutIfNeeded()
+        
+        //self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0) // Status bar inset
+        
+        self.automaticallyAdjustsScrollViewInsets = false
+        self.edgesForExtendedLayout = .None
+        talbeContent .reloadData()
 
     }
     
@@ -73,4 +85,42 @@ class DetalleGaleriaVC: UIViewController {
     
     override func didReceiveMemoryWarning() { super.didReceiveMemoryWarning() }
     override func preferredStatusBarStyle() -> UIStatusBarStyle { return .LightContent }
+}
+
+extension DetalleGaleriaVC : UITableViewDataSource {
+    
+    // MARK: - Table view data source
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("DynamicCell", forIndexPath: indexPath) as! DynamicTableViewCell
+        
+        cell.titleLabel.text = currentShownEvent.titular
+        cell.bodyLabel.attributedText = handleHtml(currentShownEvent.desarrollo)
+        
+        return cell
+    }
+    
+    func handleHtml(string : String) -> NSAttributedString{
+        var returnStr = NSMutableAttributedString()
+        do {
+            returnStr = try NSMutableAttributedString(data: string.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!, options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
+            
+            let fullRange : NSRange = NSMakeRange(0, returnStr.length)
+            returnStr.addAttributes([NSFontAttributeName : UIFont(name: "Helvetica Neue", size: 18.0)!], range: fullRange)
+            
+        } catch {
+            print(error)
+        }
+        return returnStr
+    }
+    
 }
