@@ -16,10 +16,8 @@ class DetalleGaleriaVC: UIViewController {
     var slideshowTransitioningDelegate: ZoomAnimatedTransitioningDelegate?
     
     var currentShownEvent : Noticia!
-  
-    override func viewDidLayoutSubviews() {
-        
-        print(currentShownEvent.urlBullets.count)
+    
+    override func viewWillLayoutSubviews() {
         
         var sdWebImageSource = [InputSource]()
         
@@ -30,7 +28,7 @@ class DetalleGaleriaVC: UIViewController {
         
         slideshow.backgroundColor = UIColor.redColor()
         slideshow.slideshowInterval = 5.0
-        slideshow.pageControlPosition = PageControlPosition.UnderScrollView
+        slideshow.pageControlPosition = PageControlPosition.InsideScrollView
         slideshow.pageControl.currentPageIndicatorTintColor = UIColor.lightGrayColor();
         slideshow.pageControl.pageIndicatorTintColor = UIColor.blackColor();
         slideshow.contentScaleMode = UIViewContentMode.ScaleAspectFill
@@ -39,7 +37,6 @@ class DetalleGaleriaVC: UIViewController {
         
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(DetalleGaleriaVC.click))
         slideshow.addGestureRecognizer(recognizer)
-        
     }
     
     override func viewDidLoad() {
@@ -48,13 +45,12 @@ class DetalleGaleriaVC: UIViewController {
 
     }
     
-    override func viewWillDisappear(animated: Bool) {
-        NSNotificationCenter.defaultCenter().postNotificationName("llamaMiControlador", object: false)
+    override func viewDidAppear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().postNotificationName("llamaMiControlador", object: true)
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().postNotificationName("llamaMiControlador", object: false)
     }
     
     override func prefersStatusBarHidden() -> Bool {
