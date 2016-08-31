@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GDU-Cg-uAv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GDU-Cg-uAv">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -268,16 +268,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UMW-pe-8pJ" customClass="ImageSlideshow" customModule="ImageSlideshow">
-                                <rect key="frame" x="9" y="28" width="582" height="268"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMW-pe-8pJ" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="20" width="600" height="279"/>
                                 <color key="backgroundColor" red="0.75957532049999998" green="0.75957532049999998" blue="0.75957532049999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GiC-Mg-5tQ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GiC-Mg-5tQ">
                                 <rect key="frame" x="0.0" y="299" width="600" height="301"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.37647058820000001" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UMW-pe-8pJ" firstAttribute="top" secondItem="0gC-YF-Syz" secondAttribute="bottom" id="5Th-20-Pae"/>
+                            <constraint firstItem="GiC-Mg-5tQ" firstAttribute="leading" secondItem="EvS-PU-PQv" secondAttribute="leading" id="5xH-lk-UuF"/>
+                            <constraint firstItem="UMW-pe-8pJ" firstAttribute="trailing" secondItem="GiC-Mg-5tQ" secondAttribute="trailing" id="OYi-HH-m2T"/>
+                            <constraint firstAttribute="bottom" secondItem="UMW-pe-8pJ" secondAttribute="bottom" constant="301" id="XMz-4V-YOm"/>
+                            <constraint firstItem="ZSP-yu-a1Q" firstAttribute="top" secondItem="GiC-Mg-5tQ" secondAttribute="bottom" id="aL1-bn-K4Y"/>
+                            <constraint firstAttribute="trailing" secondItem="GiC-Mg-5tQ" secondAttribute="trailing" id="bPp-Do-Fb4"/>
+                            <constraint firstItem="UMW-pe-8pJ" firstAttribute="leading" secondItem="GiC-Mg-5tQ" secondAttribute="leading" id="jjn-qh-Id7"/>
+                            <constraint firstItem="GiC-Mg-5tQ" firstAttribute="top" secondItem="UMW-pe-8pJ" secondAttribute="bottom" id="uIW-Gx-C9b"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="slideshow" destination="UMW-pe-8pJ" id="dFb-08-ik7"/>
