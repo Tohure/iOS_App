@@ -49,8 +49,6 @@ class DetalleMultimediaNoticiaVC: UIViewController, JWPlayerDelegate {
         self.tableViewNew.setNeedsLayout()
         self.tableViewNew.layoutIfNeeded()
         
-        print(currentShownEvent.elemento)
-        
         //self.tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0) // Status bar inset
         
         self.automaticallyAdjustsScrollViewInsets = false
@@ -167,14 +165,6 @@ extension DetalleMultimediaNoticiaVC : UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("DynamicCell", forIndexPath: indexPath) as! DynamicTableViewCell
         
         cell.titleLabel.text = currentShownEvent.titular
-        //cell.bodyLabel.text = currentShownEvent.desarrollo
-        
-        /*let attrStr = try! NSAttributedString(
-            data: currentShownEvent.desarrollo.dataUsingEncoding(NSUnicodeStringEncoding, allowLossyConversion: true)!,
-            options: [ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType],
-            documentAttributes: nil)
-        cell.bodyLabel.attributedText = attrStr*/
-        
         cell.bodyLabel.attributedText = handleHtml(currentShownEvent.desarrollo)
         
         return cell
