@@ -124,8 +124,6 @@ extension DetalleNoticiaVC : UITableViewDataSource {
         let cell = tableView.dequeueReusableCellWithIdentifier("DynamicCell", forIndexPath: indexPath) as! DynamicTableViewCell
         
         cell.titleLabel.text = currentShownEvent.titular
-        //cell.bodyLabel.text = currentShownEvent.desarrollo
-        
         cell.bodyLabel.attributedText = handleHtml(currentShownEvent.desarrollo)
         
         return cell

@@ -21,14 +21,13 @@ class DetalleGaleriaVC: UIViewController {
         
         print(currentShownEvent.urlBullets.count)
         
-        var sdWebImageSource = [InputSource]()
+        var sdWebImageSource = [SDWebImageSource]()
         
         for item in currentShownEvent.urlBullets {
-            print(item.foto)
             sdWebImageSource.append(SDWebImageSource(urlString: item.foto)!)
         }
         
-        slideshow.backgroundColor = UIColor.redColor()
+        slideshow.backgroundColor = UIColor.whiteColor()
         slideshow.slideshowInterval = 5.0
         slideshow.pageControlPosition = PageControlPosition.UnderScrollView
         slideshow.pageControl.currentPageIndicatorTintColor = UIColor.lightGrayColor();
