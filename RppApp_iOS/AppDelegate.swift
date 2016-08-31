@@ -137,13 +137,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Install initial versions of our two extra dynamic shortcuts.
         if let shortcutItems = application.shortcutItems where shortcutItems.isEmpty {
             // Construct the items.
-            let shortcut3 = UIMutableApplicationShortcutItem(type: ShortcutIdentifier.Third.type, localizedTitle: "Play", localizedSubtitle: "Will Play an item", icon: UIApplicationShortcutIcon(type: .Play), userInfo: [
-                AppDelegate.applicationShortcutUserInfoIconKey: UIApplicationShortcutIconType.Play.rawValue
-                ]
+            let shortcut3 = UIMutableApplicationShortcutItem(type: ShortcutIdentifier.Third.type, localizedTitle: "Últimas Noticias", localizedSubtitle: "Revisa las últimas noticias RPP", icon: nil, userInfo: nil
             )
             
-            let shortcut4 = UIMutableApplicationShortcutItem(type: ShortcutIdentifier.Fourth.type, localizedTitle: "Pause", localizedSubtitle: "Will Pause an item", icon: UIApplicationShortcutIcon(type: .Pause), userInfo: [
-                AppDelegate.applicationShortcutUserInfoIconKey: UIApplicationShortcutIconType.Pause.rawValue
+            let shortcut4 = UIMutableApplicationShortcutItem(type: ShortcutIdentifier.Fourth.type, localizedTitle: "Radio en Vivo", localizedSubtitle: "Escucha nuestra radio en vivo", icon: UIApplicationShortcutIcon(type: .Play), userInfo: [
+                AppDelegate.applicationShortcutUserInfoIconKey: UIApplicationShortcutIconType.Play.rawValue
                 ]
             )
             
