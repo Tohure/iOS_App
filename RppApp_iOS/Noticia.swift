@@ -92,10 +92,16 @@ class Noticia: NSObject {
             self.titularcorto = titularcorto as! String
         }
         
-        if let gorro = jsonObject[NoticiaJSONKeys.gorro] {
+        /*if let gorro = jsonObject[NoticiaJSONKeys.gorro] {
             self.gorro = gorro as! String
-        }
+        }*/
+        let gorro = jsonObject[NoticiaJSONKeys.gorro]
         
+        if !(gorro is NSNull) {
+            self.gorro = gorro as! String
+        }else{
+            self.gorro = ""
+        }
         
         if let linkimg = jsonObject[NoticiaJSONKeys.linkimg] {
             self.linkimg = linkimg as! String
