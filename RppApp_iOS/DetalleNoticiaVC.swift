@@ -70,6 +70,9 @@ class DetalleNoticiaVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle { return .LightContent }
+    
     // MARK: - UIScrollViewDelegate
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
@@ -90,9 +93,9 @@ class DetalleNoticiaVC: UIViewController {
     
     // MARK: - Satus Bar
     
-    override func prefersStatusBarHidden() -> Bool {
+    /*override func prefersStatusBarHidden() -> Bool {
         return true
-    }
+    }*/
     
 
     /*

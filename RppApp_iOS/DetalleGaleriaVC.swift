@@ -39,6 +39,10 @@ class DetalleGaleriaVC: UIViewController {
         slideshow.addGestureRecognizer(recognizer)
     }
     
+    @IBAction func onClickInput(sender: AnyObject) {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -57,16 +61,18 @@ class DetalleGaleriaVC: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        
         NSNotificationCenter.defaultCenter().postNotificationName("llamaMiControlador", object: true)
+        super.viewDidAppear(animated)
     }
     
     override func viewWillDisappear(animated: Bool) {
         NSNotificationCenter.defaultCenter().postNotificationName("llamaMiControlador", object: false)
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    /*override func prefersStatusBarHidden() -> Bool {
         return true
-    }
+    }*/
     
     func click() {
         let ctr = FullScreenSlideshowViewController()
