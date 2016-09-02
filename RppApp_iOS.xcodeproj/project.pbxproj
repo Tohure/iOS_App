@@ -61,6 +61,7 @@
 		A0AC567C1D6EBB1400273FD3 /* DetalleNoticiaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */; };
 		A0FA7A881D793B2F00B90030 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA7A871D793B2F00B90030 /* SWRevealViewController.m */; };
 		A0FA7A8A1D793C7100B90030 /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA7A891D793C7100B90030 /* RevealViewController.swift */; };
+		A0FA7A8C1D79439A00B90030 /* DefaultColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA7A8B1D79439A00B90030 /* DefaultColors.swift */; };
 		C73C46A243F752571B984A32 /* Pods_RppApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0898E83933594BE3C50D241D /* Pods_RppApp_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +147,7 @@
 		A0FA7A861D793B2F00B90030 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		A0FA7A871D793B2F00B90030 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		A0FA7A891D793C7100B90030 /* RevealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
+		A0FA7A8B1D79439A00B90030 /* DefaultColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultColors.swift; sourceTree = "<group>"; };
 		FB1766815EC88B6ADB0AC3A4 /* Pods-RppApp_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RppApp_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RppApp_iOS/Pods-RppApp_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -298,6 +300,7 @@
 		31859B571D65255600187AB8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A0FA7A8B1D79439A00B90030 /* DefaultColors.swift */,
 				318DC5931D75081C0068617A /* SDWebImageSource.swift */,
 				A0A0936C1D6FF8A50008DDE1 /* Validator.swift */,
 				A023E0FD1D6D749300C47432 /* Spring */,
@@ -633,6 +636,7 @@
 				A023E10A1D6D752A00C47432 /* UIImage+DropShadow.swift in Sources */,
 				A07287411D693D53000561CF /* JSONParser.swift in Sources */,
 				A0A093691D6FE7860008DDE1 /* NoticeDetailsProminentCell.swift in Sources */,
+				A0FA7A8C1D79439A00B90030 /* DefaultColors.swift in Sources */,
 				A023E0FF1D6D749A00C47432 /* SpringImageView.swift in Sources */,
 				314208081D691C4E009F638D /* Multimedia.swift in Sources */,
 				A023E1091D6D752A00C47432 /* UIImageView+Download.swift in Sources */,

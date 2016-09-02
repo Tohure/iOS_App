@@ -500,7 +500,27 @@
                     <view key="view" contentMode="scaleToFill" id="vMS-cI-ka9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="1GK-lq-J3c">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_rpp_app" translatesAutoresizingMaskIntoConstraints="NO" id="Zek-tJ-epG">
+                                <rect key="frame" x="215" y="200" width="171" height="201"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="201" id="d7c-fK-Vv2"/>
+                                    <constraint firstAttribute="width" constant="171" id="lRL-PT-6ge"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="abd-va-4RE" firstAttribute="top" secondItem="1GK-lq-J3c" secondAttribute="bottom" id="5B0-ug-SDX"/>
+                            <constraint firstItem="Zek-tJ-epG" firstAttribute="centerX" secondItem="vMS-cI-ka9" secondAttribute="centerX" id="Qiv-4e-73v"/>
+                            <constraint firstAttribute="trailing" secondItem="1GK-lq-J3c" secondAttribute="trailing" id="hhz-3W-Lyz"/>
+                            <constraint firstItem="Zek-tJ-epG" firstAttribute="centerY" secondItem="vMS-cI-ka9" secondAttribute="centerY" id="oMW-zl-Olj"/>
+                            <constraint firstItem="1GK-lq-J3c" firstAttribute="top" secondItem="vMS-cI-ka9" secondAttribute="top" id="uvk-dc-QAb"/>
+                            <constraint firstItem="1GK-lq-J3c" firstAttribute="leading" secondItem="vMS-cI-ka9" secondAttribute="leading" id="vRI-G5-AyB"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="gNX-gG-Fmz" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="O0E-KD-Lrr"/>

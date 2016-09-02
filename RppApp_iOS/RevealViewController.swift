@@ -21,7 +21,7 @@ class RevealViewController: SWRevealViewController {
         self.delegate = self
         
         opacityView = UIView(frame: UIScreen.mainScreen().bounds)
-        //opacityView.backgroundColor = UIColor.quickColorWith(0, green: 0, blue: 0, alpha: 0.45)
+        opacityView.backgroundColor = UIColor.quickColorWith(0, green: 0, blue: 0, alpha: 0.45)
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SWRevealViewController.revealToggle(_:)))
         opacityView.addGestureRecognizer(tapGesture)
