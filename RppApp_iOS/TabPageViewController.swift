@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SWRevealViewController
 
 public class TabPageViewController: UIPageViewController {
     public var isInfinity: Bool = false
@@ -69,7 +70,13 @@ public class TabPageViewController: UIPageViewController {
         let btnMenu = UIButton(type: .Custom)
         btnMenu .setImage(UIImage(named: "hamburguer"), forState: .Normal)
         btnMenu.frame = CGRectMake(0.0, 0.0, 34.0, 32.0)
-        btnMenu.addTarget(self, action: #selector(TabPageViewController.popToViewController), forControlEvents: .TouchUpInside)
+        /*btnMenu.addTarget(self, action: #selector(TabPageViewController.popToViewController), forControlEvents: .TouchUpInside)*/
+        
+        btnMenu.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), forControlEvents: .TouchUpInside)
+        
+        /*btnMenu.target = self.revealViewController()
+        btnMenu.action = Selector("revealToggle:")*/
+        
         btnMenu.adjustsImageWhenHighlighted = false
         let btnMenuItem = UIBarButtonItem(customView: btnMenu)
         self.navigationItem.setLeftBarButtonItem(btnMenuItem, animated: true)
@@ -85,6 +92,7 @@ public class TabPageViewController: UIPageViewController {
     }
     
     func popToViewController() {
+        
         print("call to menu")
     }
     
