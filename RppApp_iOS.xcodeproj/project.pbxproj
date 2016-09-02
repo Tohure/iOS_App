@@ -59,6 +59,8 @@
 		A0A0936B1D6FF52C0008DDE1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A0936A1D6FF52C0008DDE1 /* QuartzCore.framework */; };
 		A0A0936D1D6FF8A50008DDE1 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A0936C1D6FF8A50008DDE1 /* Validator.swift */; };
 		A0AC567C1D6EBB1400273FD3 /* DetalleNoticiaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */; };
+		A0FA7A881D793B2F00B90030 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0FA7A871D793B2F00B90030 /* SWRevealViewController.m */; };
+		A0FA7A8A1D793C7100B90030 /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA7A891D793C7100B90030 /* RevealViewController.swift */; };
 		C73C46A243F752571B984A32 /* Pods_RppApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0898E83933594BE3C50D241D /* Pods_RppApp_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +143,9 @@
 		A0A0936A1D6FF52C0008DDE1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A0A0936C1D6FF8A50008DDE1 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleNoticiaVC.swift; sourceTree = "<group>"; };
+		A0FA7A861D793B2F00B90030 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		A0FA7A871D793B2F00B90030 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		A0FA7A891D793C7100B90030 /* RevealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
 		FB1766815EC88B6ADB0AC3A4 /* Pods-RppApp_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RppApp_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RppApp_iOS/Pods-RppApp_iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +243,9 @@
 		31859B251D64DBAC00187AB8 /* RppApp_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A0FA7A891D793C7100B90030 /* RevealViewController.swift */,
+				A0FA7A861D793B2F00B90030 /* SWRevealViewController.h */,
+				A0FA7A871D793B2F00B90030 /* SWRevealViewController.m */,
 				A023E0F31D6D741200C47432 /* Streaming */,
 				A072874B1D696CB2000561CF /* View */,
 				A072873A1D693D48000561CF /* Networking */,
@@ -610,6 +618,7 @@
 			files = (
 				A07287401D693D53000561CF /* NetworkManager.swift in Sources */,
 				311871331D6FAA81003C88F7 /* DynamicTableViewCell.swift in Sources */,
+				A0FA7A881D793B2F00B90030 /* SWRevealViewController.m in Sources */,
 				3142081C1D692AA2009F638D /* TabView.swift in Sources */,
 				A023E0F81D6D742400C47432 /* RadioStation.swift in Sources */,
 				A07287521D696E82000561CF /* EventDetailsCell.swift in Sources */,
@@ -620,6 +629,7 @@
 				A023E1031D6D74B200C47432 /* Spring.swift in Sources */,
 				314208191D692AA2009F638D /* TabCollectionCell.swift in Sources */,
 				318DC5941D75081C0068617A /* SDWebImageSource.swift in Sources */,
+				A0FA7A8A1D793C7100B90030 /* RevealViewController.swift in Sources */,
 				A023E10A1D6D752A00C47432 /* UIImage+DropShadow.swift in Sources */,
 				A07287411D693D53000561CF /* JSONParser.swift in Sources */,
 				A0A093691D6FE7860008DDE1 /* NoticeDetailsProminentCell.swift in Sources */,
@@ -802,10 +812,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
+					"-ObjC",
 					"-framework",
 					"\"SDWebImage\"",
-					"-framework",
-					"\"SWRevealViewController\"",
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gruporpp.RPPNoticiasIphone.RppApp-iOS";
@@ -833,10 +842,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
+					"-ObjC",
 					"-framework",
 					"\"SDWebImage\"",
-					"-framework",
-					"\"SWRevealViewController\"",
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gruporpp.RPPNoticiasIphone.RppApp-iOS";

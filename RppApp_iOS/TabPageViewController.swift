@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SWRevealViewController
 
 public class TabPageViewController: UIPageViewController {
     public var isInfinity: Bool = false
