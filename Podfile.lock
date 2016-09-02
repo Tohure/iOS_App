@@ -5,18 +5,15 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
-  - SWRevealViewController (2.3.0)
 
 DEPENDENCIES:
   - ImageSlideshow (~> 0.5)
   - SDWebImage (~> 3.7)
-  - SWRevealViewController (~> 2.3.0)
 
 SPEC CHECKSUMS:
   ImageSlideshow: b2662127d093a42d9595a6b40af2817d064df251
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
-  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
 
-PODFILE CHECKSUM: c6550642e811f3983b134c38641d38e2d9ae9b88
+PODFILE CHECKSUM: fd960e2287bf04a5bc3a9d0735e82d0aa9a0e5ce
 
 COCOAPODS: 1.0.1

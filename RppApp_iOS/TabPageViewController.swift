@@ -71,7 +71,7 @@ public class TabPageViewController: UIPageViewController {
         btnMenu .setImage(UIImage(named: "hamburguer"), forState: .Normal)
         btnMenu.frame = CGRectMake(0.0, 0.0, 34.0, 32.0)
         /*btnMenu.addTarget(self, action: #selector(TabPageViewController.popToViewController), forControlEvents: .TouchUpInside)*/
-        
+    
         btnMenu.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), forControlEvents: .TouchUpInside)
         
         /*btnMenu.target = self.revealViewController()
