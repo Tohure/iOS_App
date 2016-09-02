@@ -98,7 +98,7 @@ public class TabPageViewController: UIPageViewController {
     func loadRadioInLive() {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewControllerWithIdentifier("StreamingViewController") as! StreamingViewController
+        let vc = storyboard.instantiateViewControllerWithIdentifier("NowPlayingViewController") as! NowPlayingViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
 

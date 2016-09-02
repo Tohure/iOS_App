@@ -27,7 +27,6 @@
 		31859B3C1D64DBAD00187AB8 /* RppApp_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B3B1D64DBAD00187AB8 /* RppApp_iOSTests.swift */; };
 		31859B471D64DBAD00187AB8 /* RppApp_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B461D64DBAD00187AB8 /* RppApp_iOSUITests.swift */; };
 		31859B591D65256900187AB8 /* NetworkUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31859B581D65256900187AB8 /* NetworkUtil.swift */; };
-		318A79451D6E61A000B2E300 /* StreamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318A79441D6E61A000B2E300 /* StreamingViewController.swift */; };
 		318DC58A1D74AD4F0068617A /* DetalleGaleriaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318DC5891D74AD4F0068617A /* DetalleGaleriaVC.swift */; };
 		318DC5941D75081C0068617A /* SDWebImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318DC5931D75081C0068617A /* SDWebImageSource.swift */; };
 		31B3ADD91D776F6B009026F4 /* ShortcutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B3ADD81D776F6B009026F4 /* ShortcutDetailViewController.swift */; };
@@ -45,6 +44,9 @@
 		A023E1091D6D752A00C47432 /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1061D6D752A00C47432 /* UIImageView+Download.swift */; };
 		A023E10A1D6D752A00C47432 /* UIImage+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1071D6D752A00C47432 /* UIImage+DropShadow.swift */; };
 		A023E10D1D6D75EA00C47432 /* SwiftRadio-Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E10C1D6D75EA00C47432 /* SwiftRadio-Settings.swift */; };
+		A02CE5B81D7A0C450054908A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02CE5B71D7A0C450054908A /* MenuViewController.swift */; };
+		A02CE5BA1D7A0E250054908A /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02CE5B91D7A0E250054908A /* MenuItemCell.swift */; };
+		A02CE5BE1D7A0FB40054908A /* BlackTransparentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02CE5BD1D7A0FB40054908A /* BlackTransparentNavigationController.swift */; };
 		A072873F1D693D53000561CF /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072873B1D693D53000561CF /* RequestBuilder.swift */; };
 		A07287401D693D53000561CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072873C1D693D53000561CF /* NetworkManager.swift */; };
 		A07287411D693D53000561CF /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072873D1D693D53000561CF /* JSONParser.swift */; };
@@ -111,7 +113,6 @@
 		31859B461D64DBAD00187AB8 /* RppApp_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RppApp_iOSUITests.swift; sourceTree = "<group>"; };
 		31859B481D64DBAD00187AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31859B581D65256900187AB8 /* NetworkUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtil.swift; sourceTree = "<group>"; };
-		318A79441D6E61A000B2E300 /* StreamingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingViewController.swift; sourceTree = "<group>"; };
 		318DC5891D74AD4F0068617A /* DetalleGaleriaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleGaleriaVC.swift; sourceTree = "<group>"; };
 		318DC5931D75081C0068617A /* SDWebImageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDWebImageSource.swift; sourceTree = "<group>"; };
 		31B3ADD81D776F6B009026F4 /* ShortcutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutDetailViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +131,9 @@
 		A023E1061D6D752A00C47432 /* UIImageView+Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
 		A023E1071D6D752A00C47432 /* UIImage+DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+DropShadow.swift"; sourceTree = "<group>"; };
 		A023E10C1D6D75EA00C47432 /* SwiftRadio-Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftRadio-Settings.swift"; sourceTree = "<group>"; };
+		A02CE5B71D7A0C450054908A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		A02CE5B91D7A0E250054908A /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		A02CE5BD1D7A0FB40054908A /* BlackTransparentNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackTransparentNavigationController.swift; sourceTree = "<group>"; };
 		A072873B1D693D53000561CF /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		A072873C1D693D53000561CF /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A072873D1D693D53000561CF /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
@@ -245,9 +249,7 @@
 		31859B251D64DBAC00187AB8 /* RppApp_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A0FA7A891D793C7100B90030 /* RevealViewController.swift */,
-				A0FA7A861D793B2F00B90030 /* SWRevealViewController.h */,
-				A0FA7A871D793B2F00B90030 /* SWRevealViewController.m */,
+				A02CE5B61D7A0C390054908A /* Menu */,
 				A023E0F31D6D741200C47432 /* Streaming */,
 				A072874B1D696CB2000561CF /* View */,
 				A072873A1D693D48000561CF /* Networking */,
@@ -287,7 +289,6 @@
 				A023E0EF1D6D73DD00C47432 /* NowPlayingViewController.swift */,
 				31859B281D64DBAC00187AB8 /* SplashViewController.swift */,
 				314208091D692236009F638D /* PortadaViewController.swift */,
-				318A79441D6E61A000B2E300 /* StreamingViewController.swift */,
 				A0AC567B1D6EBB1400273FD3 /* DetalleNoticiaVC.swift */,
 				31724F4F1D6EC0CF0050CBBD /* DetalleMultimediaNoticiaVC.swift */,
 				318DC5891D74AD4F0068617A /* DetalleGaleriaVC.swift */,
@@ -377,6 +378,19 @@
 				A023E10C1D6D75EA00C47432 /* SwiftRadio-Settings.swift */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A02CE5B61D7A0C390054908A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				A02CE5BD1D7A0FB40054908A /* BlackTransparentNavigationController.swift */,
+				A02CE5B91D7A0E250054908A /* MenuItemCell.swift */,
+				A02CE5B71D7A0C450054908A /* MenuViewController.swift */,
+				A0FA7A891D793C7100B90030 /* RevealViewController.swift */,
+				A0FA7A861D793B2F00B90030 /* SWRevealViewController.h */,
+				A0FA7A871D793B2F00B90030 /* SWRevealViewController.m */,
+			);
+			name = Menu;
 			sourceTree = "<group>";
 		};
 		A072873A1D693D48000561CF /* Networking */ = {
@@ -626,13 +640,13 @@
 				A023E0F81D6D742400C47432 /* RadioStation.swift in Sources */,
 				A07287521D696E82000561CF /* EventDetailsCell.swift in Sources */,
 				A023E0F91D6D742400C47432 /* Player.swift in Sources */,
-				318A79451D6E61A000B2E300 /* StreamingViewController.swift in Sources */,
 				31B3ADDB1D776FC7009026F4 /* ShortcutsTableViewController.swift in Sources */,
 				3142080A1D692236009F638D /* PortadaViewController.swift in Sources */,
 				A023E1031D6D74B200C47432 /* Spring.swift in Sources */,
 				314208191D692AA2009F638D /* TabCollectionCell.swift in Sources */,
 				318DC5941D75081C0068617A /* SDWebImageSource.swift in Sources */,
 				A0FA7A8A1D793C7100B90030 /* RevealViewController.swift in Sources */,
+				A02CE5BA1D7A0E250054908A /* MenuItemCell.swift in Sources */,
 				A023E10A1D6D752A00C47432 /* UIImage+DropShadow.swift in Sources */,
 				A07287411D693D53000561CF /* JSONParser.swift in Sources */,
 				A0A093691D6FE7860008DDE1 /* NoticeDetailsProminentCell.swift in Sources */,
@@ -649,10 +663,12 @@
 				31724F501D6EC0CF0050CBBD /* DetalleMultimediaNoticiaVC.swift in Sources */,
 				A023E1081D6D752A00C47432 /* AnimationFrames.swift in Sources */,
 				A023E0F01D6D73DD00C47432 /* NowPlayingViewController.swift in Sources */,
+				A02CE5B81D7A0C450054908A /* MenuViewController.swift in Sources */,
 				A023E1011D6D749F00C47432 /* SpringLabel.swift in Sources */,
 				3142081A1D692AA2009F638D /* TabPageOption.swift in Sources */,
 				318DC58A1D74AD4F0068617A /* DetalleGaleriaVC.swift in Sources */,
 				A07287481D693E1C000561CF /* NSErrorHelper.swift in Sources */,
+				A02CE5BE1D7A0FB40054908A /* BlackTransparentNavigationController.swift in Sources */,
 				31859B591D65256900187AB8 /* NetworkUtil.swift in Sources */,
 				A0A0936D1D6FF8A50008DDE1 /* Validator.swift in Sources */,
 				A072874A1D696573000561CF /* Category.swift in Sources */,

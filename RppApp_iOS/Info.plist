@@ -43,6 +43,10 @@
 	<string>UIStatusBarStyleLightContent</string>
 	<key>JWPlayerKey</key>
 	<string>nxHIRb707gRCHMci3YchXGBLpEdlzBwEeiAZWw==</string>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>NSUserActivityTypeBrowsingWeb</string>
+	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
