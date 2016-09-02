@@ -26,6 +26,9 @@ protocol NowPlayingViewControllerDelegate: class {
 //*****************************************************************
 
 class NowPlayingViewController: UIViewController {
+    
+    
+    @IBOutlet weak var menuButton: UIBarButtonItem!
 
     @IBOutlet weak var albumHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var albumImageView: SpringImageView!
@@ -60,6 +63,7 @@ class NowPlayingViewController: UIViewController {
         
         // Create Now Playing BarItem
         createNowPlayingAnimation()
+        revealControllerAction()
         
         // Setup MPMoviePlayerController
         // If you're building an app for a client, you may want to
@@ -104,6 +108,13 @@ class NowPlayingViewController: UIViewController {
     func didBecomeActiveNotificationReceived() {
         // View became active
         justBecameActive = true
+    }
+    
+    func revealControllerAction() {
+        if revealViewController() != nil {
+            menuButton.target = revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        }
     }
     
     deinit {

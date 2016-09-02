@@ -485,11 +485,11 @@
             </objects>
             <point key="canvasLocation" x="139" y="-756"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Black Transparent Navigation Controller-->
         <scene sceneID="sm4-UV-0Gf">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ctV-RJ-fcE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController storyboardIdentifier="MyLocationNavController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="GDU-Cg-uAv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MyLocationNavController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="GDU-Cg-uAv" customClass="BlackTransparentNavigationController" customModule="RppApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iVE-Pw-iaK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -502,6 +502,22 @@
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="139" y="47"/>
+        </scene>
+        <!--Black Transparent Navigation Controller-->
+        <scene sceneID="CPl-xG-UtD">
+            <objects>
+                <navigationController storyboardIdentifier="Playing" id="IWh-Ip-5vM" customClass="BlackTransparentNavigationController" customModule="RppApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QTh-Ps-ctQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RgV-uw-EkP" kind="relationship" relationship="rootViewController" id="Dem-f7-8Z9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Mk-Nd-Av3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="725"/>
         </scene>
         <!--Now Playing View-->
         <scene sceneID="7Tk-h3-A24">
@@ -604,8 +620,14 @@
                             <constraint firstItem="LaA-5g-zNB" firstAttribute="top" secondItem="rMk-bf-zJo" secondAttribute="bottom" id="sZb-qx-2vv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jHU-rE-A6O">
+                        <barButtonItem key="leftBarButtonItem" image="hamburguer" id="b2P-q3-Awy">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="menuButton" destination="b2P-q3-Awy" id="5UL-ZJ-usq"/>
                         <outlet property="pauseButton" destination="lnX-0l-lhw" id="wE0-2K-FmY"/>
                         <outlet property="playButton" destination="i9M-Po-LFl" id="QxV-5r-Vpd"/>
                         <outlet property="volumeParentView" destination="JZN-Kc-zYE" id="xOd-LK-9Vx"/>
@@ -613,7 +635,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="um2-iD-3ta" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2163" y="47"/>
+            <point key="canvasLocation" x="855" y="725"/>
         </scene>
         <!--Detalle NoticiaVC-->
         <scene sceneID="Bm1-RN-apz">
@@ -856,6 +878,7 @@
         <image name="bg" width="720" height="1100"/>
         <image name="btn-pause" width="44" height="44"/>
         <image name="btn-play" width="44" height="44"/>
+        <image name="hamburguer" width="36" height="36"/>
         <image name="logo_rpp_app" width="254" height="318"/>
         <image name="vol-max" width="17" height="14"/>
         <image name="vol-min" width="11" height="13"/>

@@ -181,7 +181,7 @@ extension MenuViewController: UITableViewDelegate {
             
         else if title == calendarTitle {
             
-            let nav = self.storyboard?.instantiateViewControllerWithIdentifier("MyLocationNavController") as! BlackTransparentNavigationController
+            let nav = self.storyboard?.instantiateViewControllerWithIdentifier("Playing") as! BlackTransparentNavigationController
             let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NowPlayingViewController") as! NowPlayingViewController
             nav.setViewControllers([locationViewController], animated: true)
             self.mylocationViewController = nav
