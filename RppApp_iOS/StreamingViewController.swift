@@ -10,6 +10,7 @@ import UIKit
 
 class StreamingViewController: UIViewController {
     
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     private var delegado:AppDelegate!
     
     @IBOutlet weak var playButton: UIButton!
@@ -19,14 +20,22 @@ class StreamingViewController: UIViewController {
         
         delegado = UIApplication.sharedApplication().delegate as! AppDelegate
         delegado.playerPlaying()
-        
+        revealControllerAction()
         super.viewDidLoad()
+    }
+    
+    func revealControllerAction() {
+        if revealViewController() != nil {
+            menuButton.target = revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+        }
     }
     
     @IBAction func playPressed(sender: AnyObject) {
         playButtonEnable(false)
         delegado.playerPlaying()
     }
+    
    
     @IBAction func pausePressed(sender: AnyObject) {
         playButtonEnable()

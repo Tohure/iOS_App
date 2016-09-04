@@ -115,9 +115,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // MPNowPlayingInfoCenter
         UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
-        
-<<<<<<< HEAD
-=======
+
         myPlayer.player.play()
         
         print("Status", myPlayer.player.status.hashValue)
@@ -134,8 +132,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch let error as NSError {
             print(error.localizedDescription)
         }
-        
->>>>>>> ca5c310db4d29c89c487edda7fa78421f3f0fcc2
         application.applicationIconBadgeNumber = 0
         
         let readAction = UIMutableUserNotificationAction()
