@@ -32,9 +32,6 @@
 		31B3ADD91D776F6B009026F4 /* ShortcutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B3ADD81D776F6B009026F4 /* ShortcutDetailViewController.swift */; };
 		31B3ADDB1D776FC7009026F4 /* ShortcutsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B3ADDA1D776FC7009026F4 /* ShortcutsTableViewController.swift */; };
 		A023E0F21D6D740500C47432 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A023E0F11D6D740500C47432 /* MediaPlayer.framework */; };
-		A023E0F81D6D742400C47432 /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0F51D6D742400C47432 /* RadioStation.swift */; };
-		A023E0F91D6D742400C47432 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0F61D6D742400C47432 /* Player.swift */; };
-		A023E0FA1D6D742400C47432 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0F71D6D742400C47432 /* Track.swift */; };
 		A023E0FC1D6D745400C47432 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0FB1D6D745400C47432 /* SwiftyJSON.swift */; };
 		A023E0FF1D6D749A00C47432 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0FE1D6D749A00C47432 /* SpringImageView.swift */; };
 		A023E1011D6D749F00C47432 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1001D6D749F00C47432 /* SpringLabel.swift */; };
@@ -119,9 +116,6 @@
 		31B3ADDA1D776FC7009026F4 /* ShortcutsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShortcutsTableViewController.swift; sourceTree = "<group>"; };
 		39EACB7211C9B86CD0A4FB58 /* Pods-RppApp_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RppApp_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RppApp_iOS/Pods-RppApp_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		A023E0F11D6D740500C47432 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		A023E0F51D6D742400C47432 /* RadioStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
-		A023E0F61D6D742400C47432 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		A023E0F71D6D742400C47432 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		A023E0FB1D6D745400C47432 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		A023E0FE1D6D749A00C47432 /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
 		A023E1001D6D749F00C47432 /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
@@ -336,19 +330,8 @@
 			isa = PBXGroup;
 			children = (
 				A023E1041D6D751F00C47432 /* UI Helpers */,
-				A023E0F41D6D741900C47432 /* Model */,
 			);
 			name = Streaming;
-			sourceTree = "<group>";
-		};
-		A023E0F41D6D741900C47432 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A023E0F51D6D742400C47432 /* RadioStation.swift */,
-				A023E0F61D6D742400C47432 /* Player.swift */,
-				A023E0F71D6D742400C47432 /* Track.swift */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		A023E0FD1D6D749300C47432 /* Spring */ = {
@@ -638,9 +621,7 @@
 				A0FA7A881D793B2F00B90030 /* SWRevealViewController.m in Sources */,
 				A0E0FFAC1D7BA35700ABD8FC /* StreamingViewController.swift in Sources */,
 				3142081C1D692AA2009F638D /* TabView.swift in Sources */,
-				A023E0F81D6D742400C47432 /* RadioStation.swift in Sources */,
 				A07287521D696E82000561CF /* EventDetailsCell.swift in Sources */,
-				A023E0F91D6D742400C47432 /* Player.swift in Sources */,
 				31B3ADDB1D776FC7009026F4 /* ShortcutsTableViewController.swift in Sources */,
 				3142080A1D692236009F638D /* PortadaViewController.swift in Sources */,
 				A023E1031D6D74B200C47432 /* Spring.swift in Sources */,
@@ -658,7 +639,6 @@
 				A023E10D1D6D75EA00C47432 /* SwiftRadio-Settings.swift in Sources */,
 				3142081B1D692AA2009F638D /* TabPageViewController.swift in Sources */,
 				A0AC567C1D6EBB1400273FD3 /* DetalleNoticiaVC.swift in Sources */,
-				A023E0FA1D6D742400C47432 /* Track.swift in Sources */,
 				A07287451D693D7F000561CF /* NoticiasServices.swift in Sources */,
 				31B3ADD91D776F6B009026F4 /* ShortcutDetailViewController.swift in Sources */,
 				31724F501D6EC0CF0050CBBD /* DetalleMultimediaNoticiaVC.swift in Sources */,
