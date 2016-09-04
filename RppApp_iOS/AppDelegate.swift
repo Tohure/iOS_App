@@ -92,6 +92,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             break
         case ShortcutIdentifier.Fourth.type:
             // Handle shortcut 4 (dynamic).
+            var navigationController:UINavigationController!
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            navigationController = self.window?.rootViewController as! UINavigationController
+            let vc = storyboard.instantiateViewControllerWithIdentifier("StreamingViewController") as! StreamingViewController
+            navigationController .pushViewController(vc, animated: true)
             handled = true
             break
         default:
@@ -99,12 +104,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // Construct an alert using the details of the shortcut used to open the application.
-        let alertController = UIAlertController(title: "Shortcut Handled", message: "\"\(shortcutItem.localizedTitle)\"", preferredStyle: .Alert)
+        /*let alertController = UIAlertController(title: "Shortcut Handled", message: "\"\(shortcutItem.localizedTitle)\"", preferredStyle: .Alert)
         let okAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
-        alertController.addAction(okAction)
+        alertController.addAction(okAction)*/
         
         // Display an alert indicating the shortcut selected from the home screen.
-        window!.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
+        //window!.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
         
         return handled
     }
