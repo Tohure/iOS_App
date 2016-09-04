@@ -7,10 +7,13 @@
 //
 
 import UIKit
-
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var myPlayer = PlayerAv(link: "http://gruporemux-live.hls.adaptive.level3.net/hls-live/gruporemux-streamRPPRD/_definst_/live/stream1.m3u8")
+    
     
     enum ShortcutIdentifier: String {
         case First
@@ -90,6 +93,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // MPNowPlayingInfoCenter
         UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
+        
+        myPlayer.player.play()
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            print("AVAudioSession Category Playback OK")
+            do {
+                try AVAudioSession.sharedInstance().setActive(true)
+                print("AVAudioSession is Active")
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
         
         application.applicationIconBadgeNumber = 0
         
@@ -200,8 +217,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-    //MARK: Notificaciones 
+    class PlayerAv {
+        var audioLink: String?
+        var player: AVPlayer
+        init(link: String) {
+            self.audioLink = link
+            self.player = AVPlayer(URL: NSURL(string: link)!)
+        }
+    }
     
+    //MARK: Notificaciones 
     
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         NSLog("deviceToken: %@", deviceToken);

@@ -361,6 +361,24 @@
             </objects>
             <point key="canvasLocation" x="1506" y="725"/>
         </scene>
+        <!--Streaming View Controller-->
+        <scene sceneID="yka-Ki-Rth">
+            <objects>
+                <viewController storyboardIdentifier="StreamingViewController" id="nlG-Tb-7S8" customClass="StreamingViewController" customModule="RppApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zVX-lL-zyG"/>
+                        <viewControllerLayoutGuide type="bottom" id="nRN-qS-Q5b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QwH-vC-5RR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySQ-og-Qfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2511" y="-90"/>
+        </scene>
         <!--Detalle Multimedia NoticiaVC-->
         <scene sceneID="8gy-0X-Iec">
             <objects>
