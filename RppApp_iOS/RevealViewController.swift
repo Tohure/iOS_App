@@ -1,9 +1,9 @@
 //
 //  RevealViewController.swift
-//  Culture
+//  
 //
-//  Created by J on 5/18/16.
-//  Copyright © 2016 LIMAAPP E.I.R.L. All rights reserved.
+//  Created by Huamán Torres, Carlo Renzo on 24/08/16.
+//  Copyright © 2016 Grupo RPP. All rights reserved.
 //
 
 import UIKit

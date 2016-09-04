@@ -1,9 +1,9 @@
 //
 //  BlackTransparentNavigationController.swift
-//  Culture
+//  
 //
-//  Created by J on 4/6/16.
-//  Copyright © 2016 LIMAAPP E.I.R.L. All rights reserved.
+//  Created by Huamán Torres, Carlo Renzo on 24/08/16.
+//  Copyright © 2016 Grupo RPP. All rights reserved.
 //
 
 import UIKit
@@ -12,10 +12,10 @@ class BlackTransparentNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.setBackgroundImage(UIImage.fromColor(.backgroundBlack()), forBarMetrics: .Default)
+        navigationBar.setBackgroundImage(UIImage.fromColor(UIColor.whiteColor()), forBarMetrics: .Default)
         navigationBar.translucent = true
 
-        UINavigationBar.appearance().barTintColor = UIColor.backgroundBlack()
+        UINavigationBar.appearance().barTintColor = UIColor.whiteColor()
         view.backgroundColor = UIColor.clearColor()
     
         navigationBar.tintColor = UIColor.whiteColor()
