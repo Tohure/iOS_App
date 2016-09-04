@@ -116,6 +116,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // MPNowPlayingInfoCenter
         UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
         
+<<<<<<< HEAD
+=======
+        myPlayer.player.play()
+        
+        print("Status", myPlayer.player.status.hashValue)
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            print("AVAudioSession Category Playback OK")
+            do {
+                try AVAudioSession.sharedInstance().setActive(true)
+                print("AVAudioSession is Active")
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        
+>>>>>>> ca5c310db4d29c89c487edda7fa78421f3f0fcc2
         application.applicationIconBadgeNumber = 0
         
         let readAction = UIMutableUserNotificationAction()
@@ -176,6 +196,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Update the application providing the initial 'dynamic' shortcut items.
             application.shortcutItems = [shortcut3, shortcut4]
         }
+        
+        myPlayer.player.pause()
+        
+        print("Status@", myPlayer.player.status.hashValue)
         
         return shouldPerformAdditionalDelegateHandling
         //return true
@@ -267,6 +291,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         completionHandler()
+    }
+    
+    func pausePLayer(){
+        
+        myPlayer.player.pause()
+    }
+    
+    func playPlayer(){
+        myPlayer.player.play()
     }
 }
 
