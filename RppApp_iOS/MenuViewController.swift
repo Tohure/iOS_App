@@ -170,7 +170,7 @@ extension MenuViewController: UITableViewDelegate {
             
             else {
                 let nav = self.storyboard?.instantiateViewControllerWithIdentifier("MyLocationNavController") as! UINavigationController
-                let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NowPlayingViewController") as! NowPlayingViewController
+                let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("StreamingViewController") as! StreamingViewController
                 nav.setViewControllers([locationViewController], animated: true)
                 self.mylocationViewController = nav
                 newFrontController = self.mylocationViewController
@@ -182,7 +182,7 @@ extension MenuViewController: UITableViewDelegate {
         else if title == calendarTitle {
             
             let nav = self.storyboard?.instantiateViewControllerWithIdentifier("Playing") as! BlackTransparentNavigationController
-            let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NowPlayingViewController") as! NowPlayingViewController
+            let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("StreamingViewController") as! StreamingViewController
             nav.setViewControllers([locationViewController], animated: true)
             self.mylocationViewController = nav
             newFrontController = self.mylocationViewController
@@ -193,7 +193,7 @@ extension MenuViewController: UITableViewDelegate {
         else if title == notificationTitle {
             
             let nav = self.storyboard?.instantiateViewControllerWithIdentifier("MyLocationNavController") as! BlackTransparentNavigationController
-            let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NowPlayingViewController") as! NowPlayingViewController
+            let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("StreamingViewController") as! StreamingViewController
             nav.setViewControllers([locationViewController], animated: true)
             self.mylocationViewController = nav
             newFrontController = self.mylocationViewController
@@ -204,7 +204,7 @@ extension MenuViewController: UITableViewDelegate {
         else if title == favoriteTitle {
             
             let nav = self.storyboard?.instantiateViewControllerWithIdentifier("MyLocationNavController") as! BlackTransparentNavigationController
-            let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NowPlayingViewController") as! NowPlayingViewController
+            let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("StreamingViewController") as! StreamingViewController
             nav.setViewControllers([locationViewController], animated: true)
             self.mylocationViewController = nav
             newFrontController = self.mylocationViewController
@@ -215,7 +215,7 @@ extension MenuViewController: UITableViewDelegate {
         else if title == profileTitle {
             
             let nav = self.storyboard?.instantiateViewControllerWithIdentifier("MyLocationNavController") as! BlackTransparentNavigationController
-            let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NowPlayingViewController") as! NowPlayingViewController
+            let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("StreamingViewController") as! StreamingViewController
             nav.setViewControllers([locationViewController], animated: true)
             self.mylocationViewController = nav
             newFrontController = self.mylocationViewController
@@ -231,7 +231,7 @@ extension MenuViewController: UITableViewDelegate {
                 
             else {
                 let nav = self.storyboard?.instantiateViewControllerWithIdentifier("MyLocationNavController") as! BlackTransparentNavigationController
-                let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("NowPlayingViewController") as! NowPlayingViewController
+                let locationViewController = self.storyboard?.instantiateViewControllerWithIdentifier("StreamingViewController") as! StreamingViewController
                 nav.setViewControllers([locationViewController], animated: true)
                 self.mylocationViewController = nav
                 newFrontController = self.mylocationViewController
