@@ -120,6 +120,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // MPNowPlayingInfoCenter
         UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
+<<<<<<< HEAD
+
+        myPlayer.player.play()
+        
+        print("Status", myPlayer.player.status.hashValue)
+=======
+>>>>>>> 2c3baf7773d162e6b06a0adef179d83adea253d8
         
         do {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
@@ -133,7 +140,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch let error as NSError {
             print(error.localizedDescription)
         }
+<<<<<<< HEAD
+=======
         
+>>>>>>> 2c3baf7773d162e6b06a0adef179d83adea253d8
         application.applicationIconBadgeNumber = 0
         
         let readAction = UIMutableUserNotificationAction()
