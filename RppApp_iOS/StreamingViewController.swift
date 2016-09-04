@@ -7,45 +7,41 @@
 //
 
 import UIKit
-import AVFoundation
 
 class StreamingViewController: UIViewController {
     
+    private var delegado:AppDelegate!
     
-    class PlayerAv {
-        var audioLink: String?
-        var player: AVPlayer
-        init(link: String) {
-            self.audioLink = link
-            self.player = AVPlayer(URL: NSURL(string: link)!)
-        }
-    }
-    
-    var myPlayer = PlayerAv(link: "http://gruporemux-live.hls.adaptive.level3.net/hls-live/gruporemux-streamRPPRD/_definst_/live/stream1.m3u8")
- 
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var pauseButton: UIButton!
     
     override func viewDidLoad() {
-        /*
-        myPlayer.player.play()
-        do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            print("AVAudioSession Category Playback OK")
-            do {
-                try AVAudioSession.sharedInstance().setActive(true)
-                print("AVAudioSession is Active")
-            } catch let error as NSError {
-                print(error.localizedDescription)
-            }
-        } catch let error as NSError {
-            print(error.localizedDescription)
-        }*/
         
-        
+        delegado = UIApplication.sharedApplication().delegate as! AppDelegate
+        delegado.playerPlaying()
         
         super.viewDidLoad()
     }
     
+    @IBAction func playPressed(sender: AnyObject) {
+        playButtonEnable(false)
+        delegado.playerPlaying()
+    }
    
+    @IBAction func pausePressed(sender: AnyObject) {
+        playButtonEnable()
+        delegado.playerStoping()
+    }
+    
+    func playButtonEnable(enabled: Bool = true) {
+        if enabled {
+            playButton.enabled = true
+            pauseButton.enabled = false
+        } else {
+            playButton.enabled = false
+            pauseButton.enabled = true
+        }
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

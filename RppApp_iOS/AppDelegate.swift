@@ -36,6 +36,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    func playerPlaying() {
+        
+        myPlayer.player.play()
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            print("AVAudioSession Category Playback OK")
+            do {
+                try AVAudioSession.sharedInstance().setActive(true)
+                print("AVAudioSession is Active")
+            } catch let error as NSError {
+                print(error.localizedDescription)
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func playerStoping() {
+        
+        myPlayer.player.pause()
+    }
+    
     
     // MARK: Static Properties
     
@@ -93,20 +115,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // MPNowPlayingInfoCenter
         UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
-        
-        myPlayer.player.play()
-        do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            print("AVAudioSession Category Playback OK")
-            do {
-                try AVAudioSession.sharedInstance().setActive(true)
-                print("AVAudioSession is Active")
-            } catch let error as NSError {
-                print(error.localizedDescription)
-            }
-        } catch let error as NSError {
-            print(error.localizedDescription)
-        }
         
         application.applicationIconBadgeNumber = 0
         
