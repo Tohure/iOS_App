@@ -497,8 +497,12 @@
 				TargetAttributes = {
 					31859B221D64DBAC00187AB8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5682UC7QWG;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -819,7 +823,7 @@
 					"\"SDWebImage\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "gruporpp.RPPNoticiasIphone.RppApp-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crht.rpp.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RppApp_iOS-Bridging-Header.h";
@@ -851,7 +855,7 @@
 					"\"SDWebImage\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "gruporpp.RPPNoticiasIphone.RppApp-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.crht.rpp.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RppApp_iOS-Bridging-Header.h";

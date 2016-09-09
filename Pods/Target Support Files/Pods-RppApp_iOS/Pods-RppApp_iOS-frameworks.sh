@@ -84,10 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AWSCognito/AWSCognito.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AWSCore/AWSCore.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AWSSNS/AWSSNS.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ImageSlideshow/ImageSlideshow.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AWSCognito/AWSCognito.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AWSCore/AWSCore.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AWSSNS/AWSSNS.framework"
   install_framework "$BUILT_PRODUCTS_DIR/ImageSlideshow/ImageSlideshow.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SDWebImage/SDWebImage.framework"
 fi

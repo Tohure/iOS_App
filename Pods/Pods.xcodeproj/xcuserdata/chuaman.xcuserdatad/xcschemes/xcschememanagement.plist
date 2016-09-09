@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AWSCognito.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AWSCore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AWSSNS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ImageSlideshow-ImageSlideshow.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +42,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>AC6C6A24FA9643359DFD367DF01AF81A</key>
+		<key>6427CA8D7E856705151C39F307893421</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7051517F12CD2BBD8AE2AD214DB4EC0C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>72053AFBEFD77D6E6F76D6C0BEC7961F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74CC32C58E7AE782A588581C72E199BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BAA396C4D689A02A15029B49E076FAF0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -38,11 +73,6 @@
 			<true/>
 		</dict>
 		<key>E7BEAF4DCE4B39E319ED8628F0399557</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EF77B9D559B96933A62733D598FC0C4C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

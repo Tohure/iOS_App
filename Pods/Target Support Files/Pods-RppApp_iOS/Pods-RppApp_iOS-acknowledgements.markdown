@@ -1,6 +1,21 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## AWSCognito
+
+The AWS Mobile SDK for iOS is generally licensed under the Apache 2.0 License, with the Amazon Cognito Identity Provider and Amazon Cognito Sync subcomponents being licensed under the Amazon Software License.
+
+
+## AWSCore
+
+The AWS Mobile SDK for iOS is generally licensed under the Apache 2.0 License, with the Amazon Cognito Identity Provider and Amazon Cognito Sync subcomponents being licensed under the Amazon Software License.
+
+
+## AWSSNS
+
+The AWS Mobile SDK for iOS is generally licensed under the Apache 2.0 License, with the Amazon Cognito Identity Provider and Amazon Cognito Sync subcomponents being licensed under the Amazon Software License.
+
+
 ## ImageSlideshow
 
 Copyright (c) 2015 Petr Zvoníček <zvonicek@gmail.com>

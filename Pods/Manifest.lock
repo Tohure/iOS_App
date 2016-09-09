@@ -1,4 +1,9 @@
 PODS:
+  - AWSCognito (2.4.7):
+    - AWSCore (= 2.4.7)
+  - AWSCore (2.4.7)
+  - AWSSNS (2.4.7):
+    - AWSCore (= 2.4.7)
   - ImageSlideshow (0.5.0):
     - ImageSlideshow/Core (= 0.5.0)
   - ImageSlideshow/Core (0.5.0)
@@ -7,13 +12,18 @@ PODS:
   - SDWebImage/Core (3.8.1)
 
 DEPENDENCIES:
+  - AWSCognito (~> 2.4.7)
+  - AWSSNS (~> 2.4.7)
   - ImageSlideshow (~> 0.5)
   - SDWebImage (~> 3.7)
 
 SPEC CHECKSUMS:
+  AWSCognito: 6aa404f15d1eb2b4b51f45322a409257b3248e79
+  AWSCore: 9a729a3c0050a51ece3547d546c327acdac7838a
+  AWSSNS: 45b3a02693808251ed388afcab0e90ec05b53f72
   ImageSlideshow: b2662127d093a42d9595a6b40af2817d064df251
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: fd960e2287bf04a5bc3a9d0735e82d0aa9a0e5ce
+PODFILE CHECKSUM: 80447851e8e5fa1f5554c9823c6c6ecd585ae3d8
 
 COCOAPODS: 1.0.1
