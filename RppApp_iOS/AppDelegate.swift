@@ -286,8 +286,11 @@ extension AppDelegate {
         let dataset = syncClient.openOrCreateDataset("RPP_Notifications_Beta")
         dataset.setString("APN_Token", forKey: deviceTokenAsString(deviceToken))
         dataset.synchronize().continueWithBlock {(task: AWSTask!) -> AnyObject! in
-            
-            self.AWScreateEndPoint(deviceToken,confAWS: configuration)
+            if task.error != nil {
+                print("Error: \(task.error)")
+            } else {
+                self.AWScreateEndPoint(deviceToken,confAWS: configuration)
+            }
             
             return nil
         }
@@ -329,10 +332,7 @@ extension AppDelegate {
         
         let snsManager = AWSSNS.defaultSNS()
         snsManager.subscribe(subscriptionRequest)
-        
-        
     }
- 
  
     func deviceTokenAsString(deviceTokenData: NSData) -> String {
         let rawDeviceTring = "\(deviceTokenData.description)"
