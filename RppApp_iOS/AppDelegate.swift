@@ -266,17 +266,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.player = AVPlayer(URL: NSURL(string: link)!)
         }
     }
-    
-    
-    // see?? asi ordenas tus clases separar todo 
-    //osea puedo hacer esto varias veces?
-    //asi?
 
-}
-
-
-extension AppDelegate {
-    
 }
 
 //MARK: Notificaciones
@@ -309,7 +299,7 @@ extension AppDelegate {
         let myArn = "arn:aws:sns:us-east-1:217243875767:app/APNS_SANDBOX/Test_iOS_Renzo"
         
         let platformEndpointRequest = AWSSNSCreatePlatformEndpointInput()
-        platformEndpointRequest.customUserData = "chuaman_iPhone6s"
+        platformEndpointRequest.customUserData = "jyanayaco_iPhone6s"
         platformEndpointRequest.token = self.deviceTokenAsString(deviceToken)
         platformEndpointRequest.platformApplicationArn = myArn
         let snsManager = AWSSNS.defaultSNS()

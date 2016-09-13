@@ -1,9 +1,9 @@
 //
 //  DefaultColors.swift
-//  Culture
+//  
 //
-//  Created by J on 4/2/16.
-//  Copyright © 2016 LIMAAPP E.I.R.L. All rights reserved.
+//  Created by Huamán Torres, Carlo Renzo on 20/08/16.
+//  Copyright © 2016 Grupo RPP. All rights reserved.
 //
 
 import UIKit

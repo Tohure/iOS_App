@@ -12,18 +12,7 @@ class BlackTransparentNavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        navigationBar.setBackgroundImage(UIImage.fromColor(.backgroundBlack()), forBarMetrics: .Default)
-//        navigationBar.translucent = true
-//
-//        UINavigationBar.appearance().barTintColor = UIColor.backgroundBlack()
-//        view.backgroundColor = UIColor.clearColor()
-//    
-//        navigationBar.tintColor = UIColor.whiteColor()
-//        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont(name: "Avenir-Light", size: 15.0)!]
-//        
-//        self.navigationBar.shadowImage = UIImage()
-
+    
         self.interactivePopGestureRecognizer!.enabled = false
     }
     

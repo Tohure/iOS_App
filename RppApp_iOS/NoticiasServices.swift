@@ -2,7 +2,7 @@
 //  NoticiasServices.swift
 //  RppApp_iOS
 //
-//  Created by Luis on 20/08/16.
+//  Created by Huamán Torres, Carlo Renzo on 20/08/16.
 //  Copyright © 2016 Grupo RPP. All rights reserved.
 //
 

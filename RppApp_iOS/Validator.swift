@@ -1,9 +1,9 @@
 //
 //  Validator.swift
-//  Culture
 //
-//  Created by Tohure on 4/21/16.
-//  Copyright © 2016 RPP All rights reserved.
+//
+//  Created by Huamán Torres, Carlo Renzo on 20/08/16.
+//  Copyright © 2016 Grupo RPP. All rights reserved.
 //
 
 import Foundation
