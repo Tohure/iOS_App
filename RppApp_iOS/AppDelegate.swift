@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import AWSCognito
+import AWSSNS
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -205,11 +206,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          AWSLogLevelWarn
          AWSLogLevelInfo
          AWSLogLevelDebug
-         
-         [AWSLogger defaultLogger].logLevel = AWSLogLevelVerbose;
-         */
         
-        AWSLogger.defaultLogger().logLevel = .Verbose
+         */
+        AWSLogger.defaultLogger().logLevel = .None
         
         return shouldPerformAdditionalDelegateHandling
         //return true
@@ -295,22 +294,61 @@ extension AppDelegate {
         let syncClient = AWSCognito.defaultCognito()
         
         let dataset = syncClient.openOrCreateDataset("RPP_Notifications_Beta")
-        dataset.setString("apn_Token", forKey: deviceToken.description)
+        dataset.setString("APN_Token", forKey: deviceTokenAsString(deviceToken))
         dataset.synchronize().continueWithBlock {(task: AWSTask!) -> AnyObject! in
             
-            self.createEndPoint()
-            
-            print("CognitoID",credentialsProvider.identityId)
+            self.AWScreateEndPoint(deviceToken,confAWS: configuration)
             
             return nil
-            
         }
         
         NSLog("deviceToken: %@", deviceToken);
     }
     
-    func createEndPoint(){
+    func AWScreateEndPoint(deviceToken: NSData,confAWS: AWSServiceConfiguration){
+        let myArn = "arn:aws:sns:us-east-1:217243875767:app/APNS_SANDBOX/Test_iOS_Renzo"
         
+        let platformEndpointRequest = AWSSNSCreatePlatformEndpointInput()
+        platformEndpointRequest.customUserData = "chuaman_iPhone6s"
+        platformEndpointRequest.token = self.deviceTokenAsString(deviceToken)
+        platformEndpointRequest.platformApplicationArn = myArn
+        let snsManager = AWSSNS.defaultSNS()
+        
+        snsManager.createPlatformEndpoint(platformEndpointRequest).continueWithExecutor(AWSExecutor.mainThreadExecutor(), withBlock: { (task: AWSTask!) -> AnyObject! in
+            if task.error != nil {
+                print("Error: \(task.error)")
+            } else {
+                let createEndpointResponse = task.result as! AWSSNSCreateEndpointResponse
+                print("endpointArn: \(createEndpointResponse.endpointArn)")
+                NSUserDefaults.standardUserDefaults().setObject(createEndpointResponse.endpointArn, forKey: "endpointArn")
+                self.AWSSubscribeToTopic(createEndpointResponse.endpointArn!);
+            }
+            
+            return nil
+        })
+    }
+    
+    func AWSSubscribeToTopic(endPointARN: String){
+        
+        let topicARN = "arn:aws:sns:us-east-1:217243875767:RPP_Push_Notifications"
+        
+        let subscriptionRequest = AWSSNSSubscribeInput()
+        subscriptionRequest.protocols = "application"
+        subscriptionRequest.topicArn = topicARN
+        subscriptionRequest.endpoint = endPointARN
+        
+        let snsManager = AWSSNS.defaultSNS()
+        snsManager.subscribe(subscriptionRequest)
+        
+        
+    }
+ 
+ 
+    func deviceTokenAsString(deviceTokenData: NSData) -> String {
+        let rawDeviceTring = "\(deviceTokenData.description)"
+        let noSpaces = rawDeviceTring.stringByReplacingOccurrencesOfString(" ", withString: "")
+        let tmp1 = noSpaces.stringByReplacingOccurrencesOfString("<", withString: "")
+        return tmp1.stringByReplacingOccurrencesOfString(">", withString: "")
     }
     
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
