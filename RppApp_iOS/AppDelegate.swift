@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import AWSCognito
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -116,6 +117,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+    
         // Override point for customization after application launch.
         
         // MPNowPlayingInfoCenter
@@ -133,6 +136,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } catch let error as NSError {
             print(error.localizedDescription)
         }
+        
         application.applicationIconBadgeNumber = 0
         
         let readAction = UIMutableUserNotificationAction()
@@ -194,6 +198,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             application.shortcutItems = [shortcut3, shortcut4]
         }
         
+        /* Add this so we can see logging to calls to AWS
+         options:
+         AWSLogLevelNone
+         AWSLogLevelError (default. Only error logs are printed to the console.)
+         AWSLogLevelWarn
+         AWSLogLevelInfo
+         AWSLogLevelDebug
+         
+         [AWSLogger defaultLogger].logLevel = AWSLogLevelVerbose;
+         */
+        
+        AWSLogger.defaultLogger().logLevel = .Verbose
+        
         return shouldPerformAdditionalDelegateHandling
         //return true
     }
@@ -251,12 +268,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    //MARK: Notificaciones 
+    
+    // see?? asi ordenas tus clases separar todo 
+    //osea puedo hacer esto varias veces?
+    //asi?
+
+}
+
+
+extension AppDelegate {
+    
+}
+
+//MARK: Notificaciones
+
+extension AppDelegate {
     
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        //Amazon Credentials & Register
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1,identityPoolId:"us-east-1:b9d9ffa9-da62-4f6c-bca1-40f091d2ac3a")
+        
+        let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
+        
+        AWSServiceManager.defaultServiceManager().defaultServiceConfiguration = configuration
+        
+        let syncClient = AWSCognito.defaultCognito()
+        
+        let dataset = syncClient.openOrCreateDataset("RPP_Notifications_Beta")
+        dataset.setString("apn_Token", forKey: deviceToken.description)
+        dataset.synchronize().continueWithBlock {(task: AWSTask!) -> AnyObject! in
+            
+            self.createEndPoint()
+            
+            print("CognitoID",credentialsProvider.identityId)
+            
+            return nil
+            
+        }
+        
         NSLog("deviceToken: %@", deviceToken);
     }
-
+    
+    func createEndPoint(){
+        
+    }
+    
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
         NSLog("Failed to register with error : %@", error);
     }
@@ -274,7 +330,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forLocalNotification notification: UILocalNotification, completionHandler: () -> Void) {
-
+        
         if identifier == "READ_IDENTIFIER" {
             let msg = String(format: "%@","read")
             createAlert(msg)
@@ -285,5 +341,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         completionHandler()
     }
+    
 }
 

@@ -39,7 +39,6 @@
 		A023E1081D6D752A00C47432 /* AnimationFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1051D6D752A00C47432 /* AnimationFrames.swift */; };
 		A023E1091D6D752A00C47432 /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1061D6D752A00C47432 /* UIImageView+Download.swift */; };
 		A023E10A1D6D752A00C47432 /* UIImage+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1071D6D752A00C47432 /* UIImage+DropShadow.swift */; };
-		A023E10D1D6D75EA00C47432 /* SwiftRadio-Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E10C1D6D75EA00C47432 /* SwiftRadio-Settings.swift */; };
 		A02CE5B81D7A0C450054908A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02CE5B71D7A0C450054908A /* MenuViewController.swift */; };
 		A02CE5BA1D7A0E250054908A /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02CE5B91D7A0E250054908A /* MenuItemCell.swift */; };
 		A02CE5BE1D7A0FB40054908A /* BlackTransparentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02CE5BD1D7A0FB40054908A /* BlackTransparentNavigationController.swift */; };
@@ -123,7 +122,6 @@
 		A023E1051D6D752A00C47432 /* AnimationFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationFrames.swift; sourceTree = "<group>"; };
 		A023E1061D6D752A00C47432 /* UIImageView+Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
 		A023E1071D6D752A00C47432 /* UIImage+DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+DropShadow.swift"; sourceTree = "<group>"; };
-		A023E10C1D6D75EA00C47432 /* SwiftRadio-Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftRadio-Settings.swift"; sourceTree = "<group>"; };
 		A02CE5B71D7A0C450054908A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A02CE5B91D7A0E250054908A /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		A02CE5BD1D7A0FB40054908A /* BlackTransparentNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackTransparentNavigationController.swift; sourceTree = "<group>"; };
@@ -358,7 +356,6 @@
 			isa = PBXGroup;
 			children = (
 				31859B321D64DBAC00187AB8 /* Info.plist */,
-				A023E10C1D6D75EA00C47432 /* SwiftRadio-Settings.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -640,7 +637,6 @@
 				A023E0FF1D6D749A00C47432 /* SpringImageView.swift in Sources */,
 				314208081D691C4E009F638D /* Multimedia.swift in Sources */,
 				A023E1091D6D752A00C47432 /* UIImageView+Download.swift in Sources */,
-				A023E10D1D6D75EA00C47432 /* SwiftRadio-Settings.swift in Sources */,
 				3142081B1D692AA2009F638D /* TabPageViewController.swift in Sources */,
 				A0AC567C1D6EBB1400273FD3 /* DetalleNoticiaVC.swift in Sources */,
 				A07287451D693D7F000561CF /* NoticiasServices.swift in Sources */,
