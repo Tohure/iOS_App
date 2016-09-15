@@ -185,7 +185,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // Install initial versions of our two extra dynamic shortcuts.
-        if let shortcutItems = application.shortcutItems , shortcutItems.isEmpty {
+        if let shortcutItems = application.shortcutItems  where shortcutItems.isEmpty {
             // Construct the items.
             let shortcut3 = UIMutableApplicationShortcutItem(type: ShortcutIdentifier.Third.type, localizedTitle: "Últimas Noticias", localizedSubtitle: "Revisa las últimas noticias RPP", icon: nil, userInfo: nil
             )

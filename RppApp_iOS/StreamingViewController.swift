@@ -20,7 +20,7 @@ class StreamingViewController: UIViewController {
         
         delegado = UIApplication.sharedApplication().delegate as! AppDelegate
         delegado.playerPlaying()
-        revealControllerAction()
+        //revealControllerAction()
         super.viewDidLoad()
     }
     
