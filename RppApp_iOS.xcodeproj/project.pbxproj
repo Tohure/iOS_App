@@ -36,9 +36,6 @@
 		A023E0FF1D6D749A00C47432 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E0FE1D6D749A00C47432 /* SpringImageView.swift */; };
 		A023E1011D6D749F00C47432 /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1001D6D749F00C47432 /* SpringLabel.swift */; };
 		A023E1031D6D74B200C47432 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1021D6D74B200C47432 /* Spring.swift */; };
-		A023E1081D6D752A00C47432 /* AnimationFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1051D6D752A00C47432 /* AnimationFrames.swift */; };
-		A023E1091D6D752A00C47432 /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1061D6D752A00C47432 /* UIImageView+Download.swift */; };
-		A023E10A1D6D752A00C47432 /* UIImage+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A023E1071D6D752A00C47432 /* UIImage+DropShadow.swift */; };
 		A02CE5B81D7A0C450054908A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02CE5B71D7A0C450054908A /* MenuViewController.swift */; };
 		A02CE5BA1D7A0E250054908A /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02CE5B91D7A0E250054908A /* MenuItemCell.swift */; };
 		A02CE5BE1D7A0FB40054908A /* BlackTransparentNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02CE5BD1D7A0FB40054908A /* BlackTransparentNavigationController.swift */; };
@@ -119,9 +116,6 @@
 		A023E0FE1D6D749A00C47432 /* SpringImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringImageView.swift; sourceTree = "<group>"; };
 		A023E1001D6D749F00C47432 /* SpringLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringLabel.swift; sourceTree = "<group>"; };
 		A023E1021D6D74B200C47432 /* Spring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spring.swift; sourceTree = "<group>"; };
-		A023E1051D6D752A00C47432 /* AnimationFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationFrames.swift; sourceTree = "<group>"; };
-		A023E1061D6D752A00C47432 /* UIImageView+Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
-		A023E1071D6D752A00C47432 /* UIImage+DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+DropShadow.swift"; sourceTree = "<group>"; };
 		A02CE5B71D7A0C450054908A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A02CE5B91D7A0E250054908A /* MenuItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		A02CE5BD1D7A0FB40054908A /* BlackTransparentNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackTransparentNavigationController.swift; sourceTree = "<group>"; };
@@ -242,7 +236,6 @@
 			isa = PBXGroup;
 			children = (
 				A02CE5B61D7A0C390054908A /* Menu */,
-				A023E0F31D6D741200C47432 /* Streaming */,
 				A072874B1D696CB2000561CF /* View */,
 				A072873A1D693D48000561CF /* Networking */,
 				31859B601D664F3700187AB8 /* Models */,
@@ -324,14 +317,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		A023E0F31D6D741200C47432 /* Streaming */ = {
-			isa = PBXGroup;
-			children = (
-				A023E1041D6D751F00C47432 /* UI Helpers */,
-			);
-			name = Streaming;
-			sourceTree = "<group>";
-		};
 		A023E0FD1D6D749300C47432 /* Spring */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,16 +325,6 @@
 				A023E0FE1D6D749A00C47432 /* SpringImageView.swift */,
 			);
 			name = Spring;
-			sourceTree = "<group>";
-		};
-		A023E1041D6D751F00C47432 /* UI Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				A023E1051D6D752A00C47432 /* AnimationFrames.swift */,
-				A023E1061D6D752A00C47432 /* UIImageView+Download.swift */,
-				A023E1071D6D752A00C47432 /* UIImage+DropShadow.swift */,
-			);
-			name = "UI Helpers";
 			sourceTree = "<group>";
 		};
 		A023E10B1D6D75E000C47432 /* Supporting Files */ = {
@@ -630,19 +605,16 @@
 				318DC5941D75081C0068617A /* SDWebImageSource.swift in Sources */,
 				A0FA7A8A1D793C7100B90030 /* RevealViewController.swift in Sources */,
 				A02CE5BA1D7A0E250054908A /* MenuItemCell.swift in Sources */,
-				A023E10A1D6D752A00C47432 /* UIImage+DropShadow.swift in Sources */,
 				A07287411D693D53000561CF /* JSONParser.swift in Sources */,
 				A0A093691D6FE7860008DDE1 /* NoticeDetailsProminentCell.swift in Sources */,
 				A0FA7A8C1D79439A00B90030 /* DefaultColors.swift in Sources */,
 				A023E0FF1D6D749A00C47432 /* SpringImageView.swift in Sources */,
 				314208081D691C4E009F638D /* Multimedia.swift in Sources */,
-				A023E1091D6D752A00C47432 /* UIImageView+Download.swift in Sources */,
 				3142081B1D692AA2009F638D /* TabPageViewController.swift in Sources */,
 				A0AC567C1D6EBB1400273FD3 /* DetalleNoticiaVC.swift in Sources */,
 				A07287451D693D7F000561CF /* NoticiasServices.swift in Sources */,
 				31B3ADD91D776F6B009026F4 /* ShortcutDetailViewController.swift in Sources */,
 				31724F501D6EC0CF0050CBBD /* DetalleMultimediaNoticiaVC.swift in Sources */,
-				A023E1081D6D752A00C47432 /* AnimationFrames.swift in Sources */,
 				A02CE5B81D7A0C450054908A /* MenuViewController.swift in Sources */,
 				A023E1011D6D749F00C47432 /* SpringLabel.swift in Sources */,
 				3142081A1D692AA2009F638D /* TabPageOption.swift in Sources */,

@@ -47,22 +47,8 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44
-        //addUserNotifications()
         
     }
-    
-//    func addUserNotifications() {
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MenuViewController.changeProfile), name: User.didUpdateCurrentUserNotification, object: nil)
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MenuViewController.logOut), name: User.didLogoutNotification, object: nil)
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(MenuViewController.logIn), name: User.didLoginNotification, object: nil)
-//    }
-//    
-//    deinit {
-//        NSNotificationCenter.defaultCenter().removeObserver(self, name: User.didLoginNotification, object: nil)
-//        NSNotificationCenter.defaultCenter().removeObserver(self, name: User.didLogoutNotification, object: nil)
-//        NSNotificationCenter.defaultCenter().removeObserver(self, name: User.didUpdateCurrentUserNotification, object: nil)
-//    }
-
     
     //MARK: image For Optio nWith Title
     func imageForOptionWithTitle(title:String) -> UIImage? {
@@ -127,14 +113,6 @@ extension MenuViewController: UITableViewDataSource {
             cell.menuIconImageView.image = image
         }
 
-//        if indexPath.row == menuItemTitles.count - 1 && UserManager.hasCurrentUser() {
-//            cell.menuItemTitle.textColor = UIColor.watermelonColor()
-//        }
-//        else {
-//            cell.menuItemTitle.textColor = UIColor.whiteColor()
-//        }
-        
-        
         cell.setNeedsLayout()
         return cell
     }
@@ -150,12 +128,6 @@ extension MenuViewController: UITableViewDelegate {
         let currentCell = tableView.cellForRowAtIndexPath(indexPath)
         currentCell!.setSelected(true, animated: false)
         
-//        if indexPath.row == previouslyPresentedRow {
-//        
-//            self.revealViewController().setFrontViewPosition(.Left, animated: true)
-//            return;
-//        }
-
         var newFrontController : UIViewController!
 
         let title = menuItemTitles[indexPath.row]
